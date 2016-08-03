@@ -10606,6 +10606,7 @@
     <a class="clsHide" href="#idLjnpackage.jsonnam"></a></p>
   <p id="idLjnpackage.jsonP2">AddressWpg:
     <br/>* <a href="https://www.npmjs.org/doc/files/package.json.html">https://www.npmjs.org/doc/files/package.json.html</a>,
+    <br/>* <a href="https://docs.npmjs.com/getting-started/using-a-package.json">https://docs.npmjs.com/getting-started/using-a-package.json</a>
     <a class="clsHide" href="#idLjnpackage.jsonP2"></a></p>
 
   <section id="idLjnpackage.jsonmbr">
@@ -10616,28 +10617,36 @@
     <br/>* cpt.ljnpkgjsn'member,
     <a class="clsHide" href="#idLjnpackage.jsonmbrnam"></a></p>
   <p id="idLjnpackage.jsonmbrSpc">Specific:
+    <br/>=== mandatory:
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrname">name</a>,
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrversion">version</a>,
     <br/>===
-    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrauthor">author</a>,
-    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrcontributors">contributors</a>,
-    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrdependencies">dependencies</a>,
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrdescription">description</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrmain">main</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrauthor">author</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrbin">bin</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrbugs">bugs</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrconfig">config</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrcontributors">contributors</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrcpu">cpu</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrdependencies">dependencies</a>,
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrdevDependencies">devDependencies</a>,
-    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrdist">dist</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrdirectories">directories</a>,
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrengines">engines</a>,
-    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrfrom">from</a>,
-    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrid">id</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrfiles">files</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrhomepage">homepage</a>,
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrkeywords">keywords</a>,
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrlicense">license</a>,
-    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrmain">main</a>,
-    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrreadme">readme</a>,
-    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrreadmeFilename">readmeFilename</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbros">os</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrpeerDependencies">peerDependencies</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrpreferGlobal">preferGlobal</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrprivate">private</a>,
+    <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrpublishConfig">publishConfig</a>,
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrrepository">repository</a>,
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrscripts">scripts</a>,
     <a class="clsHide" href="#idLjnpackage.jsonmbrSpc"></a></p>
-  <p id="idLjnpackage.jsonmbrname">ljnpkgjsn'name:
-    <br/><code>&nbsp; "name": "pkgname",</code>
+  <p id="idLjnpackage.jsonmbrname">ljnpkgjsn'name-string:
+    <br/><code>&nbsp; "name" : "pkgname",</code>
     <br/>===
     <br/><span class="clsQuote">The most important things in your package.json are the name and version fields. Those are actually required, and your package won't install without them. The name and version together form an identifier that is assumed to be completely unique. Changes to the package should come along with changes to the version.
     <br/>
@@ -10658,8 +10667,8 @@
     <br/>A name can be optionally prefixed by a scope, e.g. @myorg/mypackage. See npm-scope for more detail.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#name">https://docs.npmjs.com/files/package.json#name</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrname"></a></p>
-  <p id="idLjnpackage.jsonmbrversion">ljnpkgjsn'version:
-    <br/><code>&nbsp; "version": "0.10.2", //major.minor.bug</code>
+  <p id="idLjnpackage.jsonmbrversion">ljnpkgjsn'version-string:
+    <br/><code>&nbsp; "version" : "0.10.2", //major.minor.bug</code>
     <br/>===
     <br/><span class="clsQuote">The most important things in your package.json are the name and version fields.
     <br/>Those are actually required, and your package won't install without them.
@@ -10671,12 +10680,12 @@
     <br/>More on version numbers and ranges at <a class="clsPreview" href="#idLjnnpmsemver">semver</a>(7).</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#version">https://docs.npmjs.com/files/package.json#version</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrversion"></a></p>
-  <p id="idLjnpackage.jsonmbrauthor">ljnpkgjsn'author:
-    <br/><code>&nbsp; "author": {
-    <br/>&nbsp; "name": "Eran Hammer",
-    <br/>&nbsp; "email": "eran@hueniverse.com",
-    <br/>&nbsp; "url": "http://hueniverse.com"
-    <br/>},</code>
+  <p id="idLjnpackage.jsonmbrauthor">ljnpkgjsn'author-string-or-object:
+    <br/><code>&nbsp; "author" : {
+    <br/>&nbsp; &nbsp; "name" : "Eran Hammer",
+    <br/>&nbsp; &nbsp; "email" : "eran@hueniverse.com",
+    <br/>&nbsp; &nbsp; "url" : "http://hueniverse.com"
+    <br/>&nbsp; },</code>
     <br/>===
     <br/><span class="clsQuote">The "author" is one person. "contributors" is an array of people. A "person" is an object with a "name" field and optionally "url" and "email", like this:
     <br/><code>{ "name" : "Barney Rubble"
@@ -10690,8 +10699,53 @@
     <br/>npm also sets a top-level "maintainers" field with your npm user info.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#people-fields-author-contributors">https://docs.npmjs.com/files/package.json#people-fields-author-contributors</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrauthor"></a></p>
-  <p id="idLjnpackage.jsonmbrcontributors">ljnpkgjsn'contributors:
-    <br/><code>&nbsp; "contributors": [{<a class="clsPreview" href="#idLjnpackage.jsonmbrauthor">person1</a>}, {person2}],</code>
+  <p id="idLjnpackage.jsonmbrbin">ljnpkgjsn'bin-string-or-object:
+    <br/><code>&nbsp; "bin" : "./path/to/program",</code>
+    <br/>===
+    <br/><span class="clsQuote">A lot of packages have one or more executable files that they'd like to install into the PATH. npm makes this pretty easy (in fact, it uses this feature to install the "npm" executable.)
+    <br/>
+    <br/>To use this, supply a bin field in your package.json which is a map of command name to local file name. On install, npm will symlink that file into prefix/bin for global installs, or ./node_modules/.bin/ for local installs.
+    <br/>
+    <br/>For example, myapp could have this:
+    <br/><code>{ "bin" : { "myapp" : "./cli.js" } }</code>
+    <br/>So, when you install myapp, it'll create a symlink from the cli.js script to /usr/local/bin/myapp.
+    <br/>
+    <br/>If you have a single executable, and its name should be the name of the package, then you can just supply it as a string. For example:
+    <br/><code>{ "name": "my-program"
+    <br/>, "version": "1.2.5"
+    <br/>, "bin": "./path/to/program" }</code>
+    <br/>would be the same as this:
+    <br/><code>{ "name": "my-program"
+    <br/>, "version": "1.2.5"
+    <br/>, "bin" : { "my-program" : "./path/to/program" } }</code></span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#bin">https://docs.npmjs.com/files/package.json#bin</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrbin"></a></p>
+  <p id="idLjnpackage.jsonmbrbugs">ljnpkgjsn'bugs-object:
+    <br/><code>&nbsp; "bugs" : { "url" : "https://github.com/user/my_package/issues" },</code>
+    <br/>===
+    <br/><span class="clsQuote">The url to your project's issue tracker and / or the email address to which issues should be reported. These are helpful for people who encounter issues with your package.
+    <br/>
+    <br/>It should look like this:
+    <br/><code>{ "url" : "https://github.com/owner/project/issues"
+    <br/>, "email" : "project@hostname.com"
+    <br/>}</code>
+    <br/>You can specify either one or both values. If you want to provide only a url, you can specify the value for "bugs" as a simple string instead of an object.
+    <br/>
+    <br/>If a url is provided, it will be used by the npm bugs command.</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#bugs">https://docs.npmjs.com/files/package.json#bugs</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrbugs"></a></p>
+  <p id="idLjnpackage.jsonmbrconfig">ljnpkgjsn'config-object:
+    <br/><code>&nbsp; "config" : { "port" : "8080" },</code>
+    <br/>===
+    <br/><span class="clsQuote">A "config" object can be used to set configuration parameters used in package scripts that persist across upgrades. For instance, if a package had the following:
+    <br/><code>{ "name" : "foo"
+    <br/>, "config" : { "port" : "8080" } }</code>
+    <br/>and then had a "start" command that then referenced the npm_package_config_port environment variable, then the user could override that by doing npm config set foo:port 8001.
+    <br/>See <a href="https://docs.npmjs.com/misc/config">npm-config</a> and <a href="https://docs.npmjs.com/misc/scripts">npm-scripts</a> for more on package configs.</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#config">https://docs.npmjs.com/files/package.json#config</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrconfig"></a></p>
+  <p id="idLjnpackage.jsonmbrcontributors">ljnpkgjsn'contributors-array:
+    <br/><code>&nbsp; "contributors" : [{<a class="clsPreview" href="#idLjnpackage.jsonmbrauthor">person1</a>}, {person2}],</code>
     <br/>===
     <br/><span class="clsQuote">The "author" is one person. "contributors" is an array of people.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#people-fields-author-contributors">https://docs.npmjs.com/files/package.json#people-fields-author-contributors</a>]
@@ -10701,42 +10755,97 @@
     <br/>If there is an AUTHORS file in the root of your package, npm will treat each line as a Name &lt;email&gt; (url) format, where email and url are optional. Lines which start with a # or are blank, will be ignored.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#default-values">https://docs.npmjs.com/files/package.json#default-values</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrcontributors"></a></p>
-  <p id="idLjnpackage.jsonmbrdependencies">ljnpkgjsn'dependencies:
-    <br/><code>&nbsp; "dependencies": {
-    <br/>&nbsp; "hoek": "0.7.x",
-    <br/>&nbsp; "dyl" : "file:../dyl",
-    <br/>&nbsp; "til" : "~1.2",
-    <br/>&nbsp; "lat" : "latest"
-    <br/>},</code>
+  <p id="idLjnpackage.jsonmbrcpu">ljnpkgjsn'cpu-array:
+    <br/><code>&nbsp; "cpu" : [ "x64", "ia32" ],</code>
+    <br/>===
+    <br/><span class="clsQuote">If your code only runs on certain cpu architectures, you can specify which ones.
+    <br/><code>"cpu" : [ "x64", "ia32" ]</code>
+    <br/>Like the os option, you can also blacklist architectures:
+    <br/><code>"cpu" : [ "!arm", "!mips" ]</code>
+    <br/>The host architecture is determined by process.arch</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#cpu">https://docs.npmjs.com/files/package.json#cpu</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrcpu"></a></p>
+  <p id="idLjnpackage.jsonmbrdependencies">ljnpkgjsn'dependencies-object:
+    <br/><code>&nbsp; "dependencies" : {
+    <br/>&nbsp; &nbsp; "hoek": "0.7.x",
+    <br/>&nbsp; &nbsp; "dyl" : "file:../dyl",
+    <br/>&nbsp; &nbsp; "til" : "~1.2",
+    <br/>&nbsp; &nbsp; "lat" : "latest"
+    <br/>&nbsp; },</code>
     <br/>===
     <br/><span class="clsQuote">Dependencies are specified in a simple object that maps a package name to a version range. The version range is a string which has one or more space-separated descriptors. Dependencies can also be identified with a tarball or git URL.
     <br/>
     <br/>Please do not put test harnesses or transpilers in your dependencies object. See devDependencies, below.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#dependencies">https://docs.npmjs.com/files/package.json#dependencies</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrdependencies"></a></p>
-  <p id="idLjnpackage.jsonmbrdescription">ljnpkgjsn'description:
-    <br/><code>&nbsp; "description": "A packaged foo fooer for fooing foos",</code>
+  <p id="idLjnpackage.jsonmbrdescription">ljnpkgjsn'description-string:
+    <br/><code>&nbsp; "description" : "A packaged foo fooer for fooing foos",</code>
     <br/>===
     <br/><span class="clsQuote">Put a description in it.
     <br/>It's a string.
     <br/>This helps people discover your package, as it's listed in <code>npm search</code>.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#description">https://docs.npmjs.com/files/package.json#description</a>]as it's listed in npm search.
     <a class="clsHide" href="#idLjnpackage.jsonmbrdescription"></a></p>
-  <p id="idLjnpackage.jsonmbrdevDependencies">ljnpkgjsn'devDependencies:
-    <br/><code>&nbsp; "devDependencies": {
-    <br/>&nbsp; "lab": "0.0.x",
-    <br/>&nbsp; "complexity-report": "0.x.x"
-    <br/>},</code>
+  <p id="idLjnpackage.jsonmbrdevDependencies">ljnpkgjsn'devDependencies-object:
+    <br/><code>&nbsp; "devDependencies" : {
+    <br/>&nbsp; &nbsp; "lab" : "0.0.x",
+    <br/>&nbsp; &nbsp; "complexity-report" : "0.x.x"
+    <br/>&nbsp; },</code>
     <br/>===
-    <br/>[<a href="https://docs.npmjs.com/files/package.json#devDependencies">https://docs.npmjs.com/files/package.json#devDependencies</a>]
+    <br/><span class="clsQuote">If someone is planning on downloading and using your module in their program, then they probably don't want or need to download and build the external test or documentation framework that you use.
+    <br/>
+    <br/>In this case, it's best to map these additional items in a devDependencies object.
+    <br/>
+    <br/>These things will be installed when doing npm link or npm install from the root of a package, and can be managed like any other npm configuration param. See npm-config for more on the topic.
+    <br/>
+    <br/>For build steps that are not platform-specific, such as compiling CoffeeScript or other languages to JavaScript, use the prepublish script to do this, and make the required package a devDependency.
+    <br/>
+    <br/>For example:
+    <br/>{ "name": "ethopia-waza",
+    <br/>  "description": "a delightfully fruity coffee varietal",
+    <br/>  "version": "1.2.3",
+    <br/>  "devDependencies": {
+    <br/>&nbsp;   "coffee-script": "~1.6.3"
+    <br/>  },
+    <br/>  "scripts": {
+    <br/>&nbsp;   "prepublish": "coffee -o lib/ -c src/waza.coffee"
+    <br/>  },
+    <br/>  "main": "lib/waza.js"
+    <br/>}
+    <br/>The prepublish script will be run before publishing, so that users can consume the functionality without requiring them to compile it themselves. In dev mode (ie, locally running npm install), it'll run this script as well, so that you can test it easily.</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#devdependencies">https://docs.npmjs.com/files/package.json#devdependencies</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrdevDependencies"></a></p>
-  <p id="idLjnpackage.jsonmbrdist">ljnpkgjsn'dist:
-    <br/>"dist": {
-    <br/>&nbsp; "shasum": "e40f98139beca93f25615708f8a13f4c20f20178"
-    <br/>},
-    <br/>[<a href="https://docs.npmjs.com/files/package.json#dist">https://docs.npmjs.com/files/package.json#dist</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrdist"></a></p>
-  <p id="idLjnpackage.jsonmbrengines">ljnpkgjsn'engines:
+  <p id="idLjnpackage.jsonmbrdirectories">ljnpkgjsn'directories-object:
+    <br/><code>&nbsp; "directories" : {
+    <br/>&nbsp; &nbsp; "lib" : "local/lib",
+    <br/>&nbsp; &nbsp; "bin" : "local/binaries",
+    <br/>&nbsp; &nbsp; "man" : "local/man",
+    <br/>&nbsp; &nbsp; "doc" : "local/docs"
+    <br/>&nbsp; },</code>
+    <br/>===
+    <br/><span class="clsQuote">The CommonJS Packages spec details a few ways that you can indicate the structure of your package using a directories object. If you look at npm's package.json, you'll see that it has directories for doc, lib, and man.
+    <br/>
+    <br/>In the future, this information may be used in other creative ways.
+    <br/>
+    <br/>directories.lib
+    <br/>Tell people where the bulk of your library is. Nothing special is done with the lib folder in any way, but it's useful meta info.
+    <br/>
+    <br/>directories.bin
+    <br/>If you specify a bin directory in directories.bin, all the files in that folder will be added.
+    <br/>
+    <br/>Because of the way the bin directive works, specifying both a bin path and setting directories.bin is an error. If you want to specify individual files, use bin, and for all the files in an existing bin directory, use directories.bin.
+    <br/>
+    <br/>directories.man
+    <br/>A folder that is full of man pages. Sugar to generate a "man" array by walking the folder.
+    <br/>
+    <br/>directories.doc
+    <br/>Put markdown files in here. Eventually, these will be displayed nicely, maybe, someday.
+    <br/>
+    <br/>directories.example
+    <br/>Put example scripts in here. Someday, it might be exposed in some clever way.</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#directories">https://docs.npmjs.com/files/package.json#directories</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrdirectories"></a></p>
+  <p id="idLjnpackage.jsonmbrengines">ljnpkgjsn'engines-object:
     <br/><code>&nbsp; "engines" : { "node" : "&gt;=0.10.3 &lt;0.12",  "npm" : "1.3.5" },</code>
     <br/>===
     <br/><span class="clsQuote">You can specify the version of node that your stuff works on:
@@ -10750,23 +10859,48 @@
     <br/>Note that, unless the user has set the engine-strict config flag, this field is advisory only.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#engines">https://docs.npmjs.com/files/package.json#engines</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrengines"></a></p>
-  <p id="idLjnpackage.jsonmbrfrom">ljnpkgjsn'from:
-    <br/>  "_from": "hawk@~0.10.2",
-    <br/>[<a href="https://docs.npmjs.com/files/package.json#from">https://docs.npmjs.com/files/package.json#from</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrfrom"></a></p>
-  <p id="idLjnpackage.jsonmbrid">ljnpkgjsn'id:
-    <br/><code>&nbsp; "id": "hawk@0.10.2",</code>
-    <br/>[<a href="https://docs.npmjs.com/files/package.json#id">https://docs.npmjs.com/files/package.json#id</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrid"></a></p>
-  <p id="idLjnpackage.jsonmbrkeywords">ljnpkgjsn'keywords:
-    <br/><code>&nbsp; "keywords": ["http", "authentication"],</code>
+  <p id="idLjnpackage.jsonmbrfiles">ljnpkgjsn'files-array:
+    <br/><code>&nbsp; "files" : [ filName, dirName],</code>
+    <br/>===
+    <br/><span class="clsQuote">The "files" field is an array of files to include in your project. If you name a folder in the array, then it will also include the files inside that folder. (Unless they would be ignored by another rule.)
+    <br/>
+    <br/>You can also provide a ".npmignore" file in the root of your package or in subdirectories, which will keep files from being included, even if they would be picked up by the files array. The .npmignore file works just like a .gitignore.
+    <br/>
+    <br/>Certain files are always included, regardless of settings:
+    <br/>package.json
+    <br/>README (and its variants)
+    <br/>CHANGELOG (and its variants)
+    <br/>LICENSE / LICENCE
+    <br/>Conversely, some files are always ignored:
+    <br/>.git
+    <br/>CVS
+    <br/>.svn
+    <br/>.hg
+    <br/>.lock-wscript
+    <br/>.wafpickle-N
+    <br/>*.swp
+    <br/>.DS_Store
+    <br/>._*
+    <br/>npm-debug.log</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#files">https://docs.npmjs.com/files/package.json#files</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrfiles"></a></p>
+  <p id="idLjnpackage.jsonmbrhomepage">ljnpkgjsn'homepage-string:
+    <br/><code>&nbsp; "homepage" : "https://my-homepage/",</code>
+    <br/>===
+    <br/><span class="clsQuote">The url to the project homepage.
+    <br/>NOTE: This is not the same as "url". If you put a "url" field, then the registry will think it's a redirection to your package that has been published somewhere else, and spit at you.
+    <br/>Literally. Spit. I'm so not kidding.</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#homepage">https://docs.npmjs.com/files/package.json#homepage</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrhomepage"></a></p>
+  <p id="idLjnpackage.jsonmbrkeywords">ljnpkgjsn'keywords-array:
+    <br/><code>&nbsp; "keywords" : [ "http", "authentication" ],</code>
     <br/>===
     <br/><span class="clsQuote">Put keywords in it.
     <br/>It's an array of strings.
     <br/>This helps people discover your package as it's listed in <strong>npm search</strong>.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#keywords">https://docs.npmjs.com/files/package.json#keywords</a>]s it's listed in npm search.
     <a class="clsHide" href="#idLjnpackage.jsonmbrkeywords"></a></p>
-  <p id="idLjnpackage.jsonmbrlicense">ljnpkgjsn'license:
+  <p id="idLjnpackage.jsonmbrlicense">ljnpkgjsn'license-string:
     <br/><code>&nbsp; "license" : "MIT",</code>
     <br/>===
     <br/><span class="clsQuote">You should specify a license for your package so that people know how they are permitted to use it, and any restrictions you're placing on it.
@@ -10776,8 +10910,8 @@
     <br/>You can check <a href="https://spdx.org/licenses/">the full list of SPDX license IDs</a>. Ideally you should pick one that is OSI approved.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#license">https://docs.npmjs.com/files/package.json#license</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrlicense"></a></p>
-  <p id="idLjnpackage.jsonmbrmain">ljnpkgjsn'main:
-    <br/><code>&nbsp; "main": "index",</code>
+  <p id="idLjnpackage.jsonmbrmain">ljnpkgjsn'main-string:
+    <br/><code>&nbsp; "main" : "index",</code>
     <br/>===
     <br/><span class="clsQuote">The main field is a module ID that is the primary entry point to your program.
     <br/>That is, if your package is named foo, and a user installs it, and then does require("foo"), then your main module's exports object will be returned.
@@ -10787,22 +10921,95 @@
     <br/>For most modules, it makes the most sense to have a main script and often not much else.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#main">https://docs.npmjs.com/files/package.json#main</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrmain"></a></p>
-  <p id="idLjnpackage.jsonmbrreadme">ljnpkgjsn'readme:
-    <br/>&nbsp; "readme": "![hawk Logo](https://raw.github.com/hueniverse/ ...\r\n\r\nThe **Hawk** logo was created by [Chris Carrasco](http://chriscarrasco.com).\r\n",
-    <br/>[<a href="https://docs.npmjs.com/files/package.json#readme">https://docs.npmjs.com/files/package.json#readme</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrreadme"></a></p>
-  <p id="idLjnpackage.jsonmbrreadmeFilename">ljnpkgjsn'readmeFilename:
-    <br/>&nbsp; "readmeFilename": "README.md",
-    <br/>[<a href="https://docs.npmjs.com/files/package.json#readmeFilename">https://docs.npmjs.com/files/package.json#readmeFilename</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrreadmeFilename"></a></p>
-  <p id="idLjnpackage.jsonmbrrepository">ljnpkgjsn'repository:
-    <br/>"repository": {
-    <br/>&nbsp; "type": "git",
-    <br/>&nbsp; "url": "git://github.com/hueniverse/hawk"
-    <br/>},
+  <p id="idLjnpackage.jsonmbros">ljnpkgjsn'os-array:
+    <br/><code>&nbsp; "os" : [ "darwin", "linux" ],</code>
+    <br/>===
+    <br/><span class="clsQuote">You can specify which operating systems your module will run on:
+    <br/><code>"os" : [ "darwin", "linux" ]</code>
+    <br/>You can also blacklist instead of whitelist operating systems, just prepend the blacklisted os with a '!':
+    <br/><code>"os" : [ "!win32" ]</code>
+    <br/>The host operating system is determined by process.platform
+    <br/>
+    <br/>It is allowed to both blacklist, and whitelist, although there isn't any good reason to do this.</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#os">https://docs.npmjs.com/files/package.json#os</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbros"></a></p>
+  <p id="idLjnpackage.jsonmbrpeerDependencies">ljnpkgjsn'peerDependencies-object:
+    <br/><code>&nbsp; "peerDependencies" : { "tea" : "2.x" },</code>
+    <br/>===
+    <br/><span class="clsQuote">In some cases, you want to express the compatibility of your package with a host tool or library, while not necessarily doing a require of this host. This is usually referred to as a plugin. Notably, your module may be exposing a specific interface, expected and specified by the host documentation.
+    <br/>
+    <br/>For example:
+    <br/><code>{
+    <br/>&nbsp; "name": "tea-latte",
+    <br/>&nbsp; "version": "1.3.5",
+    <br/>&nbsp; "peerDependencies": {
+    <br/>&nbsp; &nbsp; "tea": "2.x"
+    <br/>&nbsp; }
+    <br/>}</code>
+    <br/>This ensures your package tea-latte can be installed along with the second major version of the host package tea only. npm install tea-latte could possibly yield the following dependency graph:
+    <br/>├── tea-latte@1.3.5
+    <br/>└── tea@2.2.0
+    <br/>NOTE: npm versions 1 and 2 will automatically install peerDependencies if they are not explicitly depended upon higher in the dependency tree. In the next major version of npm (npm@3), this will no longer be the case. You will receive a warning that the peerDependency is not installed instead. The behavior in npms 1 & 2 was frequently confusing and could easily put you into dependency hell, a situation that npm is designed to avoid as much as possible.
+    <br/>
+    <br/>Trying to install another plugin with a conflicting requirement will cause an error. For this reason, make sure your plugin requirement is as broad as possible, and not to lock it down to specific patch versions.
+    <br/>
+    <br/>Assuming the host complies with semver, only changes in the host package's major version will break your plugin. Thus, if you've worked with every 1.x version of the host package, use "^1.0" or "1.x" to express this. If you depend on features introduced in 1.5.2, use "&gt;= 1.5.2 &lt; 2".</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#peerdependencies">https://docs.npmjs.com/files/package.json#peerdependencies</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrpeerDependencies"></a></p>
+  <p id="idLjnpackage.jsonmbrpreferGlobal">ljnpkgjsn'preferGlobal-boolean:
+    <br/><code>&nbsp; "preferGlobal" : true,</code>
+    <br/>===
+    <br/><span class="clsQuote">If your package is primarily a command-line application that should be installed globally, then set this value to true to provide a warning if it is installed locally.
+    <br/>
+    <br/>It doesn't actually prevent users from installing it locally, but it does help prevent some confusion if it doesn't work as expected.</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#preferglobal">https://docs.npmjs.com/files/package.json#preferglobal</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrpreferGlobal"></a></p>
+  <p id="idLjnpackage.jsonmbrprivate">ljnpkgjsn'private-boolean:
+    <br/><code>&nbsp; "private" : true,</code>
+    <br/>===
+    <br/><span class="clsQuote">If you set "private": true in your package.json, then npm will refuse to publish it.
+    <br/>
+    <br/>This is a way to prevent accidental publication of private repositories. If you would like to ensure that a given package is only ever published to a specific registry (for example, an internal registry), then use the publishConfig dictionary described below to override the registry config param at publish-time.</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#private">https://docs.npmjs.com/files/package.json#private</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrprivate"></a></p>
+  <p id="idLjnpackage.jsonmbrpublishConfig">ljnpkgjsn'publishConfig-object:
+    <br/><code>&nbsp; "publishConfig" : { "registry" : "http://my-internal-registry.local" },</code>
+    <br/>===
+    <br/><span class="clsQuote">This is a set of config values that will be used at publish-time. It's especially handy if you want to set the tag, registry or access, so that you can ensure that a given package is not tagged with "latest", published to the global public registry or that a scoped module is private by default.
+    <br/>
+    <br/>Any config values can be overridden, but of course only "tag", "registry" and "access" probably matter for the purposes of publishing.
+    <br/>
+    <br/>See <a href="https://docs.npmjs.com/misc/config">npm-config</a> to see the list of config options that can be overridden.</span>
+    <br/>[<a href="https://docs.npmjs.com/files/package.json#publishconfig">https://docs.npmjs.com/files/package.json#publishconfig</a>]
+    <a class="clsHide" href="#idLjnpackage.jsonmbrpublishConfig"></a></p>
+  <p id="idLjnpackage.jsonmbrrepository">ljnpkgjsn'repository-object:
+    <br/><code>&nbsp; "repository" : {
+    <br/>&nbsp; &nbsp; "type" : "git",
+    <br/>&nbsp; &nbsp; "url" : "git://github.com/hueniverse/hawk"
+    <br/>&nbsp; },</code>
+    <br/>===
+    <br/><span class="clsQuote">Specify the place where your code lives. This is helpful for people who want to contribute. If the git repo is on GitHub, then the npm docs command will be able to find you.
+    <br/>
+    <br/>Do it like this:
+    <br/>"repository" :
+    <br/>  { "type" : "git"
+    <br/>  , "url" : "https://github.com/npm/npm.git"
+    <br/>  }
+    <br/>
+    <br/>"repository" :
+    <br/>  { "type" : "svn"
+    <br/>  , "url" : "https://v8.googlecode.com/svn/trunk/"
+    <br/>  }
+    <br/>The URL should be a publicly available (perhaps read-only) url that can be handed directly to a VCS program without any modification. It should not be a url to an html project page that you put in your browser. It's for computers.
+    <br/>
+    <br/>For GitHub, GitHub gist, Bitbucket, or GitLab repositories you can use the same shortcut syntax you use for npm install:
+    <br/>"repository": "npm/npm"
+    <br/>"repository": "gist:11081aaa281"
+    <br/>"repository": "bitbucket:example/repo"
+    <br/>"repository": "gitlab:another/repo"</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#repository">https://docs.npmjs.com/files/package.json#repository</a>]
     <a class="clsHide" href="#idLjnpackage.jsonmbrrepository"></a></p>
-  <p id="idLjnpackage.jsonmbrscripts">ljnpkgjsn'scripts:
+  <p id="idLjnpackage.jsonmbrscripts">ljnpkgjsn'scripts-object:
     <br/><code>&nbsp; "scripts": { "test" : "make test-cov" },</code>
     <br/>===
     <br/><span class="clsQuote">You can specify the version of node that your stuff works on:
@@ -10823,14 +11030,42 @@
     <a class="clsHide" href="#idLjnpackage.jsonExlH4"></a></h4>
   <p id="idLjnpackage.jsonExlnam">Example-of-package.json-file:
     <br/><code>{
-    <br/>&nbsp; "name" : "pkgname",
-    <br/>&nbsp; "version" : "0.10.2",
-    <br/>&nbsp; "author" : "Barney Rubble &lt;b@rubble.com&gt; (http://barnyrubble.tumblr.com/)",
-    <br/>&nbsp; "contributors" : [ {person1}, {person2}],
-    <br/>&nbsp; "dependencies" : { "hoek" : "0.7.x", "dyl" : "file:../dyl" },
-    <br/>&nbsp; "description": "A packaged foo fooer for fooing foos",
-    <br/>&nbsp; "engines" : { "node" : "&gt;=0.10.3 &lt;0.12", "npm" : "1.3.5" },
-    <br/>&nbsp; "scripts" : { "test" : "make test-cov" }
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrname">name</a>" : "pkgname",
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrversion">version</a>" : "0.10.2",
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrdescription">description</a>" : "A packaged foo fooer for fooing foos",
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrmain">main</a>" : "index.js",
+    <br/>
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrauthor">author</a>" : "Barney Rubble &lt;b@rubble.com&gt; (http://barnyrubble.tumblr.com/)",
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrbin">bin</a>" : "./path/to/program",
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrbugs">bugs</a>" : { "url" : "https://github.com/user/my_package/issues" },
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrconfig">config</a>" : { "port" : "8080" },
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrcontributors">contributors</a>" : [ {person1}, {person2}],
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrcpu">cpu</a>" : [ "x64", "ia32" ],
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrdependencies">dependencies</a>" : { "hoek" : "0.7.x", "dyl" : "file:../dyl" },
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrdevDependencies">devDependencies</a>" : {
+    <br/>&nbsp; &nbsp; "lab" : "0.0.x",
+    <br/>&nbsp; &nbsp; "complexity-report" : "0.x.x"
+    <br/>&nbsp; },
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrdirectories">directories</a>" : {
+    <br/>&nbsp; &nbsp; "lib" : "local/lib",
+    <br/>&nbsp; &nbsp; "bin" : "local/binaries",
+    <br/>&nbsp; &nbsp; "man" : "local/man",
+    <br/>&nbsp; &nbsp; "doc" : "local/docs"
+    <br/>&nbsp; },
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrengines">engines</a>" : { "node" : "&gt;=0.10.3 &lt;0.12", "npm" : "1.3.5" },
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrfiles">files</a>" : [ filName, dirName],
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrhomepage">homepage</a>" : "https://my-homepage/",
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrkeywords">keywords</a>" : [ "http", "authentication" ],
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbros">os</a>" : [ "darwin", "linux" ],
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrpeerDependencies">peerDependencies</a>" : { "tea" : "2.x" },
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrpreferGlobal">preferGlobal</a>" : true,
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrprivate">private</a>" : true,
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrpublishConfig">publishConfig</a>" : { "registry" : "http://my-internal-registry.local" },
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrrepository">repository</a>" : {
+    <br/>&nbsp; &nbsp; "type" : "git",
+    <br/>&nbsp; &nbsp; "url" : "git://github.com/hueniverse/hawk"
+    <br/>&nbsp; },
+    <br/>&nbsp; "<a class="clsPreview" href="#idLjnpackage.jsonmbrscripts">scripts</a>" : { "test" : "make test-cov" }
     <br/>}</code>
     <a class="clsHide" href="#idLjnpackage.jsonExlnam"></a></p>
   </section>
@@ -12993,6 +13228,9 @@
     <br/>• email:
     <br/>&nbsp;&nbsp;<img src="../../misc/img/mail.png" alt="imgMail" />
     <br/>• twitter: <a href="https://twitter.com/synagonism">@synagonism</a>
+    <br/>===
+    <br/>• dev: <a href="https://github.com/synagonism/filCptLjs/">https://github.com/synagonism/filCptLjs/</a>
+    <br/>• issues: <a href="https://github.com/synagonism/filCptLjs/issues">https://github.com/synagonism/filCptLjs/issues</a>
     <a class="clsHide" href="#idFooterP1"></a></p>
 </footer>
 
@@ -13002,6 +13240,7 @@
   <p id="idMetaP1">SEARCH THE-PAGE:
     <br/>This page uses '<span class="clsColorRed">locator-names</span>', names that when you find them, you find the-LOCATION of the-concept they denote.
     <br/>Type <span class="clsColorRed">CTRL+F "cpt.(ljs|ljb|ljn)words-of-concept's-name" or "words-of-name-cpt"</span>, to go to the-LOCATION of the-concept.
+    <br/>There are about 400 sub-concepts in this concept (ebook) with 1,400 names and 14,000 lines of <a class="clsPreview" href="../../hitp/#idDescription">hitp-document</a>.
     <a class="clsHide" href="#idMetaP1"></a></p>
   <!--                                                                            -->
   <p id="idMetaVersion">Webpage-Versions:
@@ -13063,6 +13302,6 @@
 </script>
 
 <script src="http://synagonism.github.io/hitp/hitp.js"></script>
-@nodejs @JavaScriptDaily Published generic #javascript with dialects browser-js, Node.js from a linguistic viewpoint http://synagonism.net/dMiw/dTchInf/lngJs.html
+@nodejs @JavaScriptDaily Published generic #javascript with dialects browser-js, Node.js from a linguistic viewpoint http://synagonism.net/dMiw/dTchInf/filCptLjs.html
 </body>
 </html>
