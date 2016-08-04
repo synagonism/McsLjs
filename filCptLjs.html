@@ -10645,7 +10645,11 @@
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrrepository">repository</a>,
     <br/>* <a class="clsPreview" href="#idLjnpackage.jsonmbrscripts">scripts</a>,
     <a class="clsHide" href="#idLjnpackage.jsonmbrSpc"></a></p>
-  <p id="idLjnpackage.jsonmbrname">ljnpkgjsn'name-string:
+  
+  <section id="idLjnpackage.jsonmbrname">
+  <h5 id="idLjnpackage.jsonmbrnameH5">ljnpkgjsn'name-string
+    <a class="clsHide" href="#idLjnpackage.jsonmbrnameH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrnamedsn">Description:
     <br/><code>&nbsp; "name" : "pkgname",</code>
     <br/>===
     <br/><span class="clsQuote">The most important things in your package.json are the name and version fields. Those are actually required, and your package won't install without them. The name and version together form an identifier that is assumed to be completely unique. Changes to the package should come along with changes to the version.
@@ -10666,8 +10670,13 @@
     <br/>
     <br/>A name can be optionally prefixed by a scope, e.g. @myorg/mypackage. See npm-scope for more detail.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#name">https://docs.npmjs.com/files/package.json#name</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrname"></a></p>
-  <p id="idLjnpackage.jsonmbrversion">ljnpkgjsn'version-string:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrnamedsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrversion">
+  <h5 id="idLjnpackage.jsonmbrversionH5">ljnpkgjsn'version-string
+    <a class="clsHide" href="#idLjnpackage.jsonmbrversionH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrversiondsn">Description:
     <br/><code>&nbsp; "version" : "0.10.2", //major.minor.bug</code>
     <br/>===
     <br/><span class="clsQuote">The most important things in your package.json are the name and version fields.
@@ -10679,8 +10688,13 @@
     <br/>
     <br/>More on version numbers and ranges at <a class="clsPreview" href="#idLjnnpmsemver">semver</a>(7).</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#version">https://docs.npmjs.com/files/package.json#version</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrversion"></a></p>
-  <p id="idLjnpackage.jsonmbrauthor">ljnpkgjsn'author-string-or-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrversiondsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrauthor">
+  <h5 id="idLjnpackage.jsonmbrauthorH5">ljnpkgjsn'author-string-or-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrauthorH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrauthordsn">Description:
     <br/><code>&nbsp; "author" : {
     <br/>&nbsp; &nbsp; "name" : "Eran Hammer",
     <br/>&nbsp; &nbsp; "email" : "eran@hueniverse.com",
@@ -10698,8 +10712,13 @@
     <br/>
     <br/>npm also sets a top-level "maintainers" field with your npm user info.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#people-fields-author-contributors">https://docs.npmjs.com/files/package.json#people-fields-author-contributors</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrauthor"></a></p>
-  <p id="idLjnpackage.jsonmbrbin">ljnpkgjsn'bin-string-or-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrauthordsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrbin">
+  <h5 id="idLjnpackage.jsonmbrbinH5">ljnpkgjsn'bin-string-or-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrbinH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrbindsn">Description:
     <br/><code>&nbsp; "bin" : "./path/to/program",</code>
     <br/>===
     <br/><span class="clsQuote">A lot of packages have one or more executable files that they'd like to install into the PATH. npm makes this pretty easy (in fact, it uses this feature to install the "npm" executable.)
@@ -10719,8 +10738,13 @@
     <br/>, "version": "1.2.5"
     <br/>, "bin" : { "my-program" : "./path/to/program" } }</code></span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#bin">https://docs.npmjs.com/files/package.json#bin</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrbin"></a></p>
-  <p id="idLjnpackage.jsonmbrbugs">ljnpkgjsn'bugs-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrbindsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrbugs">
+  <h5 id="idLjnpackage.jsonmbrbugsH5">ljnpkgjsn'bugs-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrbugsH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrbugsdsn">Description:
     <br/><code>&nbsp; "bugs" : { "url" : "https://github.com/user/my_package/issues" },</code>
     <br/>===
     <br/><span class="clsQuote">The url to your project's issue tracker and / or the email address to which issues should be reported. These are helpful for people who encounter issues with your package.
@@ -10733,8 +10757,13 @@
     <br/>
     <br/>If a url is provided, it will be used by the npm bugs command.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#bugs">https://docs.npmjs.com/files/package.json#bugs</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrbugs"></a></p>
-  <p id="idLjnpackage.jsonmbrconfig">ljnpkgjsn'config-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrbugsdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrconfig">
+  <h5 id="idLjnpackage.jsonmbrconfigH5">ljnpkgjsn'config-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrconfigH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrconfigdsn">Description:
     <br/><code>&nbsp; "config" : { "port" : "8080" },</code>
     <br/>===
     <br/><span class="clsQuote">A "config" object can be used to set configuration parameters used in package scripts that persist across upgrades. For instance, if a package had the following:
@@ -10743,8 +10772,13 @@
     <br/>and then had a "start" command that then referenced the npm_package_config_port environment variable, then the user could override that by doing npm config set foo:port 8001.
     <br/>See <a href="https://docs.npmjs.com/misc/config">npm-config</a> and <a href="https://docs.npmjs.com/misc/scripts">npm-scripts</a> for more on package configs.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#config">https://docs.npmjs.com/files/package.json#config</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrconfig"></a></p>
-  <p id="idLjnpackage.jsonmbrcontributors">ljnpkgjsn'contributors-array:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrconfigdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrcontributors">
+  <h5 id="idLjnpackage.jsonmbrcontributorsH5">ljnpkgjsn'contributors-array
+    <a class="clsHide" href="#idLjnpackage.jsonmbrcontributorsH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrcontributorsdsn">Description:
     <br/><code>&nbsp; "contributors" : [{<a class="clsPreview" href="#idLjnpackage.jsonmbrauthor">person1</a>}, {person2}],</code>
     <br/>===
     <br/><span class="clsQuote">The "author" is one person. "contributors" is an array of people.</span>
@@ -10754,8 +10788,13 @@
     <br/>"contributors": [...]
     <br/>If there is an AUTHORS file in the root of your package, npm will treat each line as a Name &lt;email&gt; (url) format, where email and url are optional. Lines which start with a # or are blank, will be ignored.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#default-values">https://docs.npmjs.com/files/package.json#default-values</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrcontributors"></a></p>
-  <p id="idLjnpackage.jsonmbrcpu">ljnpkgjsn'cpu-array:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrcontributorsdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrcpu">
+  <h5 id="idLjnpackage.jsonmbrcpuH5">ljnpkgjsn'cpu-array
+    <a class="clsHide" href="#idLjnpackage.jsonmbrcpuH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrcpudsn">Description:
     <br/><code>&nbsp; "cpu" : [ "x64", "ia32" ],</code>
     <br/>===
     <br/><span class="clsQuote">If your code only runs on certain cpu architectures, you can specify which ones.
@@ -10764,8 +10803,13 @@
     <br/><code>"cpu" : [ "!arm", "!mips" ]</code>
     <br/>The host architecture is determined by process.arch</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#cpu">https://docs.npmjs.com/files/package.json#cpu</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrcpu"></a></p>
-  <p id="idLjnpackage.jsonmbrdependencies">ljnpkgjsn'dependencies-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrcpudsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrdependencies">
+  <h5 id="idLjnpackage.jsonmbrdependenciesH5">ljnpkgjsn'dependencies-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrdependenciesH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrdependenciesdsn">Description:
     <br/><code>&nbsp; "dependencies" : {
     <br/>&nbsp; &nbsp; "hoek": "0.7.x",
     <br/>&nbsp; &nbsp; "dyl" : "file:../dyl",
@@ -10777,16 +10821,26 @@
     <br/>
     <br/>Please do not put test harnesses or transpilers in your dependencies object. See devDependencies, below.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#dependencies">https://docs.npmjs.com/files/package.json#dependencies</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrdependencies"></a></p>
-  <p id="idLjnpackage.jsonmbrdescription">ljnpkgjsn'description-string:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrdependenciesdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrdescription">
+  <h5 id="idLjnpackage.jsonmbrdescriptionH5">ljnpkgjsn'description-string
+    <a class="clsHide" href="#idLjnpackage.jsonmbrdescriptionH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrdescriptiondsn">Description:
     <br/><code>&nbsp; "description" : "A packaged foo fooer for fooing foos",</code>
     <br/>===
     <br/><span class="clsQuote">Put a description in it.
     <br/>It's a string.
     <br/>This helps people discover your package, as it's listed in <code>npm search</code>.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#description">https://docs.npmjs.com/files/package.json#description</a>]as it's listed in npm search.
-    <a class="clsHide" href="#idLjnpackage.jsonmbrdescription"></a></p>
-  <p id="idLjnpackage.jsonmbrdevDependencies">ljnpkgjsn'devDependencies-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrdescriptiondsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrdevDependencies">
+  <h5 id="idLjnpackage.jsonmbrdevDependenciesH5">ljnpkgjsn'devDependencies-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrdevDependenciesH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrdevDependenciesdsn">Description:
     <br/><code>&nbsp; "devDependencies" : {
     <br/>&nbsp; &nbsp; "lab" : "0.0.x",
     <br/>&nbsp; &nbsp; "complexity-report" : "0.x.x"
@@ -10814,8 +10868,13 @@
     <br/>}
     <br/>The prepublish script will be run before publishing, so that users can consume the functionality without requiring them to compile it themselves. In dev mode (ie, locally running npm install), it'll run this script as well, so that you can test it easily.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#devdependencies">https://docs.npmjs.com/files/package.json#devdependencies</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrdevDependencies"></a></p>
-  <p id="idLjnpackage.jsonmbrdirectories">ljnpkgjsn'directories-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrdevDependenciesdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrdirectories">
+  <h5 id="idLjnpackage.jsonmbrdirectoriesH5">ljnpkgjsn'directories-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrdirectoriesH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrdirectoriesdsn">Description:
     <br/><code>&nbsp; "directories" : {
     <br/>&nbsp; &nbsp; "lib" : "local/lib",
     <br/>&nbsp; &nbsp; "bin" : "local/binaries",
@@ -10844,8 +10903,13 @@
     <br/>directories.example
     <br/>Put example scripts in here. Someday, it might be exposed in some clever way.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#directories">https://docs.npmjs.com/files/package.json#directories</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrdirectories"></a></p>
-  <p id="idLjnpackage.jsonmbrengines">ljnpkgjsn'engines-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrdirectoriesdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrengines">
+  <h5 id="idLjnpackage.jsonmbrenginesH5">ljnpkgjsn'engines-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrenginesH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrenginesdsn">Description:
     <br/><code>&nbsp; "engines" : { "node" : "&gt;=0.10.3 &lt;0.12",  "npm" : "1.3.5" },</code>
     <br/>===
     <br/><span class="clsQuote">You can specify the version of node that your stuff works on:
@@ -10858,8 +10922,13 @@
     <br/>{ "engines" : { "npm" : "~1.0.20" } }
     <br/>Note that, unless the user has set the engine-strict config flag, this field is advisory only.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#engines">https://docs.npmjs.com/files/package.json#engines</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrengines"></a></p>
-  <p id="idLjnpackage.jsonmbrfiles">ljnpkgjsn'files-array:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrenginesdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrfiles">
+  <h5 id="idLjnpackage.jsonmbrfilesH5">ljnpkgjsn'files-array
+    <a class="clsHide" href="#idLjnpackage.jsonmbrfilesH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrfilesdsn">Description:
     <br/><code>&nbsp; "files" : [ filName, dirName],</code>
     <br/>===
     <br/><span class="clsQuote">The "files" field is an array of files to include in your project. If you name a folder in the array, then it will also include the files inside that folder. (Unless they would be ignored by another rule.)
@@ -10883,24 +10952,39 @@
     <br/>._*
     <br/>npm-debug.log</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#files">https://docs.npmjs.com/files/package.json#files</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrfiles"></a></p>
-  <p id="idLjnpackage.jsonmbrhomepage">ljnpkgjsn'homepage-string:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrfilesdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrhomepage">
+  <h5 id="idLjnpackage.jsonmbrhomepageH5">ljnpkgjsn'homepage-string
+    <a class="clsHide" href="#idLjnpackage.jsonmbrhomepageH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrhomepagedsn">Description:
     <br/><code>&nbsp; "homepage" : "https://my-homepage/",</code>
     <br/>===
     <br/><span class="clsQuote">The url to the project homepage.
     <br/>NOTE: This is not the same as "url". If you put a "url" field, then the registry will think it's a redirection to your package that has been published somewhere else, and spit at you.
     <br/>Literally. Spit. I'm so not kidding.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#homepage">https://docs.npmjs.com/files/package.json#homepage</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrhomepage"></a></p>
-  <p id="idLjnpackage.jsonmbrkeywords">ljnpkgjsn'keywords-array:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrhomepagedsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrkeywords">
+  <h5 id="idLjnpackage.jsonmbrkeywordsH5">ljnpkgjsn'keywords-array
+    <a class="clsHide" href="#idLjnpackage.jsonmbrkeywordsH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrkeywordsdsn">Description:
     <br/><code>&nbsp; "keywords" : [ "http", "authentication" ],</code>
     <br/>===
     <br/><span class="clsQuote">Put keywords in it.
     <br/>It's an array of strings.
     <br/>This helps people discover your package as it's listed in <strong>npm search</strong>.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#keywords">https://docs.npmjs.com/files/package.json#keywords</a>]s it's listed in npm search.
-    <a class="clsHide" href="#idLjnpackage.jsonmbrkeywords"></a></p>
-  <p id="idLjnpackage.jsonmbrlicense">ljnpkgjsn'license-string:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrkeywordsdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrlicense">
+  <h5 id="idLjnpackage.jsonmbrlicenseH5">ljnpkgjsn'license-string
+    <a class="clsHide" href="#idLjnpackage.jsonmbrlicenseH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrlicensedsn">Description:
     <br/><code>&nbsp; "license" : "MIT",</code>
     <br/>===
     <br/><span class="clsQuote">You should specify a license for your package so that people know how they are permitted to use it, and any restrictions you're placing on it.
@@ -10909,8 +10993,13 @@
     <br/><code>{ "license" : "BSD-3-Clause" }</code>
     <br/>You can check <a href="https://spdx.org/licenses/">the full list of SPDX license IDs</a>. Ideally you should pick one that is OSI approved.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#license">https://docs.npmjs.com/files/package.json#license</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrlicense"></a></p>
-  <p id="idLjnpackage.jsonmbrmain">ljnpkgjsn'main-string:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrlicensedsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrmain">
+  <h5 id="idLjnpackage.jsonmbrmainH5">ljnpkgjsn'main-string
+    <a class="clsHide" href="#idLjnpackage.jsonmbrmainH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrmaindsn">Description:
     <br/><code>&nbsp; "main" : "index",</code>
     <br/>===
     <br/><span class="clsQuote">The main field is a module ID that is the primary entry point to your program.
@@ -10920,8 +11009,13 @@
     <br/>
     <br/>For most modules, it makes the most sense to have a main script and often not much else.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#main">https://docs.npmjs.com/files/package.json#main</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrmain"></a></p>
-  <p id="idLjnpackage.jsonmbros">ljnpkgjsn'os-array:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrmaindsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbros">
+  <h5 id="idLjnpackage.jsonmbrosH5">ljnpkgjsn'os-array
+    <a class="clsHide" href="#idLjnpackage.jsonmbrosH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrosdsn">Description:
     <br/><code>&nbsp; "os" : [ "darwin", "linux" ],</code>
     <br/>===
     <br/><span class="clsQuote">You can specify which operating systems your module will run on:
@@ -10932,8 +11026,13 @@
     <br/>
     <br/>It is allowed to both blacklist, and whitelist, although there isn't any good reason to do this.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#os">https://docs.npmjs.com/files/package.json#os</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbros"></a></p>
-  <p id="idLjnpackage.jsonmbrpeerDependencies">ljnpkgjsn'peerDependencies-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrosdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrpeerDependencies">
+  <h5 id="idLjnpackage.jsonmbrpeerDependenciesH5">ljnpkgjsn'peerDependencies-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrpeerDependenciesH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrpeerDependenciesdsn">Description:
     <br/><code>&nbsp; "peerDependencies" : { "tea" : "2.x" },</code>
     <br/>===
     <br/><span class="clsQuote">In some cases, you want to express the compatibility of your package with a host tool or library, while not necessarily doing a require of this host. This is usually referred to as a plugin. Notably, your module may be exposing a specific interface, expected and specified by the host documentation.
@@ -10955,24 +11054,39 @@
     <br/>
     <br/>Assuming the host complies with semver, only changes in the host package's major version will break your plugin. Thus, if you've worked with every 1.x version of the host package, use "^1.0" or "1.x" to express this. If you depend on features introduced in 1.5.2, use "&gt;= 1.5.2 &lt; 2".</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#peerdependencies">https://docs.npmjs.com/files/package.json#peerdependencies</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrpeerDependencies"></a></p>
-  <p id="idLjnpackage.jsonmbrpreferGlobal">ljnpkgjsn'preferGlobal-boolean:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrpeerDependenciesdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrpreferGlobal">
+  <h5 id="idLjnpackage.jsonmbrpreferGlobalH5">ljnpkgjsn'preferGlobal-boolean
+    <a class="clsHide" href="#idLjnpackage.jsonmbrpreferGlobalH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrpreferGlobaldsn">Description:
     <br/><code>&nbsp; "preferGlobal" : true,</code>
     <br/>===
     <br/><span class="clsQuote">If your package is primarily a command-line application that should be installed globally, then set this value to true to provide a warning if it is installed locally.
     <br/>
     <br/>It doesn't actually prevent users from installing it locally, but it does help prevent some confusion if it doesn't work as expected.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#preferglobal">https://docs.npmjs.com/files/package.json#preferglobal</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrpreferGlobal"></a></p>
-  <p id="idLjnpackage.jsonmbrprivate">ljnpkgjsn'private-boolean:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrpreferGlobaldsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrprivate">
+  <h5 id="idLjnpackage.jsonmbrprivateH5">ljnpkgjsn'private-boolean
+    <a class="clsHide" href="#idLjnpackage.jsonmbrprivateH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrprivatedsn">Description:
     <br/><code>&nbsp; "private" : true,</code>
     <br/>===
     <br/><span class="clsQuote">If you set "private": true in your package.json, then npm will refuse to publish it.
     <br/>
     <br/>This is a way to prevent accidental publication of private repositories. If you would like to ensure that a given package is only ever published to a specific registry (for example, an internal registry), then use the publishConfig dictionary described below to override the registry config param at publish-time.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#private">https://docs.npmjs.com/files/package.json#private</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrprivate"></a></p>
-  <p id="idLjnpackage.jsonmbrpublishConfig">ljnpkgjsn'publishConfig-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrprivatedsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrpublishConfig">
+  <h5 id="idLjnpackage.jsonmbrpublishConfigH5">ljnpkgjsn'publishConfig-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrpublishConfigH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrpublishConfigdsn">Description:
     <br/><code>&nbsp; "publishConfig" : { "registry" : "http://my-internal-registry.local" },</code>
     <br/>===
     <br/><span class="clsQuote">This is a set of config values that will be used at publish-time. It's especially handy if you want to set the tag, registry or access, so that you can ensure that a given package is not tagged with "latest", published to the global public registry or that a scoped module is private by default.
@@ -10981,8 +11095,13 @@
     <br/>
     <br/>See <a href="https://docs.npmjs.com/misc/config">npm-config</a> to see the list of config options that can be overridden.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#publishconfig">https://docs.npmjs.com/files/package.json#publishconfig</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrpublishConfig"></a></p>
-  <p id="idLjnpackage.jsonmbrrepository">ljnpkgjsn'repository-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrpublishConfigdsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrrepository">
+  <h5 id="idLjnpackage.jsonmbrrepositoryH5">ljnpkgjsn'repository-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrrepositoryH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrrepositorydsn">Description:
     <br/><code>&nbsp; "repository" : {
     <br/>&nbsp; &nbsp; "type" : "git",
     <br/>&nbsp; &nbsp; "url" : "git://github.com/hueniverse/hawk"
@@ -11008,8 +11127,13 @@
     <br/>"repository": "bitbucket:example/repo"
     <br/>"repository": "gitlab:another/repo"</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#repository">https://docs.npmjs.com/files/package.json#repository</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrrepository"></a></p>
-  <p id="idLjnpackage.jsonmbrscripts">ljnpkgjsn'scripts-object:
+    <a class="clsHide" href="#idLjnpackage.jsonmbrrepositorydsn"></a></p>
+  </section>
+
+  <section id="idLjnpackage.jsonmbrscripts">
+  <h5 id="idLjnpackage.jsonmbrscriptsH5">ljnpkgjsn'scripts-object
+    <a class="clsHide" href="#idLjnpackage.jsonmbrscriptsH5"></a></h5>
+  <p id="idLjnpackage.jsonmbrscriptsdsn">Description:
     <br/><code>&nbsp; "scripts": { "test" : "make test-cov" },</code>
     <br/>===
     <br/><span class="clsQuote">You can specify the version of node that your stuff works on:
@@ -11022,7 +11146,8 @@
     <br/>{ "engines" : { "npm" : "~1.0.20" } }
     <br/>Note that, unless the user has set the engine-strict config flag, this field is advisory only.</span>
     <br/>[<a href="https://docs.npmjs.com/files/package.json#scripts">https://docs.npmjs.com/files/package.json#scripts</a>]
-    <a class="clsHide" href="#idLjnpackage.jsonmbrscripts"></a></p>
+    <a class="clsHide" href="#idLjnpackage.jsonmbrscriptsdsn"></a></p>
+  </section>
   </section>
 
   <section id="idLjnpackage.jsonExl">
@@ -11097,28 +11222,83 @@
   <section id="idLjnpkgpkguninstall">
   <h3 id="idLjnpkgpkguninstallH3">ljnpkg'Uninstalling
     <a class="clsHide" href="#idLjnpkgpkguninstallH3"></a></h3>
-  <p id="idLjnpkgpkguninstallP1">Specific:
-    <br/>* private-package,
-    <br/>* local-package,
-    <a class="clsHide" href="#idLjnpkgpkguninstallP1"></a></p>
+  <p id="idLjnpkgpkguninstalldsn">Description:
+    <br/><span class="clsQuote">You can remove a package from your node_modules directory using npm uninstall <package>:
+    <br/><code>npm uninstall lodash</code>
+    <br/>To remove it from the dependencies in package.json, you will need to use the save flag:
+    <br/><code>npm uninstall --save lodash</code>
+    <br/>Note: if you installed the package as a "devDependency" (i.e. with --save-dev) then --save won't remove it from package.json You have use --save-dev to uninstall it.</span>
+    <br/>[<a href="https://docs.npmjs.com/getting-started/uninstalling-local-packages">https://docs.npmjs.com/getting-started/uninstalling-local-packages</a>]
+    <br/>===
+    <br/><span class="clsQuote">Global packages can be uninstalled with npm uninstall -g <package>:
+    <br/><code>npm uninstall -g jshint</code></span>
+    <br/>[<a href="https://docs.npmjs.com/getting-started/uninstalling-global-packages">https://docs.npmjs.com/getting-started/uninstalling-global-packages</a>]
+    <a class="clsHide" href="#idLjnpkgpkguninstalldsn"></a></p>
+  <p id="idLjnpkgpkguninstallnam">Name:
+    <br/>* cpt.ljnpkg'unistall,
+    <br/>* unistall-ljn-package-cpt,
+    <a class="clsHide" href="#idLjnpkgpkguninstallnam"></a></p>
   </section>
 
   <section id="idLjnpkgpkgupdate">
   <h3 id="idLjnpkgpkgupdateH3">ljnpkg'Updating
     <a class="clsHide" href="#idLjnpkgpkgupdateH3"></a></h3>
-  <p id="idLjnpkgpkgupdateP1">Specific:
-    <br/>* private-package,
-    <br/>* local-package,
-    <a class="clsHide" href="#idLjnpkgpkgupdateP1"></a></p>
+  <p id="idLjnpkgpkgupdatedsn">Description:
+    <br/><span class="clsQuote">Every so often, you should update the packages you depend on so you can get any changes that have been made to code upstream.
+    <br/>
+    <br/>To do this, run <code>npm update</code> in the same directory as your package.json file.
+    <br/>
+    <br/>Test: Run <code>npm outdated</code>. There should not be any results.</span>
+    <br/>[<a href="https://docs.npmjs.com/getting-started/updating-local-packages">https://docs.npmjs.com/getting-started/updating-local-packages</a>]
+    <br/>===
+    <br/><span class="clsQuote">Updating global packages
+    <br/>To update global packages, you can use <code>npm install -g &lt;package&gt;</code>:
+    <br/><code>npm install -g jshint</code>
+    <br/>To find out which packages need to be updated, you can use <code>npm outdated -g --depth=0</code>.
+    <br/>
+    <br/>To update all global packages, you can use <code>npm update -g</code>. However, for npm versions less than 2.6.1, <a href="https://gist.github.com/othiym23/4ac31155da23962afd0e">this script</a> is recommended to update all outdated global packages.</span>
+    <br/>[<a href="https://docs.npmjs.com/getting-started/updating-global-packages">https://docs.npmjs.com/getting-started/updating-global-packages</a>]
+    <a class="clsHide" href="#idLjnpkgpkgupdatedsn"></a></p>
+  <p id="idLjnpkgpkgupdatenam">Name:
+    <br/>* cpt.ljnpkg'update,
+    <br/>* update-ljn-package-cpt,
+    <a class="clsHide" href="#idLjnpkgpkgupdatenam"></a></p>
   </section>
 
   <section id="idLjnpkgpkgpublish">
   <h3 id="idLjnpkgpkgpublishH3">ljnpkg'Publishing
     <a class="clsHide" href="#idLjnpkgpkgpublishH3"></a></h3>
-  <p id="idLjnpkgpkgpublishP1">Specific:
-    <br/>* private-package,
-    <br/>* local-package,
-    <a class="clsHide" href="#idLjnpkgpkgpublishP1"></a></p>
+  <p id="idLjnpkgpkgpublishdsn">Description:
+    <br/><span class="clsQuote">You can publish any directory that has a <code><a class="clsPreview" href="#idLjnpackage.json">package.json</a></code> file, e.g. a node module.
+    <br/>
+    <br/><strong>Creating a user</strong>
+    <br/>To publish, you must have a user on the npm registry. If you don't have one, create it with <code>npm adduser</code>. If you created one on the site, use <code>npm login</code> to store the credentials on the client.
+    <br/>
+    <br/>Test: Use <code>npm config ls</code> to ensure that the credentials are stored on your client. Check that it has been added to the registry by going to <a href="https://npmjs.com/~">https://npmjs.com/~</a>.
+    <br/>
+    <br/><strong>Publishing the package</strong>
+    <br/>Use <code>npm publish</code> to publish the package.
+    <br/>
+    <br/>Note that everything in the directory will be included unless it is ignored by a local .gitignore or .npmignore file as described in <a href="https://docs.npmjs.com/misc/developers">npm-developers</a>.
+    <br/>
+    <br/>Also make sure there isn't already a package with the same name, owned by somebody else.
+    <br/>
+    <br/>Test: Go to <strong>https://npmjs.com/package/&lt;package&gt;</strong>. You should see the information for your new package.
+    <br/>
+    <br/><strong>Updating the package</strong>
+    <br/>When you make changes, you can update the package using <code>npm version &lt;update_type&gt;</code>, where update_type is one of the semantic versioning release types, patch, minor, or major. This command will change the version number in package.json. Note that this will also add a tag with this release number to your git repository if you have one.
+    <br/>
+    <br/>After updating the version number, you can <code>npm publish</code> again.
+    <br/>
+    <br/>Test: Go to https://npmjs.com/package/&lt;package&gt;. The package number should be updated.
+    <br/>
+    <br/>The README displayed on the site will not be updated unless a new version of your package is published, so you would need to run <code>npm version patch</code> and <code>npm publish</code> to have a documentation fix displayed on the site.</span>
+    <br/>[<a href="https://docs.npmjs.com/getting-started/publishing-npm-packages">https://docs.npmjs.com/getting-started/publishing-npm-packages</a>]
+    <a class="clsHide" href="#idLjnpkgpkgpublishdsn"></a></p>
+  <p id="idLjnpkgpkgpublishnam">Name:
+    <br/>* cpt.ljnpkg'publish,
+    <br/>* publish-ljn-package-cpt,
+    <a class="clsHide" href="#idLjnpkgpkgpublishnam"></a></p>
   </section>
 
   <section id="idLjnpkgpkgSpc">
@@ -12243,6 +12423,9 @@
   <section id="idLjnnpmhmn">
   <h3 id="idLjnnpmhmnH3">ljnnpm'human
     <a class="clsHide" href="#idLjnnpmhmnH3"></a></h3>
+  <p id="idLjnnpmhmnnam">Name:
+    <br/>* cpt.ljnnpm'human,
+    <a class="clsHide" href="#idLjnnpmhmnnam"></a></p>
   <p id="idLjnnpmhmnP1">Author:
     <br/>* Schlueter.Isaac: original.
     <a class="clsHide" href="#idLjnnpmhmnP1"></a></p>
@@ -12296,12 +12479,12 @@
   <section id="idLjnnpmEvn">
   <h3 id="idLjnnpmEvnH3">lngnpm.EVOLUTING
     <a class="clsHide" href="#idLjnnpmEvnH3"></a></h3>
-  <p id="idLjnnpmEvnP1">VERSION
-    <br/>D:\ljn&gt;npm -v
+  <p id="idLjnnpmEvnP1">Version:
+    <br/><code>&gt; npm -v</code>
     <br/>3.9.5
     <br/>===
-    <br/>1.3.22
-    <br/>[<a href="https://npmjs.org/doc/cli/npm.html">https://npmjs.org/doc/cli/npm.html</a>] 2013.12.30,
+    <br/>AddressWpg:
+    <br/>* <a href="https://github.com/npm/npm/tags">https://github.com/npm/npm/tags</a>,
     <a class="clsHide" href="#idLjnnpmEvnP1"></a></p>
   </section>
   </section>
@@ -12327,12 +12510,12 @@
     <a class="clsHide" href="#idLjnrplexc"></a></p>
   <p id="idLjnrplcmd">Commands:
     <br/><code>&gt; .help</code>
-    <br/>.break   Sometimes you get stuck, this gets you out
-    <br/>.clear   Alias for .break
-    <br/>.exit    Exit the repl
-    <br/>.help    Show repl options
-    <br/>.load    Load JS from a file into the REPL session
-    <br/>.save    Save all evaluated commands in this REPL session to a file
+    <br/>.break&nbsp; &nbsp; Sometimes you get stuck, this gets you out
+    <br/>.clear&nbsp; &nbsp; Alias for .break
+    <br/>.exit&nbsp; &nbsp; Exit the repl
+    <br/>.help&nbsp; &nbsp; Show repl options
+    <br/>.load&nbsp; &nbsp; Load JS from a file into the REPL session
+    <br/>.save&nbsp; &nbsp; Save all evaluated commands in this REPL session to a file
     <a class="clsHide" href="#idLjnrplcmd"></a></p>
 
   <section id="idLjnrplmdl">
@@ -12344,287 +12527,9 @@
     <br/>* cpt.ljnrepl,
     <a class="clsHide" href="#idLjnrplmdlnam"></a></p>
   <p id="idLjnrplmdlP2">ljnrepl'Member:
-    <br/>// ljn.6-2-2
-    <br/>&gt; Object.getOwnPropertyNames(repl).sort()
-    <br/>[ 'REPLServer',
-    <br/>  'REPL_MODE_MAGIC',
-    <br/>  'REPL_MODE_SLOPPY',
-    <br/>  'REPL_MODE_STRICT',
-    <br/>  'Recoverable',
-    <br/>  '_builtinLibs',
-    <br/>  'repl',
-    <br/>  'start',
-    <br/>  'writer' ]
-    <br/>&gt; repl
-    <br/>{ writer:
-    <br/>   { [Function: inspect]
-    <br/>     colors:
-    <br/>      { bold: [Object],
-    <br/>        italic: [Object],
-    <br/>        underline: [Object],
-    <br/>        inverse: [Object],
-    <br/>        white: [Object],
-    <br/>        grey: [Object],
-    <br/>        black: [Object],
-    <br/>        blue: [Object],
-    <br/>        cyan: [Object],
-    <br/>        green: [Object],
-    <br/>        magenta: [Object],
-    <br/>        red: [Object],
-    <br/>        yellow: [Object] },
-    <br/>     styles:
-    <br/>      { special: 'cyan',
-    <br/>        number: 'yellow',
-    <br/>        boolean: 'yellow',
-    <br/>        undefined: 'grey',
-    <br/>        null: 'bold',
-    <br/>        string: 'green',
-    <br/>        symbol: 'green',
-    <br/>        date: 'magenta',
-    <br/>        regexp: 'red' } },
-    <br/>  _builtinLibs:
-    <br/>   [ 'assert',
-    <br/>     'buffer',
-    <br/>     'child_process',
-    <br/>     'cluster',
-    <br/>     'crypto',
-    <br/>     'dgram',
-    <br/>     'dns',
-    <br/>     'domain',
-    <br/>     'events',
-    <br/>     'fs',
-    <br/>     'http',
-    <br/>     'https',
-    <br/>     'net',
-    <br/>     'os',
-    <br/>     'path',
-    <br/>     'punycode',
-    <br/>     'querystring',
-    <br/>     'readline',
-    <br/>     'repl',
-    <br/>     'stream',
-    <br/>     'string_decoder',
-    <br/>     'tls',
-    <br/>     'tty',
-    <br/>     'url',
-    <br/>     'util',
-    <br/>     'v8',
-    <br/>     'vm',
-    <br/>     'zlib' ],
-    <br/>  REPLServer: { [Function: REPLServer] super_: { [Function: Interface] super_: [Object] } },
-    <br/>  REPL_MODE_SLOPPY: Symbol(repl-sloppy),
-    <br/>  REPL_MODE_STRICT: Symbol(repl-strict),
-    <br/>  REPL_MODE_MAGIC: Symbol(repl-magic),
-    <br/>  start: [Function],
-    <br/>  Recoverable: { [Function: Recoverable] super_: [Function: SyntaxError] },
-    <br/>  repl:
-    <br/>   REPLServer {
-    <br/>     _domain:
-    <br/>      Domain {
-    <br/>        domain: null,
-    <br/>        _events: [Object],
-    <br/>        _eventsCount: 1,
-    <br/>        _maxListeners: undefined,
-    <br/>        members: [] },
-    <br/>     useGlobal: true,
-    <br/>     ignoreUndefined: false,
-    <br/>     replMode: Symbol(repl-magic),
-    <br/>     underscoreAssigned: false,
-    <br/>     last: [Circular],
-    <br/>     _inTemplateLiteral: false,
-    <br/>     rli: [Circular],
-    <br/>     eval: { [Function: runBound] domain: [Object] },
-    <br/>     inputStream:
-    <br/>      ReadStream {
-    <br/>        connecting: false,
-    <br/>        _hadError: false,
-    <br/>        _handle: [Object],
-    <br/>        _parent: null,
-    <br/>        _host: null,
-    <br/>        _readableState: [Object],
-    <br/>        readable: true,
-    <br/>        domain: null,
-    <br/>        _events: [Object],
-    <br/>        _eventsCount: 6,
-    <br/>        _maxListeners: undefined,
-    <br/>        _writableState: [Object],
-    <br/>        writable: false,
-    <br/>        allowHalfOpen: false,
-    <br/>        destroyed: false,
-    <br/>        _bytesDispatched: 0,
-    <br/>        _sockname: null,
-    <br/>        _writev: null,
-    <br/>        _pendingData: null,
-    <br/>        _pendingEncoding: '',
-    <br/>        server: null,
-    <br/>        _server: null,
-    <br/>        isRaw: true,
-    <br/>        isTTY: true,
-    <br/>        fd: 0,
-    <br/>        read: [Function],
-    <br/>        _consuming: true },
-    <br/>     outputStream:
-    <br/>      WriteStream {
-    <br/>        connecting: false,
-    <br/>        _hadError: false,
-    <br/>        _handle: [Object],
-    <br/>        _parent: null,
-    <br/>        _host: null,
-    <br/>        _readableState: [Object],
-    <br/>        readable: false,
-    <br/>        domain: null,
-    <br/>        _events: [Object],
-    <br/>        _eventsCount: 4,
-    <br/>        _maxListeners: undefined,
-    <br/>        _writableState: [Object],
-    <br/>        writable: true,
-    <br/>        allowHalfOpen: false,
-    <br/>        destroyed: false,
-    <br/>        _bytesDispatched: 39011,
-    <br/>        _sockname: null,
-    <br/>        _writev: null,
-    <br/>        _pendingData: null,
-    <br/>        _pendingEncoding: '',
-    <br/>        server: null,
-    <br/>        _server: null,
-    <br/>        columns: 120,
-    <br/>        rows: 30,
-    <br/>        _type: 'tty',
-    <br/>        fd: 1,
-    <br/>        _isStdio: true,
-    <br/>        destroySoon: [Function],
-    <br/>        destroy: [Function] },
-    <br/>     lines:
-    <br/>      [ 'Object.getPrototypeOf(Array.prototype) === Object.prototype',
-    <br/>        level: [] ],
-    <br/>     context:
-    <br/>      { DTRACE_NET_SERVER_CONNECTION: [Function],
-    <br/>        DTRACE_NET_STREAM_END: [Function],
-    <br/>        DTRACE_HTTP_SERVER_REQUEST: [Function],
-    <br/>        DTRACE_HTTP_SERVER_RESPONSE: [Function],
-    <br/>        DTRACE_HTTP_CLIENT_REQUEST: [Function],
-    <br/>        DTRACE_HTTP_CLIENT_RESPONSE: [Function],
-    <br/>        COUNTER_NET_SERVER_CONNECTION: [Function],
-    <br/>        COUNTER_NET_SERVER_CONNECTION_CLOSE: [Function],
-    <br/>        COUNTER_HTTP_SERVER_REQUEST: [Function],
-    <br/>        COUNTER_HTTP_SERVER_RESPONSE: [Function],
-    <br/>        COUNTER_HTTP_CLIENT_REQUEST: [Function],
-    <br/>        COUNTER_HTTP_CLIENT_RESPONSE: [Function],
-    <br/>        global: [Circular],
-    <br/>        process: [Object],
-    <br/>        Buffer: [Object],
-    <br/>        clearImmediate: [Function],
-    <br/>        clearInterval: [Function],
-    <br/>        clearTimeout: [Function],
-    <br/>        setImmediate: [Function],
-    <br/>        setInterval: [Function],
-    <br/>        setTimeout: [Function],
-    <br/>        console: [Getter],
-    <br/>        module: [Object],
-    <br/>        require: [Object] },
-    <br/>     lineParser:
-    <br/>      LineParser {
-    <br/>        _literal: null,
-    <br/>        shouldFail: false,
-    <br/>        blockComment: false,
-    <br/>        regExpLiteral: false },
-    <br/>     bufferedCommand: '',
-    <br/>     _sawReturn: true,
-    <br/>     isCompletionEnabled: true,
-    <br/>     domain: null,
-    <br/>     _events:
-    <br/>      { close: [Object],
-    <br/>        SIGINT: [Function],
-    <br/>        line: [Object],
-    <br/>        SIGCONT: [Function],
-    <br/>        exit: [Function] },
-    <br/>     _eventsCount: 5,
-    <br/>     _maxListeners: undefined,
-    <br/>     output:
-    <br/>      WriteStream {
-    <br/>        connecting: false,
-    <br/>        _hadError: false,
-    <br/>        _handle: [Object],
-    <br/>        _parent: null,
-    <br/>        _host: null,
-    <br/>        _readableState: [Object],
-    <br/>        readable: false,
-    <br/>        domain: null,
-    <br/>        _events: [Object],
-    <br/>        _eventsCount: 4,
-    <br/>        _maxListeners: undefined,
-    <br/>        _writableState: [Object],
-    <br/>        writable: true,
-    <br/>        allowHalfOpen: false,
-    <br/>        destroyed: false,
-    <br/>        _bytesDispatched: 39011,
-    <br/>        _sockname: null,
-    <br/>        _writev: null,
-    <br/>        _pendingData: null,
-    <br/>        _pendingEncoding: '',
-    <br/>        server: null,
-    <br/>        _server: null,
-    <br/>        columns: 120,
-    <br/>        rows: 30,
-    <br/>        _type: 'tty',
-    <br/>        fd: 1,
-    <br/>        _isStdio: true,
-    <br/>        destroySoon: [Function],
-    <br/>        destroy: [Function] },
-    <br/>     input:
-    <br/>      ReadStream {
-    <br/>        connecting: false,
-    <br/>        _hadError: false,
-    <br/>        _handle: [Object],
-    <br/>        _parent: null,
-    <br/>        _host: null,
-    <br/>        _readableState: [Object],
-    <br/>        readable: true,
-    <br/>        domain: null,
-    <br/>        _events: [Object],
-    <br/>        _eventsCount: 6,
-    <br/>        _maxListeners: undefined,
-    <br/>        _writableState: [Object],
-    <br/>        writable: false,
-    <br/>        allowHalfOpen: false,
-    <br/>        destroyed: false,
-    <br/>        _bytesDispatched: 0,
-    <br/>        _sockname: null,
-    <br/>        _writev: null,
-    <br/>        _pendingData: null,
-    <br/>        _pendingEncoding: '',
-    <br/>        server: null,
-    <br/>        _server: null,
-    <br/>        isRaw: true,
-    <br/>        isTTY: true,
-    <br/>        fd: 0,
-    <br/>        read: [Function],
-    <br/>        _consuming: true },
-    <br/>     historySize: 1000,
-    <br/>     completer: [Function: complete],
-    <br/>     _initialPrompt: '&gt; ',
-    <br/>     _prompt: '&gt; ',
-    <br/>     terminal: true,
-    <br/>     line: '',
-    <br/>     cursor: 0,
-    <br/>     history:
-    <br/>      [ 'repl',
-    <br/>        ... 141 more items ],
-    <br/>     historyIndex: -1,
-    <br/>     commands:
-    <br/>      { break: [Object],
-    <br/>        clear: [Object],
-    <br/>        exit: [Object],
-    <br/>        help: [Object],
-    <br/>        save: [Object],
-    <br/>        load: [Object] },
-    <br/>     writer: [Function],
-    <br/>     useColors: true,
-    <br/>     prevRows: 0,
-    <br/>     paused: false,
-    <br/>     _historyHandle: 3,
-    <br/>     _flushing: false,
-    <br/>     wrappedCmd: false } }
+    <br/><code>// ljn.6-2-2
+    <br/>&gt; Object.getOwnPropertyNames(repl).sort()</code>
+    <br/>[ 'REPLServer',  'REPL_MODE_MAGIC',  'REPL_MODE_SLOPPY',  'REPL_MODE_STRICT',  'Recoverable',  '_builtinLibs',  'repl',  'start',  'writer' ]
     <a class="clsHide" href="#idLjnrplmdlP2"></a></p>
   </section>
   </section>
@@ -12653,18 +12558,18 @@
     <a class="clsHide" href="#idLjnrtminstH3"></a></h3>
 
   <section id="idLjnwindows">
-  <h4 id="idLjnwindowsH4">windows
+  <h4 id="idLjnwindowsH4">Windows
     <a class="clsHide" href="#idLjnwindowsH4"></a></h4>
   <p id="idLjnwindowsdsn">Description:
     <br/>Download (https://nodejs.org/en/) msi file and run it.
     <a class="clsHide" href="#idLjnwindowsdsn"></a></p>
-  <p id="idLjnwindowsP2">_UPGRADING:
+  <p id="idLjnwindowsP2">Upgrading:
     <br/>Download the new msi file and run it.
     <a class="clsHide" href="#idLjnwindowsP2"></a></p>
   </section>
 
   <section id="idLjnubuntu">
-  <h4 id="idLjnubuntuH4">ubuntu
+  <h4 id="idLjnubuntuH4">Ubuntu
     <a class="clsHide" href="#idLjnubuntuH4"></a></h4>
   <p id="idLjnubuntudsn">Description:
     <br/><span class="clsQuote">At Least from Ubuntu 12.04, an old version (0.6.x) of Node is in the standard repository.
@@ -12675,15 +12580,13 @@
   </section>
 
   <section id="idLjnfrom_source">
-  <h4 id="idLjnfrom_sourceH4">from-source
+  <h4 id="idLjnfrom_sourceH4">From-source
     <a class="clsHide" href="#idLjnfrom_sourceH4"></a></h4>
   <p id="idLjnfrom_sourceP1">Building From Source
     <br/><span class="clsQuote">To build and install node from source, we first need to obtain the code.
     <br/>The first method of doing so is via git, if you have git installed you can execute:
-    <br/>
-    <br/>$ git clone http://github.com/ry/node.git && cd node
+    <br/>$ git clone http://github.com/ry/node.git &amp;&amp; cd node
     <br/>For those without git, or who prefer not to use it, we can also download the source via curl, wget, or similar:
-    <br/>
     <br/>$ curl -# http://nodejs.org/dist/node-v0.1.99.tar.gz &gt; node.tar.gz
     <br/>$ tar -zxf node.tar.gz
     <br/>Now that we have the source on our machine, we can run ./configure which discovers which libraries are available for node to utilize such as OpenSSL for transport security support, C and C++ compilers, etc. make which builds node, and finally make install which will install node.
@@ -13090,56 +12993,56 @@
     <br/>* Node.js v4 is covered by the Node.js Long Term Support Plan and will be supported actively until April 2017 and maintained until April 2018.
     <br/>* 4.0.0 (stable) - 4.4.7.2016-06-28 (LTS),
     <a class="clsHide" href="#idLjn4"></a></p>
-  <p id="idLjn012">ljn.012.2015-02-06:
+  <p id="idLjn012">ljn.0-12.2015-02-06:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V012.md#2015-02-06-version-0120-stable">changelog</a>,
     <br/>* Node.js v0.12 is covered by the Node.js Long Term Support Plan and will be maintained until December 31st, 2016.
     <br/>* 0.12.0 (stable) - 0.12.15-2016.06.23 (maintenance),
     <a class="clsHide" href="#idLjn012"></a></p>
-  <p id="idLjn011">ljn.011.2013-03-28:
+  <p id="idLjn011">ljn.0-11.2013-03-28:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20130328-version-0110-unstable">changelog</a>,
     <br/>* 0.11.0 (unstable) - 0.11.14 (unstable),
     <a class="clsHide" href="#idLjn011"></a></p>
-  <p id="idLjn010">ljn.010.2013-03-11:
+  <p id="idLjn010">ljn.0-10.2013-03-11:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V010.md">changelog</a>,
     <br/>* 0.10.0 (stable) - 0.10.46 (maintenance),
     <a class="clsHide" href="#idLjn010"></a></p>
-  <p id="idLjn09">ljn.09.2012-07-20:
+  <p id="idLjn09">ljn.0-9.2012-07-20:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20120720-version-090-unstable">changelog</a>,
     <br/>* 0.9.0 (unstable) - 0.9.12 (unstable),
     <a class="clsHide" href="#idLjn09"></a></p>
-  <p id="idLjn08">ljn.08.2012-06-25:
+  <p id="idLjn08">ljn.0-8.2012-06-25:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20120625-version-080-stable">changelog</a>,
     <br/>* 0.8.0 (stable) - 0.8.25 (maintenance),
     <a class="clsHide" href="#idLjn08"></a></p>
-  <p id="idLjn07">ljn.07.2012-01-16:
+  <p id="idLjn07">ljn.0-7.2012-01-16:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20120116-version-070-unstable">changelog</a>,
-    <a class="clsHide" href="#idLjn07"></a></p>
     <br/>* 0.7.0 (unstable) - 0.7.12 (unstable),
-  <p id="idLjn06">ljn.06.2011-11-04:
+    <a class="clsHide" href="#idLjn07"></a></p>
+  <p id="idLjn06">ljn.0-6.2011-11-04:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20111104-version-060-stable">changelog</a>,
-    <a class="clsHide" href="#idLjn06"></a></p>
     <br/>* 0.6.0 (stable) - 0.6.20 (maintenance),
-  <p id="idLjn06">ljn.05.2011-07-05:
+    <a class="clsHide" href="#idLjn06"></a></p>
+  <p id="idLjn05">ljn.0-5.2011-07-05:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20110705-version-050-unstable">changelog</a>,
-    <a class="clsHide" href="#idLjn06"></a></p>
     <br/>* 0.5.0 - 0.5.10,
-  <p id="idLjn06">ljn.04.2011-02-10:
+    <a class="clsHide" href="#idLjn05"></a></p>
+  <p id="idLjn04">ljn.0-4.2011-02-10:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20110210-version-040-stable">changelog</a>,
-    <a class="clsHide" href="#idLjn06"></a></p>
     <br/>* 0.4.0 - 0.4.12,
-  <p id="idLjn06">ljn.03.2010-10-23:
+    <a class="clsHide" href="#idLjn04"></a></p>
+  <p id="idLjn03">ljn.0-3.2010-10-23:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20101023-version-030-unstable">changelog</a>,
-    <a class="clsHide" href="#idLjn06"></a></p>
     <br/>* 0.3.0 - 0.3.8,
-  <p id="idLjn06">ljn.02.2010-08-20:
+    <a class="clsHide" href="#idLjn03"></a></p>
+  <p id="idLjn02">ljn.0-2.2010-08-20:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20100820-version-020">changelog</a>,
-    <a class="clsHide" href="#idLjn06"></a></p>
     <br/>* 0.2.0,
-  <p id="idLjn06">ljn.01.2009-06-30:
+    <a class="clsHide" href="#idLjn02"></a></p>
+  <p id="idLjn01">ljn.0-1.2009-06-30:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20090630-version-010">changelog</a>,
     <br/>* 0.1.0 - 0.1.104,
-    <a class="clsHide" href="#idLjn06"></a></p>
-  <p id="idLjn00">ljn.00.2009-06-11:
+    <a class="clsHide" href="#idLjn01"></a></p>
+  <p id="idLjn00">ljn.0-0.2009-06-11:
     <br/>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20090611-version-003">changelog</a>,
     <br/> 0.0.3 - 0.0.6
     <a class="clsHide" href="#idLjn00"></a></p>
@@ -13244,8 +13147,8 @@
     <a class="clsHide" href="#idMetaP1"></a></p>
   <!--                                                                            -->
   <p id="idMetaVersion">Webpage-Versions:
-    <br/>• version.2.2016-07-22.last.minor: <a href="filCptLjs.html">filCptLjs.html</a>
-    <br/>• version.2.2016-07-22.last.minorNo (1-33): <a href="filCptLjs.2.2016-07-22.html">filCptLjs.2.2016-07-22.html</a> (ljs, ljn)
+    <br/>• version.2.2016-08-04.last.minor: <a href="filCptLjs.html">filCptLjs.html</a>
+    <br/>• version.2.2016-08-04.last.minorNo (1-33): <a href="filCptLjs.2.2016-08-04.html">filCptLjs.2.2016-08-04.html</a> (ljs, ljn)
     <br/>• version.1-21.2016-05-26: <a href="lngJs.1-21.2016-05-27.html">lngJs.1-21.2016-05-26.html</a>
     <br/>• version.1-17.2016-05-23: <a href="lngJs.1-17.2016-05-23.html">lngJs.1-17.2016-05-23.html</a>
     <br/>• version.1-11.2016-05-18: <a href="lngJs.1-11.2016-05-18.html">lngJs.1-11.2016-05-18.html</a>
@@ -13302,6 +13205,5 @@
 </script>
 
 <script src="http://synagonism.github.io/hitp/hitp.js"></script>
-@nodejs @JavaScriptDaily Published generic #javascript with dialects browser-js, Node.js from a linguistic viewpoint http://synagonism.net/dMiw/dTchInf/filCptLjs.html
 </body>
 </html>
