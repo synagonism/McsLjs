@@ -5,7 +5,7 @@ Javascript was originally developed in {1995} by Brendan-Eich, at Netscape-Commu
 
 My goal here is my text to be MONOSEMANTIC as possible, in contrast to existing texts, by defining most of the-names of my sentences.   
 ALSO, my text differs than the traditional one.   
-I publish STRUCTURED-CONCEPTS (with attributes also concepts) in contrast to traditional text, that describes concepts. 
+I publish STRUCTURED-CONCEPTS|ModelConceptStructureds (with attributes also concepts) in contrast to traditional text, that describes concepts. 
 
 This is a living concept (= an evolving concept), see and reference by version.   
 Version last.minor is dynamic (do not reference with it), all others are static.   
