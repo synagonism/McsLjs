@@ -485,7 +485,7 @@
     <a class="clsHide" href="#idLjsambrH3"></a></h3>
   <p id="idLjsambrdsn">Description:
     <br>Arrays are-considered <a class="clsPreview" href="#idLjsoCsr">objects</a> of <a class="clsPreview" href="#idLjsArray">the-Array-constructor-function</a>, with <a class="clsPreview" href="#idLjsognc">generic</a> <a class="clsPreview" href="#idLjsArrayp">the-Array.prototype-object</a>.
-    <br>In other words, the-members of <a class="clsPreview" href="#idLjsArrayp">the-Array.prototype</a> are-inherited by all <a class="clsPreview" href="#idLjsa">arrays</a>.
+    <br>In other words, <a class="clsPreview" href="#idLjsArraypmbr">the-members-of-the-Array.prototype-object</a> are-inherited by all <a class="clsPreview" href="#idLjsa">arrays</a>.
     <br>Also, any array[1] can-have extra <a class="clsPreview" href="#idLjsombr">members</a> in addition to its[1] inherited members and to its[1] <a class="clsPreview" href="#idLjsaelt">elements</a>.
     <br><a class="clsPreview" href="#idLjscod">Code</a>:
     <br><code>a.n = 3;</code>
@@ -523,18 +523,22 @@
   <h3 id="idLjsArraypH3">ljsa'Array.prototype
     <a class="clsHide" href="#idLjsArraypH3"></a></h3>
   <p id="idLjsArraypdsn">Description:
-    <br><code>Array.prototype</code> is <a class="clsPreview" href="#idLjsognc">the-generic-object</a>, of all <a class="clsPreview" href="#idLjsa">arrays</a>.
-    <br>In other words, its members are-inherited by all arrays.
+    <br><code>Array.prototype</code>[1] is <a class="clsPreview" href="#idLjsognc">the-generic-object</a>, of all <a class="clsPreview" href="#idLjsa">arrays</a>.
+    <br>In other words, its[1] members are-inherited by all arrays.
   <p id="idLjsArraypnam">Name:
-    <br>* cpt.ljso.Array.prototype,
     <br>* cpt.ljs'Array.prototype,
     <br>* cpt.ljsArray.prototype,
     <br>* cpt.ljsArray.prototype-object,
+    <br>* cpt.ljso.Array.prototype,
     <a class="clsHide" href="#idLjsArraypnam"></a></p>
   <p id="idLjsArraypgnc">Generic-chain:
     <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a> (<code>Array.prototype.__proto__ === Object.prototype //true</code>),
     <a class="clsHide" href="#idLjsArraypnam"></a></p>
-  <p id="idLjsArraypmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
+
+  <section id="idLjsArraypmbr">
+  <h4 id="idLjsArraypmbrH4">ljs'Array.prototype'Member
+    <a class="clsHide" href="#idLjsArraypmbrH4"></a></h4>
+  <p id="idLjsArraypmbrspc"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br><a class="clsPreview" href="#idLjscod">Code</a>
     <br>(ljn.622):
     <br><code>&gt; Object.getOwnPropertyNames(Array.prototype).sort()
@@ -548,10 +552,590 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Array.prototype).sort()
     <br>["concat", "constructor", "copyWithin", "entries", "every", "fill", "filter", "find", "findIndex", "forEach", "indexOf", "join", "keys", "lastIndexOf", "length", "map", "pop", "push", "reduce", "reduceRight", "reverse", "shift", "slice", "some", "sort", "splice", "toLocaleString", "toString", "unshift", "values"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Array.prototype).sort()
     <br>["concat", "constructor", "every", "filter", "forEach", "indexOf", "join", "lastIndexOf", "length", "map", "pop", "push", "reduce", "reduceRight", "reverse", "shift", "slice", "some", "sort", "splice", "toLocaleString", "toString", "unshift"]</code>
-    <a class="clsHide" href="#idLjsArraypmbr"></a></p>
+    <a class="clsHide" href="#idLjsArraypmbrspc"></a></p>
+  </section>
+
+  <section id="idLjsArraypconcat">
+  <h4 id="idLjsArraypconcatH4">ljs'Array.prototype.concat-function
+    <a class="clsHide" href="#idLjsArraypconcatH4"></a></h4>
+  <p id="idLjsArraypconcatdsn">Description:
+    <br><span class="clsQuote">The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+    <br><code>var arr1 = ["a", "b", "c"];
+    <br>var arr2 = ["d", "e", "f"];
+    <br>var arr3 = arr1.concat(arr2);
+    <br>// results in a new array [ "a", "b", "c", "d", "e", "f" ]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat</a>]
+    <a class="clsHide" href="#idLjsArraypconcatdsn"></a></p>
+  <p id="idLjsArraypconcatnam">Name:
+    <br>* cpt.ljsa'concat-function,
+    <br>* cpt.ljsambr.concat-function,
+    <br>* cpt.ljs'concat-array-function,
+    <a class="clsHide" href="#idLjsArraypconcatnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypcopyWithin">
+  <h4 id="idLjsArraypcopyWithinH4">ljs'Array.prototype.copyWithin-function
+    <a class="clsHide" href="#idLjsArraypcopyWithinH4"></a></h4>
+  <p id="idLjsArraypcopyWithindsn">Description:
+    <br><span class="clsQuote">The copyWithin() method shallow copies part of an array to another location in the same array and returns it, without modifying its size.
+    <br><code>["alpha", "bravo", "charlie", "delta"].copyWithin(2, 0);
+    <br>// results in ["alpha", "bravo", "alpha", "bravo"]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin</a>]
+    <br>===
+    <br><code>["alpha", "bravo", "charlie", "delta"].copyWithin(1);
+    <br>// results in ["alpha", "alpha", "bravo", "charlie"]</code>
+    <a class="clsHide" href="#idLjsArraypcopyWithindsn"></a></p>
+  <p id="idLjsArraypcopyWithinnam">Name:
+    <br>* cpt.ljsa'copyWithin_function,
+    <br>* cpt.ljsambr.copyWithin_function,
+    <br>* cpt.ljs'copyWithin_array_function,
+    <a class="clsHide" href="#idLjsArraypcopyWithin"></a></p>
+  </section>
+
+  <section id="idLjsArraypentries">
+  <h4 id="idLjsArraypentriesH4">ljs'Array.prototype.entries-function
+    <a class="clsHide" href="#idLjsArraypentriesH4"></a></h4>
+  <p id="idLjsArraypentriesdsn">Description:
+    <br><span class="clsQuote">The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.
+    <br><code>var a = ['a', 'b', 'c'];
+    <br>var iterator = a.entries();
+    <br>console.log(iterator.next().value); // [0, 'a']
+    <br>console.log(iterator.next().value); // [1, 'b']
+    <br>console.log(iterator.next().value); // [2, 'c']</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries</a>]
+    <a class="clsHide" href="#idLjsArraypentriesdsn"></a></p>
+  <p id="idLjsArraypentriesnam">Name:
+    <br>* cpt.ljsa'entries_function,
+    <br>* cpt.ljsambr.entries_function,
+    <br>* cpt.ljs'entries_array_function,
+    <a class="clsHide" href="#idLjsArraypentriesnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypevery">
+  <h4 id="idLjsArraypeveryH4">ljs'Array.prototype.every-function
+    <a class="clsHide" href="#idLjsArraypeveryH4"></a></h4>
+  <p id="idLjsArraypeverydsn">Description:
+    <br><span class="clsQuote">The every() method tests whether all elements in the array pass the test implemented by the provided function.
+    <br><code>function isBigEnough(element, index, array) {
+    <br>&nbsp; return element >= 10;
+    <br>}
+    <br>[12, 5, 8, 130, 44].every(isBigEnough);   // false
+    <br>[12, 54, 18, 130, 44].every(isBigEnough); // true</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every</a>]
+    <a class="clsHide" href="#idLjsArraypeverydsn"></a></p>
+  <p id="idLjsArraypeverynam">Name:
+    <br>* cpt.ljsa'every_function,
+    <br>* cpt.ljsambr.every_function,
+    <br>* cpt.ljs'every_array_function,
+    <a class="clsHide" href="#idLjsArraypeverynam"></a></p>
+  </section>
+
+  <section id="idLjsArraypfill">
+  <h4 id="idLjsArraypfillH4">ljs'Array.prototype.fill-function
+    <a class="clsHide" href="#idLjsArraypfillH4"></a></h4>
+  <p id="idLjsArraypfilldsn">Description:
+    <br><span class="clsQuote">The fill() method fills all the elements of an array from a start index to an end index with a static value.
+    <br><code>var numbers = [1, 2, 3]
+    <br>numbers.fill(1);
+    <br>// results in [1, 1, 1]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill</a>]
+    <a class="clsHide" href="#idLjsArraypfilldsn"></a></p>
+  <p id="idLjsArraypfillnam">Name:
+    <br>* cpt.ljsa'fill_function,
+    <br>* cpt.ljsambr.fill_function,
+    <br>* cpt.ljs'fill_array_function,
+    <a class="clsHide" href="#idLjsArraypfillnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypfilter">
+  <h4 id="idLjsArraypfilterH4">ljs'Array.prototype.filter-function
+    <a class="clsHide" href="#idLjsArraypfilterH4"></a></h4>
+  <p id="idLjsArraypfilterdsn">Description:
+    <br><span class="clsQuote">The filter() method creates a new array with all elements that pass the test implemented by the provided function.</span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a>]
+    <br>===
+    <br><code>&gt; ['a', false, 'b', undefined, 'c', null, NaN, 3].filter(Number)
+    <br>[3]</code>
+    <a class="clsHide" href="#idLjsArraypfilterdsn"></a></p>
+  <p id="idLjsArraypfilternam">Name:
+    <br>* cpt.ljsa'filter_function,
+    <br>* cpt.ljsambr.filter_function,
+    <br>* cpt.ljs'filter_array_function,
+    <a class="clsHide" href="#idLjsArraypfilternam"></a></p>
+  </section>
+
+  <section id="idLjsArraypfind">
+  <h4 id="idLjsArraypfindH4">ljs'Array.prototype.find-function
+    <a class="clsHide" href="#idLjsArraypfindH4"></a></h4>
+  <p id="idLjsArraypfinddsn">Description:
+    <br><span class="clsQuote">The find() method returns a value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
+    <br><code>function isBigEnough(element) {
+    <br>&nbsp; return element >= 15;
+    <br>}
+    <br>[12, 5, 8, 130, 44].find(isBigEnough); // 130</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find</a>]
+    <a class="clsHide" href="#idLjsArraypfinddsn"></a></p>
+  <p id="idLjsArraypfindnam">Name:
+    <br>* cpt.ljsa'find_function,
+    <br>* cpt.ljsambr.find_function,
+    <br>* cpt.ljs'find_array_function,
+    <a class="clsHide" href="#idLjsArraypfindnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypfindIndex">
+  <h4 id="idLjsArraypfindIndexH4">ljs'Array.prototype.findIndex-function
+    <a class="clsHide" href="#idLjsArraypfindIndexH4"></a></h4>
+  <p id="idLjsArraypfindIndexdsn">Description:
+    <br><span class="clsQuote">The findIndex() method returns an index of the first element in the array that satisfies the provided testing function. Otherwise -1 is returned.
+    <br><code>function isBigEnough(element) {
+    <br>&nbsp; return element >= 15;
+    <br>}
+    <br>[12, 5, 8, 130, 44].findIndex(isBigEnough); // 3</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex</a>]
+    <a class="clsHide" href="#idLjsArraypfindIndexdsn"></a></p>
+  <p id="idLjsArraypfindIndexnam">Name:
+    <br>* cpt.ljsa'findIndex_function,
+    <br>* cpt.ljsambr.findIndex_function,
+    <br>* cpt.ljs'findIndex_array_function,
+    <a class="clsHide" href="#idLjsArraypfindIndexnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypforEach">
+  <h4 id="idLjsArraypforEachH4">ljs'Array.prototype.forEach-function
+    <a class="clsHide" href="#idLjsArraypforEachH4"></a></h4>
+  <p id="idLjsArraypforEachdsn">Description:
+    <br><span class="clsQuote">The forEach() method executes a provided function once for each array element.
+    <br><code>var a = ["a", "b", "c"];
+    <br>a.forEach(function(element) {
+    console.log(element);
+    <br>});
+    <br>// a
+    <br>// b
+    <br>// c</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach</a>]
+    <a class="clsHide" href="#idLjsArraypforEachdsn"></a></p>
+  <p id="idLjsArraypforEachnam">Name:
+    <br>* cpt.ljsa'forEach_function,
+    <br>* cpt.ljsambr.forEach_function,
+    <br>* cpt.ljsforEach_array_function,
+    <a class="clsHide" href="#idLjsArraypforEachnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypincludes">
+  <h4 id="idLjsArraypincludesH4">ljs'Array.prototype.includes-function
+    <a class="clsHide" href="#idLjsArraypincludesH4"></a></h4>
+  <p id="idLjsArraypincludesdsn">Description:
+    <br><span class="clsQuote">The includes() method determines whether an array includes a certain element, returning true or false as appropriate.
+    <br><code>var a = [1, 2, 3];
+    <br>a.includes(2); // true
+    <br>a.includes(4); // false</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes</a>]
+    <a class="clsHide" href="#idLjsArraypincludesdsn"></a></p>
+  <p id="idLjsArraypincludesnam">Name:
+    <br>* cpt.ljsa'includes_function,
+    <br>* cpt.ljsambr.includes_function,
+    <br>* cpt.ljs'includes_array_function,
+    <a class="clsHide" href="#idLjsArraypincludesnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypindexOf">
+  <h4 id="idLjsArraypindexOfH4">ljs'Array.prototype.indexOf-function
+    <a class="clsHide" href="#idLjsArraypindexOfH4"></a></h4>
+  <p id="idLjsArraypindexOfdsn">Description:
+    <br><span class="clsQuote">The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+    <br><code>var a = [2, 9, 9];
+    <br>a.indexOf(2); // 0
+    <br>a.indexOf(7); // -1
+    <br>if (a.indexOf(7) === -1) {
+    <br>&nbsp; // element doesn't exist in array
+    <br>}</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf</a>]
+    <br>===
+    <br><code>&gt; [1,2,3].indexOf(3)
+    <br>2
+    <br>&gt; [1,2,3].indexOf(4)
+    <br>-1
+    <br>&gt; [1,2,3].indexOf(0)
+    <br>-1</code>
+    <a class="clsHide" href="#idLjsArraypindexOfdsn"></a></p>
+  <p id="idLjsArraypindexOfnam">Name:
+    <br>* cpt.ljsa'indexOf_function,
+    <br>* cpt.ljsambr.indexOf_function,
+    <br>* cpt.ljs'indexOf_array_function,
+    <a class="clsHide" href="#idLjsArraypindexOfnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypjoin">
+  <h4 id="idLjsArraypjoinH4">ljs'Array.prototype.join-function
+    <a class="clsHide" href="#idLjsArraypjoinH4"></a></h4>
+  <p id="idLjsArraypjoindsn">Description:
+    <br><span class="clsQuote">The join() method joins all elements of an array into a string.
+    <br><code>var a = ['Wind', 'Rain', 'Fire'];
+    <br>a.join();    // 'Wind,Rain,Fire'
+    <br>a.join('-'); // 'Wind-Rain-Fire'</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join</a>]
+    <br>===
+    <br><code>&gt; [1,2,3].join()
+    <br>"1,2,3"
+    <br>&gt; [1,2,3].join(' ')
+    <br>"1 2 3"
+    <br>&gt; [1,2,3].join(' and ')
+    <br>"1 and 2 and 3"</code>
+    <a class="clsHide" href="#idLjsArraypjoindsn"></a></p>
+  <p id="idLjsArraypjoinnam">Name:
+    <br>* cpt.ljsa'join_function,
+    <br>* cpt.ljsambr.join_function,
+    <br>* cpt.ljs'join_array_function,
+    <a class="clsHide" href="#idLjsArraypjoinnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypkeys">
+  <h4 id="idLjsArraypkeysH4">ljs'Array.prototype.keys-function
+    <a class="clsHide" href="#idLjsArraypkeysH4"></a></h4>
+  <p id="idLjsArraypkeysdsn">Description:
+    <br><span class="clsQuote">The keys() method returns a new Array Iterator that contains the keys for each index in the array.
+    <br><code>var arr = ["a", "b", "c"];
+    <br>var iterator = arr.keys();
+    <br>console.log(iterator.next()); // { value: 0, done: false }
+    <br>console.log(iterator.next()); // { value: 1, done: false }
+    <br>console.log(iterator.next()); // { value: 2, done: false }
+    <br>console.log(iterator.next()); // { value: undefined, done: true }</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys</a>]
+    <a class="clsHide" href="#idLjsArraypkeysdsn"></a></p>
+  <p id="idLjsArraypkeysnam">Name:
+    <br>* cpt.ljsa'keys_function,
+    <br>* cpt.ljsambr.keys_function,
+    <br>* cpt.ljs'keys_array_function,
+    <a class="clsHide" href="#idLjsArraypkeysnam"></a></p>
+  </section>
+
+  <section id="idLjsArrayplastIndexOf">
+  <h4 id="idLjsArrayplastIndexOfH4">ljs'Array.prototype.lastIndexOf-function
+    <a class="clsHide" href="#idLjsArrayplastIndexOfH4"></a></h4>
+  <p id="idLjsArrayplastIndexOfdsn">Description:
+    <br><span class="clsQuote">The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
+    <br><code>var numbers = [2, 5, 9, 2];
+    <br>numbers.lastIndexOf(2); // 3
+    <br>numbers.lastIndexOf(7); // -1</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf</a>]
+    <a class="clsHide" href="#idLjsArrayplastIndexOfdsn"></a></p>
+  <p id="idLjsArrayplastIndexOfnam">Name:
+    <br>* cpt.ljsa'lastIndexOf_function,
+    <br>* cpt.ljsambr.lastIndexOf_function,
+    <br>* cpt.ljs'lastIndexOf_array_function,
+    <a class="clsHide" href="#idLjsArrayplastIndexOfnam"></a></p>
+  </section>
+
+  <section id="idLjsArrayplength">
+  <h4 id="idLjsArrayplengthH4">ljs'Array.prototype.length-number
+    <a class="clsHide" href="#idLjsArrayplengthH4"></a></h4>
+  <p id="idLjsArrayplengthdsn">Description:
+    <br><code>&gt; ['a', 'b', 'c'].length
+    <br>3</code>
+    <br>===
+    <br><span class="clsQuote">The maximum length until "it gets sluggish" is totally dependent on your target machine and your actual code, so you'll need to test on that (those) platform(s) to see what is acceptable.
+    <br>However, the maximum length of an array according to the ECMA-262 5th Edition specification is bound by an unsigned 32-bit integer due to the ToUint32 abstract operation, so the longest possible array could have 232-1 = 4,294,967,295 = 4.29 billion elements.</span>
+    <br>[<a href="http://stackoverflow.com/a/6155063">http://stackoverflow.com/a/6155063</a>]
+    <a class="clsHide" href="#idLjsArrayplengthdsn"></a></p>
+  <p id="idLjsArrayplengthnam">Name:
+    <br>* cpt.ljsa'length_number,
+    <br>* cpt.ljsambr.length_number,
+    <br>* cpt.ljs'length_array_number_member,
+    <a class="clsHide" href="#idLjsArrayplengthnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypmap">
+  <h4 id="idLjsArraypmapH4">ljs'Array.prototype.map-function
+    <a class="clsHide" href="#idLjsArraypmapH4"></a></h4>
+  <p id="idLjsArraypmapdsn">Description:
+    <br><span class="clsQuote">The map() method creates a new array with the results of calling a provided function on every element in this array.
+    <br><code>var numbers = [1, 5, 10, 15];
+    <br>var roots = numbers.map(function(x){
+    <br>&nbsp;  return x * 2;
+    <br>});
+    <br>// roots is now [2, 10, 20, 30]
+    <br>// numbers is still [1, 5, 10, 15]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map</a>]
+    <a class="clsHide" href="#idLjsArraypmapdsn"></a></p>
+  <p id="idLjsArraypmapnam">Name:
+    <br>* cpt.ljsa'map_function,
+    <br>* cpt.ljsambr.map_function,
+    <br>* cpt.ljs'map_array_function,
+    <a class="clsHide" href="#idLjsArraypmapnam"></a></p>
+  </section>
+
+  <section id="idLjsArrayppop">
+  <h4 id="idLjsArrayppopH4">ljs'Array.prototype.pop-function
+    <a class="clsHide" href="#idLjsArrayppopH4"></a></h4>
+  <p id="idLjsArrayppopdsn">Description:
+    <br><span class="clsQuote">The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+    <br><code>var a = [1, 2, 3];
+    <br>a.pop();
+    <br>console.log(a); // [1, 2]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop</a>]
+    <a class="clsHide" href="#idLjsArrayppopdsn"></a></p>
+  <p id="idLjsArrayppopnam">Name:
+    <br>* cpt.ljsa'pop_function,
+    <br>* cpt.ljsambr.pop_function,
+    <br>* cpt.ljs'pop_array_function,
+    <a class="clsHide" href="#idLjsArrayppopnam"></a></p>
+  </section>
+
+  <section id="idLjsArrayppush">
+  <h4 id="idLjsArrayppushH4">ljs'Array.prototype.push-function
+    <a class="clsHide" href="#idLjsArrayppushH4"></a></h4>
+  <p id="idLjsArrayppushdsn">Description:
+    <br><span class="clsQuote">The push() method adds one or more elements to the end of an array and returns the new length of the array.
+    <br><code>var numbers = [1, 2, 3];
+    <br>numbers.push(4);
+    <br>console.log(numbers); // [1, 2, 3, 4]
+    <br>numbers.push(5, 6, 7);
+    <br>console.log(numbers); // [1, 2, 3, 4, 5, 6, 7]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push</a>]
+    <a class="clsHide" href="#idLjsArrayppushdsn"></a></p>
+  <p id="idLjsArrayppushnam">Name:
+    <br>* cpt.ljsa'push_function,
+    <br>* cpt.ljsambr.push_function,
+    <br>* cpt.ljs'push_array_function,
+    <a class="clsHide" href="#idLjsArrayppushnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypreduce">
+  <h4 id="idLjsArraypreduceH4">ljs'Array.prototype.reduce-function
+    <a class="clsHide" href="#idLjsArraypreduceH4"></a></h4>
+  <p id="idLjsArraypreducedsn">Description:
+    <br><span class="clsQuote">The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.
+    <br>
+    <br><code>var sum = [0, 1, 2, 3].reduce(function(a, b) {
+    <br>&nbsp; return a + b;
+    <br>}, 0);
+    <br>// sum is 6
+    <br>
+    <br>var flattened = [[0, 1], [2, 3], [4, 5]].reduce(function(a, b) {
+    <br>&nbsp; return a.concat(b);
+    <br>}, []);
+    <br>// flattened is [0, 1, 2, 3, 4, 5]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a>]
+    <a class="clsHide" href="#idLjsArraypreducedsn"></a></p>
+  <p id="idLjsArraypreducenam">Name:
+    <br>* cpt.ljsa'reduce_function
+    <br>* cpt.ljsambr.reduce_function
+    <br>* cpt.ljs'reduce_array_function,
+    <a class="clsHide" href="#idLjsArraypreducenam"></a></p>
+  </section>
+
+  <section id="idLjsArraypreduceRight">
+  <h4 id="idLjsArraypreduceRightH4">ljs'Array.prototype.reduceRight-function
+    <a class="clsHide" href="#idLjsArraypreduceRightH4"></a></h4>
+  <p id="idLjsArraypreduceRightdsn">Description:
+    <br><span class="clsQuote">The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) has to reduce it to a single value.
+    <br><code>var flattened = [[0, 1], [2, 3], [4, 5]].reduceRight(function(a, b) {
+    return a.concat(b);
+    <br>}, []);
+    <br>// flattened is [4, 5, 2, 3, 0, 1]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight</a>]
+    <a class="clsHide" href="#idLjsArraypreduceRightdsn"></a></p>
+  <p id="idLjsArraypreduceRightnam">Name:
+    <br>* cpt.ljsa'reduceRight_function,
+    <br>* cpt.ljsambr.reduceRight_function,
+    <br>* cpt.ljs'reduceRight_array_function,
+    <a class="clsHide" href="#idLjsArraypreduceRightnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypreverse">
+  <h4 id="idLjsArraypreverseH4">ljs'Array.prototype.reverse-function
+    <a class="clsHide" href="#idLjsArraypreverseH4"></a></h4>
+  <p id="idLjsArraypreversedsn">Description:
+    <br><span class="clsQuote">The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
+    <br><code>var a = ['one', 'two', 'three'];
+    <br>a.reverse();
+    <br>console.log(a); // ['three', 'two', 'one']</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse</a>]
+    <a class="clsHide" href="#idLjsArraypreversedsn"></a></p>
+  <p id="idLjsArraypreversenam">Name:
+    <br>* cpt.ljsa'reverse_function,
+    <br>* cpt.ljsambr.reverse_function,
+    <br>* cpt.ljs'reverse_array_function,
+    <a class="clsHide" href="#idLjsArraypreversenam"></a></p>
+  </section>
+
+  <section id="idLjsArraypshift">
+  <h4 id="idLjsArraypshiftH4">ljs'Array.prototype.shift-function
+    <a class="clsHide" href="#idLjsArraypshiftH4"></a></h4>
+  <p id="idLjsArraypshiftdsn">Description:
+    <br><span class="clsQuote">The shift() method removes the first element from an array and returns that element. This method changes the length of the array.
+    <br><code>var a = [1, 2, 3];
+    <br>a.shift();
+    <br>console.log(a); // [2, 3]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift</a>]
+    <a class="clsHide" href="#idLjsArraypshiftdsn"></a></p>
+  <p id="idLjsArraypshiftnam">Name:
+    <br>* cpt.ljsa'shift_function,
+    <br>* cpt.ljsambr.shift_function,
+    <br>* cpt.ljs'shift_array_function,
+    <a class="clsHide" href="#idLjsArraypshiftnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypslice">
+  <h4 id="idLjsArraypsliceH4">ljs'Array.prototype.slice-function
+    <a class="clsHide" href="#idLjsArraypsliceH4"></a></h4>
+  <p id="idLjsArraypslicedsn">Description:
+    <br><span class="clsQuote">The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
+    <br><code>var a = ["zero", "one", "two", "three"];
+    <br>var sliced = a.slice(1,3);
+    <br>console.log(a);      // [ "zero", "one", "two", "three" ]
+    <br>console.log(sliced); // [ "one", "two" ]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice</a>]
+    <br>===
+    <br><code>//create arrays from array-like
+    <br>&gt; Array.prototype.slice.call({0:'a',1:'b',2:'c',length:3})
+    <br>["a", "b", "c"]
+    <br>&gt; Array.prototype.slice.call({0:'a',1:'b',2:'c'})
+    <br>[]</code>
+    <a class="clsHide" href="#idLjsArraypslicedsn"></a></p>
+  <p id="idLjsArraypslicenam">Name:
+    <br>* cpt.ljsa'slice_function,
+    <br>* cpt.ljsambr.slice_function,
+    <br>* cpt.ljs'slice_array_function,
+    <a class="clsHide" href="#idLjsArraypslicenam"></a></p>
+  </section>
+
+  <section id="idLjsArraypsome">
+  <h4 id="idLjsArraypsomeH4">ljs'Array.prototype.some-function
+    <a class="clsHide" href="#idLjsArraypsomeH4"></a></h4>
+  <p id="idLjsArraypsomedsn">Description:
+    <br><span class="clsQuote">The some() method tests whether some element in the array passes the test implemented by the provided function.
+    <br><code>function isBiggerThan10(element, index, array) {
+    <br>&nbsp; return element > 10;
+    <br>}
+    <br>[2, 5, 8, 1, 4].some(isBiggerThan10);  // false
+    <br>[12, 5, 8, 1, 4].some(isBiggerThan10); // true</code></span>
+    <br>[<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some</a>]
+    <a class="clsHide" href="#idLjsArraypsomedsn"></a></p>
+  <p id="idLjsArraypsomenam">Name:
+    <br>* cpt.ljsa'some_function,
+    <br>* cpt.ljsambr.some_function,
+    <br>* cpt.ljs'some_array_function,
+    <a class="clsHide" href="#idLjsArraypsomenam"></a></p>
+  </section>
+
+  <section id="idLjsArraypsort">
+  <h4 id="idLjsArraypsortH4">ljs'Array.prototype.sort-function
+    <a class="clsHide" href="#idLjsArraypsortH4"></a></h4>
+  <p id="idLjsArraypsortdsn">Description:
+    <br><span class="clsQuote">The sort() method sorts the elements of an array in place and returns the array. The sort is not necessarily stable. The default sort order is according to string Unicode code points.
+    <br><code>var fruit = ['cherries', 'apples', 'bananas'];
+    <br>fruit.sort(); // ['apples', 'bananas', 'cherries']
+    <br>var scores = [1, 10, 21, 2];
+    <br>scores.sort(); // [1, 10, 2, 21]
+    <br>// Watch out that 10 comes before 2,
+    <br>// because '10' comes before '2' in Unicode code point order.
+    <br>var things = ['word', 'Word', '1 Word', '2 Words'];
+    <br>things.sort(); // ['1 Word', '2 Words', 'Word', 'word']
+    <br>// In Unicode, numbers come before upper case letters,
+    <br>// which come before lower case letters.</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort</a>]
+    <a class="clsHide" href="#idLjsArraypsortdsn"></a></p>
+  <p id="idLjsArraypsortnam">Name:
+    <br>* cpt.ljsa'sort_function,
+    <br>* cpt.ljsambr.sort_function,
+    <br>* cpt.ljs'sort_array_function,
+    <a class="clsHide" href="#idLjsArraypsortnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypsplice">
+  <h4 id="idLjsArraypspliceH4">ljs'Array.prototype.splice-function
+    <a class="clsHide" href="#idLjsArraypspliceH4"></a></h4>
+  <p id="idLjsArraypsplicedsn">Description:
+    <br><span class="clsQuote">The splice() method changes the content of an array by removing existing elements and/or adding new elements.
+    <br><code>var myFish = ["angel", "clown", "mandarin", "surgeon"];
+    <br>myFish.splice(2, 0, "drum");
+    <br>// myFish is ["angel", "clown", "drum", "mandarin", "surgeon"]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice</a>]
+    <a class="clsHide" href="#idLjsArraypsplicedsn"></a></p>
+  <p id="idLjsArraypsplicenam">Name:
+    <br>* cpt.ljsambr.splice_function,
+    <br>* cpt.ljs'splice_array_function,
+    <a class="clsHide" href="#idLjsArraypsplicenam"></a></p>
+  </section>
+
+  <section id="idLjsArrayptoLocaleString">
+  <h4 id="idLjsArrayptoLocaleStringH4">ljs'Array.prototype.toLocaleString-function
+    <a class="clsHide" href="#idLjsArrayptoLocaleStringH4"></a></h4>
+  <p id="idLjsArrayptoLocaleStringdsn">Description:
+    <br><span class="clsQuote">The toLocaleString() method returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific String (such as a comma “,”).
+    <br><code>var number = 1337;
+    <br>var date = new Date();
+    <br>var myArr = [number, date, 'foo'];
+    <br>var str = myArr.toLocaleString();
+    <br>console.log(str);
+    <br>// logs '1337,6.12.2013 19:37:35,foo'
+    <br>// if run in a German (de-DE) locale with timezone Europe/Berlin</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString</a>]
+    <a class="clsHide" href="#idLjsArrayptoLocaleStringdsn"></a></p>
+  <p id="idLjsArrayptoLocaleStringnam">Name:
+    <br>* cpt.ljsa'toLocaleString_function,
+    <br>* cpt.ljsambr.toLocaleString_function,
+    <br>* cpt.ljs'toLocaleString_array_function,
+    <a class="clsHide" href="#idLjsArrayptoLocaleStringnam"></a></p>
+  </section>
+
+  <section id="idLjsArrayptoString">
+  <h4 id="idLjsArrayptoStringH4">ljs'Array.prototype.toString-function
+    <a class="clsHide" href="#idLjsArrayptoStringH4"></a></h4>
+  <p id="idLjsArrayptoStringdsn">Description:
+    <br><span class="clsQuote">The toString() method returns a string representing the specified array and its elements.
+    <br><code>var months = ["Jan", "Feb", "Mar", "Apr"];
+    <br>months.toString(); // "Jan,Feb,Mar,Apr"</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString</a>]
+    <a class="clsHide" href="#idLjsArrayptoStringdsn"></a></p>
+  <p id="idLjsArrayptoStringnam">Name:
+    <br>* cpt.ljsa'toString_function,
+    <br>* cpt.ljsambr.toString_function,
+    <br>* cpt.ljs'toString_array_function,
+    <a class="clsHide" href="#idLjsArrayptoStringnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypunshift">
+  <h4 id="idLjsArraypunshiftH4">ljs'Array.prototype.unshift-function
+    <a class="clsHide" href="#idLjsArraypunshiftH4"></a></h4>
+  <p id="idLjsArraypunshiftdsn">Description:
+    <br><span class="clsQuote">The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+    <br><code>var a = [1, 2, 3];
+    <br>a.unshift(4, 5);
+    <br>console.log(a); // [4, 5, 1, 2, 3]</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift</a>]
+    <a class="clsHide" href="#idLjsArraypunshiftdsn"></a></p>
+  <p id="idLjsArraypunshiftnam">Name:
+    <br>* cpt.ljsa'unshift,
+    <br>* cpt.ljsambr.unshift_function,
+    <br>* cpt.ljs'unshift_array_function,
+    <a class="clsHide" href="#idLjsArraypunshiftnam"></a></p>
+  </section>
+
+  <section id="idLjsArraypvalues">
+  <h4 id="idLjsArraypvaluesH4">ljs'Array.prototype.values-function
+    <a class="clsHide" href="#idLjsArraypvaluesH4"></a></h4>
+  <p id="idLjsArraypvaluesdsn">Description:
+    <br><span class="clsQuote">The values() method returns a new Array Iterator object that contains the values for each index in the array.
+    <br><code>var a = ['w', 'y', 'k', 'o', 'p'];
+    <br>var iterator = a.values();
+    <br>console.log(iterator.next().value); // w
+    <br>console.log(iterator.next().value); // y
+    <br>console.log(iterator.next().value); // k
+    <br>console.log(iterator.next().value); // o
+    <br>console.log(iterator.next().value); // p</code></span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values</a>]
+    <a class="clsHide" href="#idLjsArraypvaluesdsn"></a></p>
+  <p id="idLjsArraypvaluesnam">Name:
+    <br>* cpt.ljsa'values_function,
+    <br>* cpt.ljsambr.values_function,
+    <br>* cpt.ljs'values_array_function,
+    <a class="clsHide" href="#idLjsArraypvaluesnam"></a></p>
+  </section>
   </section>
   </section>
 
@@ -605,7 +1189,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Boolean.prototype).sort()
     <br>["constructor", "toString", "valueOf"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Boolean.prototype).sort()
     <br>["constructor", "toString", "valueOf"]</code>
     <a class="clsHide" href="#idLjsBooleanpmbr"></a></p>
@@ -796,7 +1380,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Function.prototype).sort()
     <br>["apply", "arguments", "bind", "call", "caller", "constructor", "length", "name", "toString"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Function.prototype).sort()
     <br>["apply", "bind", "call", "constructor", "length", "name", "toString"]</code>
     <a class="clsHide" href="#idLjsFunctionpmbr"></a></p>
@@ -844,7 +1428,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Function).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Function).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjsFunctionmbr"></a></p>
@@ -1109,7 +1693,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Number.prototype).sort()
     <br>[constructor", "toExponential", "toFixed", "toLocaleString", "toPrecision", "toString", "valueOf"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Number.prototype).sort()
     <br>["constructor", "toExponential", "toFixed", "toLocaleString", "toPrecision", "toString", "valueOf"]</code>
     <a class="clsHide" href="#idLjsNumberpmbr"></a></p>
@@ -1183,6 +1767,8 @@
     <br>* InheritedNo,
     <br>* <span id="idLjsmethod">Method: <a class="clsPreview" href="#idLjsombr">a-member</a> which is <a class="clsPreview" href="#idLjsf">a-function</a></span>.
     <br>* MethodNo: any other member. Some call them 'properties'.
+    <br>* Public: a-member we have access from outside of the-object. ALL members are public.
+    <br>* PublicNo: none.
     <a class="clsHide" href="#idLjsombrSpc"></a></p>
   </section>
 
@@ -1405,7 +1991,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(RegExp.prototype).sort()
     <br>["compile", "constructor", "exec", "global", "ignoreCase", "lastIndex", "multiline", "options", "source", "test", "toString", "unicode"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(RegExp.prototype).sort()
     <br>["compile", "constructor", "exec", "global", "ignoreCase", "lastIndex", "multiline", "source", "test", "toString"]</code>
     <a class="clsHide" href="#idLjsRegExppmbr"></a></p>
@@ -1461,7 +2047,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(String.prototype).sort()
     <br>["anchor", "big", "blink", "bold", "charAt", "charCodeAt", "codePointAt", "concat", "constructor", "endsWith", "fixed", "fontcolor", "fontsize", "includes", "indexOf", "italics", "lastIndexOf", "length", "link", "localeCompare", "match", "normalize", "repeat", "replace", "search", "slice", "small", "split", "startsWith", "strike", "sub", "substr", "substring", "sup", "toLocaleLowerCase", "toLocaleUpperCase", "toLowerCase", "toString", "toUpperCase", "trim", "trimLeft", "trimRight", "valueOf"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(String.prototype).sort()
     <br>["anchor", "big", "blink", "bold", "charAt", "charCodeAt", "concat", "constructor", "fixed", "fontcolor", "fontsize", "indexOf", "italics", "lastIndexOf", "length", "link", "localeCompare", "match", "replace", "search", "slice", "small", "split", "strike", "sub", "substr", "substring", "sup", "toLocaleLowerCase", "toLocaleUpperCase", "toLowerCase", "toString", "toUpperCase", "trim", "trimLeft", "trimRight", "valueOf"]</code>
     <a class="clsHide" href="#idLjsStringpmbr"></a></p>
@@ -1679,10 +2265,11 @@
     <a class="clsHide" href="#idLjsapiH1"></a></h1>
   <p id="idLjsapidsn">Description:
     <br>API is a-set of <a class="clsPreview" href="#idLjbsut">semantic-units</a>.
-    <br>An-API, like any conceptual-information, is-structured <span class="clsColorRed">at the SAME time</span>, into 2 different tree-structures:
+    <br>An-API, like any conceptual-information, is-structured <span class="clsColorRed">at the SAME time</span>, into 3 different tree-structures:
     <br>1) A-whole-part-tree with root-node <a class="clsPreview" href="#idLjsmwo">the-most-whole-object</a> and
     <br>2) A-generic-specific-tree with root-node <a class="clsPreview" href="#idLjsmgo">the-most-generic-object</a> (<code>Object.prototype</code>).
-    <br>The-discovery (not invention) that an-API has 2 different tree-structures, is <a class="clsPreview" href="../../#idAboutme">mine</a> which I first discovered to have any <a class="clsPreview" href="http://synagonism.net/dirMiwMcs/#idMwsscrH1">human-conceptual-information</a>.
+    <br>3) A-directory-tree structure.
+    <br>The-discovery (not invention) that an-API has and a-whole-part and a-generic-specific tree-structure, is <a class="clsPreview" href="../../#idAboutme">mine</a> which I first discovered to has any <a class="clsPreview" href="http://synagonism.net/dirMiwMcs/#idMwsscrH1">human-conceptual-information</a>.
     <a class="clsHide" href="#idLjsapidsn"></a></p>
   <p id="idLjsapinam">Name:
     <br>* cpt.ljs'API,
@@ -1774,7 +2361,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Object.prototype).sort()
     <br>["__defineGetter__", "__defineSetter__", "__lookupGetter__", "__lookupSetter__", "__proto__", "constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Object.prototype).sort()
     <br>["__defineGetter__", "__defineSetter__", "__lookupGetter__", "__lookupSetter__", "constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]</code>
     <a class="clsHide" href="#idLjsmgombr"></a></p>
@@ -1813,7 +2400,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Object).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Object).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjsObjectmbr"></a></p>
@@ -5553,7 +6140,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Event.prototype).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Event.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbEventpmbr"></a></p>
@@ -5590,7 +6177,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Event).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Event).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbEventmbr"></a></p>
@@ -5624,7 +6211,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(EventTarget.prototype).sort()
     <br>["addEventListener", "constructor", "dispatchEvent", "removeEventListener"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(EventTarget.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbEventTargetpmbr"></a></p>
@@ -6115,7 +6702,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(document).sort()
     <br>["__IE_DEVTOOLBAR_CONSOLE_EVAL_ERROR", "__IE_DEVTOOLBAR_CONSOLE_EVAL_ERRORCODE", "__IE_DEVTOOLBAR_CONSOLE_EVAL_RESULT, "closure_lm_199280", "closure_lm_736068", "f"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(document).sort()
     <br>["URL", "_html5shiv", "activeElement", "alinkColor", "all", "anchors", "applets", "attributes", "baseURI", "bgColor", "body", "characterSet", "charset", "childNodes", "compatMode", "constructor", "cookie", "defaultCharset", "defaultView", "designMode", "dir", "doctype", "documentElement", "documentURI", "domain", "embeds", "fgColor", "firstChild", "forms", "head", "height", "images", "implementation", "inputEncoding", "lastChild", "lastModified", "linkColor", "links", "localName", "location", "namespaceURI", "nextSibling", "nodeName", "nodeType", "nodeValue", "onabort", "onbeforecopy", "onbeforecut", "onbeforepaste", "onblur", "onchange", "onclick", "oncontextmenu", "oncopy", "oncut", "ondblclick", "ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "onerror", "onfocus", "oninput", "oninvalid", "onkeydown", "onkeypress", "onkeyup", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onmousewheel", "onpaste", "onreadystatechange", "onreset", "onscroll", "onsearch", "onselect", "onselectionchange", "onselectstart", "onsubmit", "onwebkitfullscreenchange", "ownerDocument", "parentElement", "parentNode", "plugins", "preferredStylesheetSet", "prefix", "previousSibling", "readyState", "referrer", "scripts", "selectedStylesheetSet", "styleSheets", "textContent", "title", "vlinkColor", "webkitCurrentFullScreenElement", "webkitFullScreenKeyboardInputAllowed", "webkitIsFullScreen", "width", "xmlEncoding", "xmlStandalone", "xmlVersion"]</code>
     <a class="clsHide" href="#idLjbdocumentmbr"></a></p>
@@ -6153,7 +6740,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
     <br>["constructor"]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
     <br>["captureEvents", "clear", "close", "hasFocus", "open", "releaseEvents", "write", "writeln"]</code>
     <a class="clsHide" href="#idLjbdocumentmbr"></a></p>
@@ -6188,7 +6775,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Document.prototype).sort()
     <br>[190 members]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Document.prototype).sort()
     <br>["adoptNode", "caretRangeFromPoint", "createAttribute", "createAttributeNS", "createCDATASection", "createComment", "createDocumentFragment", "createElement", "createElementNS", "createEntityReference", "createEvent", "createExpression", "createNSResolver", "createNodeIterator", "createProcessingInstruction", "createRange", "createTextNode", "createTreeWalker", "elementFromPoint", "evaluate", "execCommand", "getCSSCanvasContext", "getElementById", "getElementsByClassName", "getElementsByName", "getElementsByTagName", "getElementsByTagNameNS", "getOverrideStyle", "getSelection", "importNode", "queryCommandEnabled", "queryCommandIndeterm", "queryCommandState", "queryCommandSupported", "queryCommandValue", "querySelector", "querySelectorAll", "webkitCancelFullScreen"]</code>
     <a class="clsHide" href="#idLjbdocumentmbr"></a></p>
@@ -6222,7 +6809,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Node.prototype).sort()
     <br>[51 members]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Node.prototype).sort()
     <br>["adoptNode", "caretRangeFromPoint", "createAttribute", "createAttributeNS", "createCDATASection", "createComment", "createDocumentFragment", "createElement", "createElementNS", "createEntityReference", "createEvent", "createExpression", "createNSResolver", "createNodeIterator", "createProcessingInstruction", "createRange", "createTextNode", "createTreeWalker", "elementFromPoint", "evaluate", "execCommand", "getCSSCanvasContext", "getElementById", "getElementsByClassName", "getElementsByName", "getElementsByTagName", "getElementsByTagNameNS", "getOverrideStyle", "getSelection", "importNode", "queryCommandEnabled", "queryCommandIndeterm", "queryCommandState", "queryCommandSupported", "queryCommandValue", "querySelector", "querySelectorAll", "webkitCancelFullScreen"]</code>
     <a class="clsHide" href="#idLjbNodepmbr"></a></p>
@@ -6265,7 +6852,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Attr.prototype).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Attr.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbAttrpmbr"></a></p>
@@ -6303,7 +6890,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(CharacterData.prototype).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(CharacterData.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbCharacterDatapmbr"></a></p>
@@ -6343,7 +6930,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbDocumentFragmentpmbr"></a></p>
@@ -6381,7 +6968,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(DocumentType.prototype).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(DocumentType.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbDocumentTypepmbr"></a></p>
@@ -6420,7 +7007,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Element.prototype).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(Element.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbElementpmbr"></a></p>
@@ -6459,7 +7046,7 @@
     <br>(Edge.20):
     <br><code>&gt; Object.getOwnPropertyNames(Element.prototype).sort()
     <br>[]</code>
-    <br>(Safari.5.1.7):
+    <br>(Safari.5-1-7):
     <br><code>&gt; Object.getOwnPropertyNames(HTMLElement.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbHTMLElementpmbr"></a></p>
@@ -7238,6 +7825,9 @@
   <h4 id="idLjnmmbrPbcNoH4">ljnmmbr.PUBLIC.NO
     <a class="clsHide" href="#idLjnmmbrPbcNoH4"></a></h4>
   <p id="idLjnmmbrPbcNodsn">Description:
+    <br>If module-a is importing in module-b, the-public-member of module-a is publicNo-member in module-b.
+    <br>===
+    <br>Defining <code>var something</code> in a-module, is publicNo-member of it.
     <br><span class="clsQuote">In browsers, the top-level scope is the global scope.
     <br>That means that in browsers if you're in the global scope var something will define a global variable.
     <br>In Node.js this is different.
@@ -7600,6 +8190,19 @@
     <br>* cpt.ljnm'import-by-searching,
     <br>* cpt.ljnm'import-from-node_modules,
     <a class="clsHide" href="#idLjnrequiresrchnam"></a></p>
+  </section>
+
+  <section id="idLjnrequirejson">
+  <h5 id="idLjnrequirejsonH5">ljnrequire'Import-JSON-file
+    <a class="clsHide" href="#idLjnrequirejsonH5"></a></h5>
+  <p id="idLjnrequirejsondsn">Description:
+    <br><a class="clsPreview" href="#idLjndsn">Nodejs</a> and <a class="clsPreview" href="#idLjnpkgBrowserify">browserify</a> support importing JSON files.
+    <br><code>&gt; oJson = require('./test.json'),</code>
+    <a class="clsHide" href="#idLjnrequirejsondsn"></a></p>
+  <p id="idLjnrequirejsonnam">Name:
+    <br>* cpt.ljn'import-JSON-file,
+    <br>* cpt.ljnm'import-JSON-file,
+    <a class="clsHide" href="#idLjnrequirejsonnam"></a></p>
   </section>
 
   <section id="idLjnrequirembr">
@@ -13561,7 +14164,7 @@
     <a class="clsHide" href="#idMetaP1"></a></p>
   <!--                                                                  -->
   <p id="idMetaVersion">Webpage-Versions:
-    <br>• version.3-24.2016-12-04.dynamic: <a href="filMcsLjs.html">filMcsLjs.html</a>,
+    <br>• version.3-26.2016-12-18.dynamic: <a href="filMcsLjs.html">filMcsLjs.html</a>,
     <br>• version.3.2016-08-22 (2-4): <a href="filMcsLjs.html">filMcsLjs.3.2016-08-22.html</a>,
     <br>• version.2.2016-08-04.ljs-ljn (1-33): <a href="filCptLjs.2.2016-08-04.html">filCptLjs.2.2016-08-04.html</a>,
     <br>• version.1-21.2016-05-26: <a href="lngJs.1-21.2016-05-27.html">lngJs.1-21.2016-05-26.html</a>,
