@@ -82,6 +82,7 @@
   <p id="idLjsarcnam">Name:
     <br>* cpt.ljs'archetype,
     <br>* cpt.ljsarcho,
+    <br>* cpt.ljs'problem,
     <a class="clsHide" href="#idLjsarcnam"></a></p>
   <p id="idLjsarcSpc">Specific:
     <br>* <a class="clsPreview" href="#idLjbarc">ljb-archetype</a>,
@@ -531,7 +532,7 @@
     <a class="clsHide" href="#idLjsaeltH3"></a></h3>
   <p id="idLjsaeltdsn">Description:
     <br>Elements|items are the-entities an-array contains.
-    <br>To access them <a class="clsPreview" href="#idLjsdsn">ljs</a> uses <a class="clsPreview" href="#idLjscod">the-code</a>:
+    <br>To access them <a class="clsPreview" href="#idDescription">ljs</a> uses <a class="clsPreview" href="#idLjscod">the-code</a>:
     <br><code>a[nIndex]</code>
     <a class="clsHide" href="#idLjsaeltdsn"></a></p>
   <p id="idLjsaeltnam">Name:
@@ -734,7 +735,10 @@
     <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a>]
     <br>===
     <br><code>&gt; ['a', false, 'b', undefined, 'c', null, NaN, 3].filter(Number)
-    <br>[3]</code>
+    <br>&lt; [3]</code>
+    <br>===
+    <br><code>&gt; Object.getOwnPropertyNames(Math).sort().filter(function(sM){return sM.match(/^[s-z]/)})
+    <br>&lt; [ 'sign', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc' ]</code>
     <a class="clsHide" href="#idLjsArraypfilterdsn"></a></p>
   <p id="idLjsArraypfilternam">Name:
     <br>* cpt.ljsa'filter_function,
@@ -1527,6 +1531,32 @@
     <a class="clsHide" href="#idLjsfSpcP1"></a></p>
   </section>
 
+  <section id="idLjsfCls">
+  <h3 id="idLjsfClsH3">ljsf.CLASS
+    <a class="clsHide" href="#idLjsfClsH3"></a></h3>
+  <p id="idLjsfClsdsn">Description:
+    <br><span class="clsQuote">JavaScript classes introduced in ECMAScript 2015 are syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax is not introducing a new object-oriented inheritance model to JavaScript. JavaScript classes provide a much simpler and clearer syntax to create objects and deal with inheritance.
+    <br>Defining classes
+    <br>Classes are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.</span>
+    [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes</a>]
+    <a class="clsHide" href="#idLjsfClsdsn"></a></p>
+  <p id="idLjsfClsnam">Name:
+    <br>* cpt.ljs'class,
+    <br>* cpt.ljsclass,
+    <br>* cpt.ljsclass-function,
+    <br>* cpt.ljsf.class,
+    <br>* cpt.ljsfunction.class,
+    <br>===
+    <br>I name a-class-function as: fNameCls.
+    <a class="clsHide" href="#idLjsfClsnam"></a></p>
+  <p id="idLjsfClsrsc">AddressWpg:
+    <br>* <a href="http://www.2ality.com/2015/02/es6-classes-final.html">http://www.2ality.com/2015/02/es6-classes-final.html</a>,
+    <a class="clsHide" href="#idLjsfClsrsc"></a></p>
+  <p id="idLjsfClsevln">Evaluation:
+    <br>My-evaluation: <a class="clsPreview" href="#idLjselnProInheritance">on-inheritance</a>, <a class="clsPreview" href="#idLjselnTodoP1">on-todo</a>.
+    <a class="clsHide" href="#idLjsfClsevln"></a></p>
+  </section>
+
   <section id="idLjsfCsr">
   <h3 id="idLjsfCsrH3">ljsf.CONSTRUCTOR
     <a class="clsHide" href="#idLjsfCsrH3"></a></h3>
@@ -1543,6 +1573,8 @@
     <br>* cpt.ljsfunction.constructor,
     <br>===
     <br>Usually the-names of individual constructors begin with capital-letters.
+    <br>===
+    <br>I name a-constructor-function as: fNameCsr.
     <a class="clsHide" href="#idLjsfCsrnam"></a></p>
   <p id="idLjsfCsrproto">Constructor.prototype:
     <br><a class="clsPreview" href="#idLjsombr">The-members</a> of this special member of a-constructor, are-inherited by <a class="clsPreview" href="#idLjsoCsr">the-objects-created-by-a-constructor</a>.
@@ -1619,16 +1651,16 @@
     <br>}</code>
     <a class="clsHide" href="#idLjsfOrndsn"></a></p>
   <p id="idLjsfOrnnam">Name:
-    <br>* cpt.ljs'object-factory-function,
-    <br>* cpt.ljsobject-factory-function,
-    <br>* cpt.ljs'object-returning-function,
-    <br>* cpt.ljsobject-returning-function,
+    <br>* cpt.ljs'factory_function,
     <br>* cpt.ljs'function.object-returning,
-    <br>* cpt.ljsfunction.object-returning,
+    <br>* cpt.ljs'object-factory-function,
+    <br>* cpt.ljs'object-returning-function,
+    <br>* cpt.ljsf.factory,
     <br>* cpt.ljsf.object-factory,
     <br>* cpt.ljsf.object-returning,
-    <br>* ljsf.object_returning_cpt,
-    <br>* ljsf.factory_cpt,
+    <br>* cpt.ljsfunction.object-returning,
+    <br>* cpt.ljsobject-factory-function,
+    <br>* cpt.ljsobject-returning-function,
     <a class="clsHide" href="#idLjsfOrnnam"></a></p>
   <p id="idLjsfOrnrsc">AddressWpg:
     <br>* <a href="https://www.sitepoint.com/factory-functions-javascript/">https://www.sitepoint.com/factory-functions-javascript/</a>,
@@ -1699,6 +1731,26 @@
   </section>
   </section>
 
+  <section id="idLjsm">
+  <h2 id="idLjsmH2">ljsalgo'sut.MODULE (ljsm)
+    <a class="clsHide" href="#idLjsmH2"></a></h2>
+  <p id="idLjsmdsn">Description:
+    <br>Module is <a class="clsPreview" href="#idLjssut">a-semantic-unit</a> which 
+    <br>- can-be PART OF other modules and
+    <br>- can-has AS PART other modules.
+    <br>Like 'the-prototype-inheritance' mechanism which manages the GENERIC-SPECIFIC relations of the-semantic-units of an-API, modules is the-mechanism needed to manage the WHOLE-PART relations of the-semantic-units. 
+    <br>Today only <a class="clsPreview" href="#idLjn">ljn</a> supports modules.
+    <a class="clsHide" href="#idLjsmdsn"></a></p>
+  <p id="idLjsmnam">Name:
+    <br>* cpt.ljs'module,
+    <br>* cpt.ljsmodule,
+    <br>* cpt.ljsm,
+    <a class="clsHide" href="#idLjsmnam"></a></p>
+  <p id="idLjsmgnc">Generic-chain:
+    <br>* <a class="clsPreview" href="#idLjssut">semantic-unit</a>,
+    <a class="clsHide" href="#idLjsmgnc"></a></p>
+  </section>
+
   <section id="idLjsl">
   <h2 id="idLjslH2">ljsalgo'sut.NULL (ljsl)
     <a class="clsHide" href="#idLjslH2"></a></h2>
@@ -1709,8 +1761,6 @@
     <br>* cpt.ljs'null,
     <br>* cpt.ljsnull,
     <br>* cpt.ljsl,
-    <br>* ljsnull-cpt,
-    <br>* ljsl-cpt,
     <a class="clsHide" href="#idLjslnam"></a></p>
   <p id="idLjslgnc">Generic-chain:
     <br>* <a class="clsPreview" href="#idLjsoNo">objectNo</a>,
@@ -1834,7 +1884,7 @@
     <br><code>object.member = value;</code>
     <a class="clsHide" href="#idLjsombrCrt"></a></p>
   <p id="idLjsombrAcs">Access:
-    <br>To access a-member of an-object, <a class="clsPreview" href="#idLjsdsn">ljs</a> uses <a class="clsPreview" href="#idLjscod">the-code</a>:
+    <br>To access a-member of an-object, <a class="clsPreview" href="#idDescription">ljs</a> uses <a class="clsPreview" href="#idLjscod">the-code</a>:
     <br><code>object.member or
     <br>object[member]</code>
     <a class="clsHide" href="#idLjsombrAcs"></a></p>
@@ -2094,6 +2144,9 @@
     <br>* <a class="clsPreview" href="#idLjsStringp">String.prototype</a>, (<code>''.__proto__ === String.prototype //true</code>)
     <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a>, (<code>''.__proto__.__proto__ === Object.prototype //true</code>)
     <a class="clsHide" href="#idLjssgnc"></a></p>
+  <p id="idLjssP1">AddressWpg:
+    <br>* <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String</a>/
+    <a class="clsHide" href="#idLjssP1"></a></p>
 
   <section id="idLjsStringp">
   <h3 id="idLjsStringpH3">ljss'String.prototype
@@ -2173,7 +2226,7 @@
     <a class="clsHide" href="#idLjsvgnc"></a></p>
 
   <section id="idLjsvidr">
-  <h3 id="idLjsvidrH3">ljsv'identifier
+  <h3 id="idLjsvidrH3">ljsv'identifier (name)
     <a class="clsHide" href="#idLjsvidrH3"></a></h3>
   <p id="idLjsvidrdsn">Description:
     <br>The-name of <a class="clsPreview" href="#idLjsv">a-name-value-pair</a> is-called idenfier.
@@ -2245,6 +2298,14 @@
     <br>* <a class="clsPreview" href="#idLjsvLet">let-nvp</a>,
     <br>* <a class="clsPreview" href="#idLjsvVar">var-nvp</a>,
     <br>===
+    <br>* array-nvp (var a = []),
+    <br>* boolean-nvp (var b = true),
+    <br>* function-nvp (var f = function(){}),
+    <br>* module-nvp (var m = require('os')),
+    <br>* number-nvp (var n = 3),
+    <br>* object-nvp (var o = {}),
+    <br>* regexp-nvp (var r = /x/),
+    <br>* string-nvp (var s = 'a-string'),
     <br>* <a class="clsPreview" href="#idLjsx">mixed-nvp</a>,
     <br>* <a class="clsPreview" href="#idLjsxNo">mixedNo-nvp</a>,
     <a class="clsHide" href="#idLjsvSpcP1"></a></p>
@@ -2337,10 +2398,10 @@
 </section>
 
 <section id="idLjsapi">
-  <h1 id="idLjsapiH1">ljsalgo'sut.API
+  <h1 id="idLjsapiH1">ljsalgosut.API
     <a class="clsHide" href="#idLjsapiH1"></a></h1>
   <p id="idLjsapidsn">Description:
-    <br>API is a-set of <a class="clsPreview" href="#idLjbsut">semantic-units</a>.
+    <br>API is a-set of <a class="clsPreview" href="#idLjssut">semantic-units</a>.
     <br>An-API, like any conceptual-information, is-structured <span class="clsColorRed">at the SAME time</span>, into 3 different tree-structures:
     <br>1) A-whole-part-tree with root-node <a class="clsPreview" href="#idLjsmwo">the-most-whole-object</a> and
     <br>2) A-generic-specific-tree with root-node <a class="clsPreview" href="#idLjsmgo">the-most-generic-object</a> (<code>Object.prototype</code>).
@@ -2483,6 +2544,31 @@
   <p id="idLjsObjectSpc">Specific:
     <br>* none,
     <a class="clsHide" href="#idLjsObjectSpc"></a></p>
+
+  <section id="idLjsObjectCreate">
+  <h4 id="idLjsObjectCreateH4">ljs'Object.create-function
+    <a class="clsHide" href="#idLjsObjectCreateH4"></a></h4>
+  <p id="idLjsObjectCreatedsn">Description:
+    <br><span class="clsQuote">The Object.create() method creates a new object with the specified prototype object and properties.
+    <br><strong>Syntax</strong>
+    <br>Object.create(proto[, propertiesObject])
+    <br><strong>Parameters</strong>
+    <br>proto
+    <br>The object which should be the prototype of the newly-created object.
+    <br>propertiesObject
+    <br>Optional. If specified and not undefined, an object whose enumerable own properties (that is, those properties defined upon itself and not enumerable properties along its prototype chain) specify property descriptors to be added to the newly-created object, with the corresponding property names. These properties correspond to the second argument of Object.defineProperties().
+    <br><strong>Return value</strong>
+    <br>A new object with the specified prototype object and properties.
+    <br><strong>Exceptions</strong>
+    <br>A TypeError exception if the proto parameter isn't null or an object.</span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create</a>]
+    <a class="clsHide" href="#idLjsObjectCreatedsn"></a></p>
+  <p id="idLjsObjectCreatenam">Name:
+    <br>* cpt.ljs'Object.create,
+    <br>* cpt.ljs'Object.create-function,
+    <br>* cpt.ljs'Object.create(),
+    <a class="clsHide" href="#idLjsObjectCreatenam"></a></p>
+  </section>
   </section>
   </section>
 
@@ -3002,7 +3088,7 @@
     <a class="clsHide" href="#idLjsalgSpcH1"></a></h1>
   <p id="idLjsalgSpcdsn">Description:
     <br>With <a class="clsPreview" href="#idDescription">the-language</a> <a class="clsPreview" href="#idLjshmnPmr">programers</a> create many algorithms.
-    <br>The-quantity depends on <a class="clsPreview" href="#idLjsarc">the-archetypes</a> known, and <a class="clsPreview" href="#idLjssut">the-semantic-units</a> of <a class="clsPreview" href="#idLjsdsn">the-language</a>.
+    <br>The-quantity depends on <a class="clsPreview" href="#idLjsarc">the-archetypes</a> known, and <a class="clsPreview" href="#idLjssut">the-semantic-units</a> of <a class="clsPreview" href="#idDescription">the-language</a>.
     <a class="clsHide" href="#idLjsalgSpcdsn"></a></p>
   <p id="idLjsalgSpcP1">Specific:
     <br>* Browser-management,
@@ -3277,7 +3363,7 @@
     <br>1) <a class="clsPreview" href="#idLjselnConNaming">Valuenames</a>.
     <br>2) <a class="clsPreview" href="#idLjselnConOsp">Object-scope</a>.
     <br>3) <a class="clsPreview" href="#idLjselnProInheritance">No constructors</a>.
-    <br>Objects could-be-created by functions like <code>Object.create()</code>, functions returning objects, and literal-objects.
+    <br>Objects could-be-created by 1) functions like <a class="clsPreview" href="#idLjsObjectCreate">Object.create()</a>, 2) <a class="clsPreview" href="#idLjsfOrn">functions returning objects (factories)</a>, and 3) <a class="clsPreview" href="#idLjsoLtl">literal-objects</a>.
     <br><a class="clsPreview" href="#idLjsapigst">The-generic-chain</a> to be: object > objectSpc > objectSpc > ...
     <br>And NOT: Object.prototype > Constructor.prototype > Constructor.prototype ...
     <a class="clsHide" href="#idLjselnTodoP1"></a></p>
@@ -3377,7 +3463,7 @@
     <a class="clsHide" href="#idLjeH1"></a></h1>
   <p id="idLjedsn">Description:
     <br>Specification is a-text-document that describes|defines a-language.
-    <br><a href="http://www.ecma-international.org/memento/index.html">ECMA-International</a> creates the-specs for <a class="clsPreview" href="#idLjbdsn">ljb</a>.
+    <br><a href="http://www.ecma-international.org/memento/index.html">ECMA-International</a> creates the-specs for <a class="clsPreview" href="#idDescription">ljs</a>.
     <br>ECMA-International creates many standards.
     <br><a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMA-262</a> is the-standard that defines the-ECMAScript-language, as it calls the-ljs.
     <br>Specs are-published in pdf or HML format and are texts hard to read and multisemantic.
@@ -7589,15 +7675,12 @@
   <h2 id="idLjnalgH2">ljn'Algorithm (Model)
     <a class="clsHide" href="#idLjnalgH2"></a></h2>
   <p id="idLjnalggnc">Generic:
-    <br>* <a class="clsPreview" href="#idLjsalg">ljn-algorithm</a>,
+    <br>* <a class="clsPreview" href="#idLjsalg">ljs-algorithm</a>,
     <a class="clsHide" href="#idLjnalggnc"></a></p>
   <p id="idLjnalgnam">Name:
     <br>* cpt.ljn'algorithm,
     <br>* cpt.ljn'algo,
     <br>* cpt.ljnalgo, {2014.03.10}
-    <br>===
-    <br>* cpt.ljnalgo,
-    <br>* ljnalgo-cpt,
     <a class="clsHide" href="#idLjnalgnam"></a></p>
 
   <section id="idLjnalgcod">
@@ -8960,6 +9043,9 @@
   <p id="idLjnmoChild_processgnc">Generic-chain:
     <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a>, (moChild_process.__proto__ === Object.prototype //true)
     <a class="clsHide" href="#idLjnmoChild_processgwhl"></a></p>
+  <p id="idLjnmoChild_processapi">API:
+    <br>* ljn.last: <a href="https://nodejs.org/api/child_process.html">https://nodejs.org/api/child_process.html</a>,
+    <a class="clsHide" href="#idLjnmoChild_processapi"></a></p>
   </section>
 
   <section id="idLjnmoCluster">
@@ -10312,7 +10398,7 @@
   </section>
 
   <section id="idLjnmwo">
-  <h3 id="idLjnmwoH3">ljnapiNtv'global-object (most-whole-object)
+  <h3 id="idLjnmwoH3">ljnapiNtv'the-global-object (most-whole-object)
     <a class="clsHide" href="#idLjnmwoH3"></a></h3>
   <p id="idLjnmwodsnS">Description.short:
     <br><code>global</code> is the most whole object in <a class="clsPreview" href="#idLjnwpt">ljn-API's-whole-part-tree</a>.
@@ -10321,6 +10407,7 @@
     <br>[HmnSgm.2016-07-04]
     <a class="clsHide" href="#idLjnmwodsnS"></a></p>
   <p id="idLjnmwonam">Name:
+    <br>* cpt.ljn'the-global-object,
     <br>* cpt.ljn'most-whole-object,
     <br>* cpt.ljn'global-object,
     <br>* cpt.ljn'object.global,
@@ -10381,16 +10468,14 @@
   </section>
 
   <section id="idLjnmwombr">
-  <h3 id="idLjnmwombrH3">ljnapiNtv'global-member
+  <h3 id="idLjnmwombrH3">ljnapiNtv'the-global's-member
     <a class="clsHide" href="#idLjnmwombrH3"></a></h3>
-  <p id="idLjnmwombrP1">Global-member:
-    <br>// ljn.6-3-1
-    <br>&gt; Object.getOwnPropertyNames(global).sort()
-    <br>[ 'Array', 'ArrayBuffer', 'Boolean', 'Buffer', 'COUNTER_HTTP_CLIENT_REQUEST', 'COUNTER_HTTP_CLIENT_RESPONSE', 'COUNTER_HTTP_SERVER_REQUEST', 'COUNTER_HTTP_SERVER_RESPONSE',  'COUNTER_NET_SERVER_CONNECTION', 'COUNTER_NET_SERVER_CONNECTION_CLOSE', 'DTRACE_HTTP_CLIENT_REQUEST', 'DTRACE_HTTP_CLIENT_RESPONSE', 'DTRACE_HTTP_SERVER_REQUEST',  'DTRACE_HTTP_SERVER_RESPONSE', 'DTRACE_NET_SERVER_CONNECTION', 'DTRACE_NET_STREAM_END',   'DataView', 'Date', 'Error', 'EvalError', 'Float32Array', 'Float64Array', 'Function', 'GLOBAL', 'Infinity', 'Int16Array', 'Int32Array', 'Int8Array', 'Intl', 'JSON', 'Map', 'Math', 'NaN', 'Number', 'Object', 'Promise', 'Proxy', 'RangeError', 'ReferenceError', 'Reflect', 'RegExp', 'Set', 'String', 'Symbol', 'SyntaxError', 'TypeError', 'URIError', 'Uint16Array', 'Uint32Array', 'Uint8Array', 'Uint8ClampedArray', 'WeakMap', 'WeakSet', 'clearImmediate', 'clearInterval', 'clearTimeout', 'console', 'decodeURI', 'decodeURIComponent', 'encodeURI', 'encodeURIComponent', 'escape', 'eval', 'global', 'isFinite', 'isNaN', 'parseFloat', 'parseInt', 'process', 'root', 'setImmediate', 'setInterval', 'setTimeout', 'undefined', 'unescape' ]
-    <a class="clsHide" href="#idLjnmwombrP1"></a></p>
   <p id="idLjnmwombrdsn">Description:
-    <br>The-members of <a class="clsPreview" href="#idLjnmwo">the-most-whole-object (global)</a> are-called also 'globals'.
+    <br><span class="clsColorRed">The-members of <a class="clsPreview" href="#idLjnmwo">the-most-whole-object (global)</a> are-called >>>ALSO<<< 'globals'</span>.
     <br>[HmnSgm.2016-07-02]
+    <br>'the-global' = the-most-whole-object.
+    <br>'a-global' = a-member of the-global.
+    <br>[HmnSgm.2017-01-07]
     <br>===
     <br><span class="clsQuote">These objects are available in <strong>all modules</strong>.
     <br>Some of these objects aren't actually in <span class="clsU">the global scope</span> but in <span class="clsU">the module scope</span> - this will be noted.</span>
@@ -10412,6 +10497,7 @@
     <br>[<a href="http://net.tutsplus.com/tutorials/javascript-ajax/node-js-for-beginners/">http://net.tutsplus.com/tutorials/javascript-ajax/node-js-for-beginners/</a>]
     <a class="clsHide" href="#idLjnmwombrdsn"></a></p>
   <p id="idLjnmwombrnam">Name:
+    <br>* cpt.ljn'a-global-object,
     <br>* cpt.ljn'global-member,
     <br>* cpt.ljnglobal-member,
     <br>* cpt.ljn'global-objects,
@@ -10425,6 +10511,11 @@
     <br>* ljn'globals-cpt,
     <br>* ljnglobals-cpt,
     <a class="clsHide" href="#idLjnmwombrnam"></a></p>
+  <p id="idLjnmwombrspc">SPECIFIC:
+    <br>// ljn.6-3-1
+    <br>&gt; Object.getOwnPropertyNames(global).sort()
+    <br>[ 'Array', 'ArrayBuffer', 'Boolean', 'Buffer', 'COUNTER_HTTP_CLIENT_REQUEST', 'COUNTER_HTTP_CLIENT_RESPONSE', 'COUNTER_HTTP_SERVER_REQUEST', 'COUNTER_HTTP_SERVER_RESPONSE',  'COUNTER_NET_SERVER_CONNECTION', 'COUNTER_NET_SERVER_CONNECTION_CLOSE', 'DTRACE_HTTP_CLIENT_REQUEST', 'DTRACE_HTTP_CLIENT_RESPONSE', 'DTRACE_HTTP_SERVER_REQUEST',  'DTRACE_HTTP_SERVER_RESPONSE', 'DTRACE_NET_SERVER_CONNECTION', 'DTRACE_NET_STREAM_END',   'DataView', 'Date', 'Error', 'EvalError', 'Float32Array', 'Float64Array', 'Function', 'GLOBAL', 'Infinity', 'Int16Array', 'Int32Array', 'Int8Array', 'Intl', 'JSON', 'Map', 'Math', 'NaN', 'Number', 'Object', 'Promise', 'Proxy', 'RangeError', 'ReferenceError', 'Reflect', 'RegExp', 'Set', 'String', 'Symbol', 'SyntaxError', 'TypeError', 'URIError', 'Uint16Array', 'Uint32Array', 'Uint8Array', 'Uint8ClampedArray', 'WeakMap', 'WeakSet', 'clearImmediate', 'clearInterval', 'clearTimeout', 'console', 'decodeURI', 'decodeURIComponent', 'encodeURI', 'encodeURIComponent', 'escape', 'eval', 'global', 'isFinite', 'isNaN', 'parseFloat', 'parseInt', 'process', 'root', 'setImmediate', 'setInterval', 'setTimeout', 'undefined', 'unescape' ]
+    <a class="clsHide" href="#idLjnmwombrspc"></a></p>
   </section>
 
   <section id="idLjnArrayBuffer">
@@ -10540,7 +10631,7 @@
   <p id="idLjnprocessdsn">Description:
     <br><span class="clsQuote"><span class="clsU">The process object</span> is a global object and can be accessed from anywhere.
     <br>It is an instance of EventEmitter.</span>
-    <br>[<a href="https://nodejs.org/api/process.html#process_process">https://nodejs.org/api/process.html#process_process</a>]
+    <br>[<a href="https://nodejs.org/docs/v6.0.0/api/process.html#process_process">https://nodejs.org/docs/v6.0.0/api/process.html#process_process</a>]
     <a class="clsHide" href="#idLjnprocessdsn"></a></p>
   <p id="idLjnprocessnam">Name:
     <br>* cpt.ljn'process-object,
@@ -10558,6 +10649,9 @@
     <br>* events.EventEmitter.prototype (&gt;  process.__proto__.__proto__ === events.EventEmitter.prototype //true)
     <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a> (&gt; process.__proto__.__proto__.__proto__ === Object.prototype //true)
     <a class="clsHide" href="#idLjnprocessgnc"></a></p>
+  <p id="idLjnprocessapi">API:
+    <br>* ljn.last: <a href="https://nodejs.org/api/process.html">https://nodejs.org/api/process.html</a>,
+    <a class="clsHide" href="#idLjnprocessapi"></a></p>
 
   <section id="idLjnprocessmbr">
   <h4 id="idLjnprocessmbrH4">ljnprocess.member
@@ -11306,7 +11400,7 @@
     <a class="clsHide" href="#idLjnpgHwH3"></a></h3>
   <p id="idLjnpgHwP2">The Hello World App:
     <br>Create a-directory.
-    <br>Create on a-text-editor the-file, called filHello.js for example, and type the-code:
+    <br>Create on a-text-editor the-file, called <code>filHello.js</code> for example, and type the-code:
     <br><code>console.log('Hello World!');</code>
     <br>Close the-file and type on the-same directory the-command:
     <br><code>node filHello.js</code>
@@ -11336,30 +11430,45 @@
     <a class="clsHide" href="#idLjnpgHwP1"></a></p>
   </section>
 
-    <section id="idLjnpgGui">
-    <h3 id="idLjnpgGuiH3">ljnpgm.GUI (desktop)
-      <a class="clsHide" href="#idLjnpgGuiH3"></a></h3>
-    <p id="idLjnpgGuidsn">Description:
-      <br><span class="clsQuote">There are few options for writing GUI apps in Node:
-      <br>* AppJS - the oldest one, not actively developed, recommends NW.js or Electron
-      <br>* <a href="http://nwjs.io/">NW.js</a> - previously known as node-webkit, sponsored by Intel and Gnor Tech, used in Intel XDK, WhatsApp for Desktop and many others apps
-      <br>* <a href="https://github.com/adobe/brackets-shell#readme">Brackets Shell</a> by Adobe - a CEF-based application shell for the Brackets editor, not really meant for use in anything other than Brackets, but people use it for other projects and there are some tutorials online
-      <br>* <a href="http://electron.atom.io/">Electron</a> by GitHub - previously known as the Atom Shell originally created for the Atom editor, used by Atom, Slack, Visual Studio Code, Ionic Lab, Light Table, WordPress.com, Google Play Music Desktop Player, Yeoman and many other apps - (the 1.0 just released on May 11, 2016)</span>
-      <br>[<a href="http://softwarerecs.stackexchange.com/a/32220">http://softwarerecs.stackexchange.com/a/32220</a>]
-      <a class="clsHide" href="#idLjnpgGuidsn"></a></p>
-    <p id="idLjnpgGuinam">Name:
-      <br>* cpt.ljn'desktop-app,
-      <br>* cpt.ljn'desktop-program,
-      <br>* cpt.ljn'GUI-app,
-      <br>* ljn'desktop-app-cpt,
-      <br>* ljn'desktop-program-cpt,
-      <br>* ljn'GUI-app-cpt,
-      <br>* ljnpgm.desktop-cpt,
-      <a class="clsHide" href="#idLjnpgGuinam"></a></p>
-    <p id="idLjnpgGuirsc">AddressWpg:
-      <br>* <a href="http://code.tutsplus.com/tutorials/introduction-to-html5-desktop-apps-with-node-webkit--net-36296">http://code.tutsplus.com/tutorials/ introduction-to-html5-desktop-apps-with-node-webkit--net-36296</a>,
-      <a class="clsHide" href="#idLjnpgGuirsc"></a></p>
-    </section>
+  <section id="idLjnpgCli">
+  <h3 id="idLjnpgCliH3">ljnpgm.CLI
+    <a class="clsHide" href="#idLjnpgCliH3"></a></h3>
+  <p id="idLjnpgClidsn">Description:
+    <br>Npm-packages like <a href="https://www.npmjs.com/package/commander">commander</a> and <a href="https://www.npmjs.com/package/yargs">yargs</a> help us to manage the-input and option arguments of these programs.
+    <a class="clsHide" href="#idLjnpgClidsn"></a></p>
+  <p id="idLjnpgClinam">Name:
+    <br>* cpt.ljn'CLI-app,
+    <br>* cpt.ljn'CLI-program,
+    <br>* cpt.ljnpgm.CLI,
+    <a class="clsHide" href="#idLjnpgClinam"></a></p>
+  <p id="idLjnpgClirsc">AddressWpg:
+    <br>* <a href="https://www.npmjs.com/package/commander">https://www.npmjs.com/package/commander</a> the complete solution for node.js command-line programs,
+    <br>* <a href="https://www.npmjs.com/package/yargs">https://www.npmjs.com/package/yargs</a> yargs the modern, pirate-themed, successor to optimist,
+    <br>* <a href="https://medium.freecodecamp.com/writing-command-line-applications-in-nodejs-2cf8327eee2">https://medium.freecodecamp.com/writing-command-line-applications-in-nodejs</a>,
+    <a class="clsHide" href="#idLjnpgClirsc"></a></p>
+  </section>
+
+  <section id="idLjnpgGui">
+  <h3 id="idLjnpgGuiH3">ljnpgm.GUI (desktop)
+    <a class="clsHide" href="#idLjnpgGuiH3"></a></h3>
+  <p id="idLjnpgGuidsn">Description:
+    <br><span class="clsQuote">There are few options for writing GUI apps in Node:
+    <br>* AppJS - the oldest one, not actively developed, recommends NW.js or Electron
+    <br>* <a href="http://nwjs.io/">NW.js</a> - previously known as node-webkit, sponsored by Intel and Gnor Tech, used in Intel XDK, WhatsApp for Desktop and many others apps
+    <br>* <a href="https://github.com/adobe/brackets-shell#readme">Brackets Shell</a> by Adobe - a CEF-based application shell for the Brackets editor, not really meant for use in anything other than Brackets, but people use it for other projects and there are some tutorials online
+    <br>* <a href="http://electron.atom.io/">Electron</a> by GitHub - previously known as the Atom Shell originally created for the Atom editor, used by Atom, Slack, Visual Studio Code, Ionic Lab, Light Table, WordPress.com, Google Play Music Desktop Player, Yeoman and many other apps - (the 1.0 just released on May 11, 2016)</span>
+    <br>[<a href="http://softwarerecs.stackexchange.com/a/32220">http://softwarerecs.stackexchange.com/a/32220</a>]
+    <a class="clsHide" href="#idLjnpgGuidsn"></a></p>
+  <p id="idLjnpgGuinam">Name:
+    <br>* cpt.ljn'desktop-app,
+    <br>* cpt.ljn'desktop-program,
+    <br>* cpt.ljn'GUI-app,
+    <br>* cpt.ljnpgm.desktop,
+    <a class="clsHide" href="#idLjnpgGuinam"></a></p>
+  <p id="idLjnpgGuirsc">AddressWpg:
+    <br>* <a href="http://code.tutsplus.com/tutorials/introduction-to-html5-desktop-apps-with-node-webkit--net-36296">http://code.tutsplus.com/tutorials/ introduction-to-html5-desktop-apps-with-node-webkit--net-36296</a>,
+    <a class="clsHide" href="#idLjnpgGuirsc"></a></p>
+  </section>
 
   <section id="idLjnpgBlog">
   <h3 id="idLjnpgBlogH3">ljnpgm.BLOG
@@ -14277,9 +14386,9 @@
     <br>Type <span class="clsColorRed">CTRL+F "cpt.[ljs|ljb|ljn]words-of-concept's-name"</span>, to go to the-LOCATION of the-concept.
     <br>There are about 400 sub-concepts in this concept (ebook) with 1,400 names and 14,000 lines of <a class="clsPreview" href="../../hitp/#idDescription">hitp-document</a>.
     <a class="clsHide" href="#idMetaP1"></a></p>
-  <!--                                                                     -->
+  <!--                                                                   -->
   <p id="idMetaVersion">Webpage-Versions:
-    <br>• version.3-30.2016-12-24.dynamic: <a href="filMcsLjs.html">filMcsLjs.html</a>,
+    <br>• version.3-36.2017-01-15.dynamic: <a href="filMcsLjs.html">filMcsLjs.html</a>,
     <br>• version.3.2016-08-22 (2-4): <a href="filMcsLjs.html">filMcsLjs.3.2016-08-22.html</a>,
     <br>• version.2.2016-08-04.ljs-ljn (1-33): <a href="filCptLjs.2.2016-08-04.html">filCptLjs.2.2016-08-04.html</a>,
     <br>• version.1-21.2016-05-26: <a href="lngJs.1-21.2016-05-27.html">lngJs.1-21.2016-05-26.html</a>,
