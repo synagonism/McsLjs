@@ -1834,7 +1834,7 @@
   <p id="idLjsodsn">Description:
     <br>Object is a-collection of <a class="clsPreview" href="#idLjsv">name-value-pairs</a>, which inherits <a class="clsPreview" href="#idLjsombr">the-members</a> of the-<code><a class="clsPreview" href="#idLjsmgo">Object.prototype</a></code>, in other words it is SPECIFIC of the-<code>Object.prototype</code>.
     <br>Objects are <a class="clsPreview" href="#idLjssut">semantic-units</a> that map concepts.
-    <br>The famous sentence '<span class="clsColorGreen">everything is an object</span>', is wrong because there are and <a class="clsPreview" href="#idLjsoNo">no-objects</a>.
+    <br>The famous sentence '<span class="clsColorGreen">everything is an object</span>', is wrong because there are and <a class="clsPreview" href="#idLjsoNo">non-objects</a>.
     <br>The correct sentence is: 'almost everything is an-Object.prototype'.
     <a class="clsHide" href="#idLjsodsn"></a></p>
   <p id="idLjsonam">Name:
@@ -1891,12 +1891,16 @@
     <br>object[member]</code>
     <a class="clsHide" href="#idLjsombrAcs"></a></p>
   <p id="idLjsombrSpc">Specific:
+    <br>* Custom: not a-unit native to language.
+    <br>* CustomNo: a-unit native to language.
     <br>* Inherited: <a class="clsPreview" href="#idLjsombr">a-member</a> of its <a class="clsPreview" href="#idLjsognc">generic-objects</a>.
     <br>* InheritedNo,
     <br>* <span id="idLjsmethod">Method: <a class="clsPreview" href="#idLjsombr">a-member</a> which is <a class="clsPreview" href="#idLjsf">a-function</a></span>.
     <br>* MethodNo: any other member. Some call them 'properties'.
-    <br>* Public: a-member we have access from outside of the-object. ALL members are public.
-    <br>* PublicNo: none.
+    <br>* Internal: a-unit created inside current-algorithm.
+    <br>* InternalNo: a-unit created in another algorithm and imported into current-algorithm.
+    <br>* Public: a-member we have access from outside of the-object. ALL members of <a class="clsPreview" href="#idLjso">a-generic-object</a> are public.
+    <br>* PublicNo: <a class="clsPreview" href="#idLjsf">A-function</a> (a-specific-object) has publicNo members.
     <a class="clsHide" href="#idLjsombrSpc"></a></p>
   </section>
 
@@ -2570,6 +2574,32 @@
     <br>* cpt.ljs'Object.create-function,
     <br>* cpt.ljs'Object.create(),
     <a class="clsHide" href="#idLjsObjectCreatenam"></a></p>
+  </section>
+
+  <section id="idLjsObjectGetOwnPropertyNames">
+  <h4 id="idLjsObjectGetOwnPropertyNamesH4">ljs'Object.getOwnPropertyNames-function
+    <a class="clsHide" href="#idLjsObjectGetOwnPropertyNamesH4"></a></h4>
+  <p id="idLjsObjectGetOwnPropertyNamesdsn">Description:
+    <br><span class="clsQuote">The Object.getOwnPropertyNames() method returns an array of all properties (enumerable or not) found directly upon a given object.
+    <br><strong>Syntax</strong>
+    <br>Object.getOwnPropertyNames(obj)
+    <br><strong>Parameters</strong>
+    <br>obj
+    <br>The object whose enumerable and non-enumerable own properties are to be returned.
+    <br><strong>Return value</strong>
+    <br>An array of strings that correspond to the properties found directly upon the given object.</span>
+    <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames</a>]
+    <a class="clsHide" href="#idLjsObjectGetOwnPropertyNamesdsn"></a></p>
+  <p id="idLjsObjectGetOwnPropertyNamesnam">Name:
+    <br>* cpt.ljs'Object.getOwnPropertyNames,
+    <br>* cpt.ljs'Object.getOwnPropertyNames-function,
+    <br>* cpt.ljs'Object.getOwnPropertyNames(),
+    <a class="clsHide" href="#idLjsObjectGetOwnPropertyNamesnam"></a></p>
+  <p id="idLjsObjectGetOwnPropertyNamescod">Code:
+    <br>&gt; Object.getOwnPropertyNames(obj).sort() // to sort the-members.
+    <br>&gt; Object.getOwnPropertyNames(obj).join(', ') // to display ALL the-members.
+    <br>&gt; Object.getOwnPropertyNames(obj).filter(function(sM){return sM.match(/^[a-e]/)}) // to display the-members that begin with a-to-e.
+    <a class="clsHide" href="#idLjsObjectGetOwnPropertyNamescod"></a></p>
   </section>
   </section>
   </section>
@@ -14367,7 +14397,9 @@
     <a class="clsHide" href="#idLjsEvn2004"></a></p>
   <p id="idLjsEvn1995">Time: {1995}:
     <br>=== ANNOUNCEMENT:
-    <br><span class="clsQuote">MOUNTAIN VIEW, Calif. (December 4, 1995) -- Netscape Communications Corporation (NASDAQ: NSCP) and Sun Microsystems, Inc. (NASDAQ:SUNW), today announced javascript, an open, cross-platform object scripting language for the creation and customization of applications on enterprise networks and the Internet. The javascript language complements Java, Sun's industry-leading object-oriented, cross-platform programming language. The initial version of javascript is available now as part of the beta version of Netscape Navigator 2.0, which is currently available for downloading from Netscape's web site.</span>
+    <br><span class="clsQuote">MOUNTAIN VIEW, Calif. (December 4, 1995) -- Netscape Communications Corporation (NASDAQ: NSCP) and Sun Microsystems, Inc. (NASDAQ:SUNW), today announced javascript, an open, cross-platform object scripting language for the creation and customization of applications on enterprise networks and the Internet.
+    <br>The javascript language complements Java, Sun's industry-leading object-oriented, cross-platform programming language.
+    <br>The initial version of javascript is available now as part of the beta version of Netscape Navigator 2.0, which is currently available for downloading from Netscape's web site.</span>
     <br>[<a href="https://web.archive.org/web/20070916144913/http://wp.netscape.com/newsref/pr/newsrelease67.html">https://web.archive.org/.../wp.netscape.com/newsref/pr/newsrelease67.html</a>]
     <a class="clsHide" href="#idLjsEvn1995"></a></p>
 </section>
@@ -14392,9 +14424,9 @@
     <br>Type <span class="clsColorRed">CTRL+F "cpt.[ljs|ljb|ljn]words-of-concept's-name"</span>, to go to the-LOCATION of the-concept.
     <br>There are about 400 sub-concepts in this concept (ebook) with 1,400 names and 14,000 lines of <a class="clsPreview" href="../../hitp/#idDescription">hitp-document</a>.
     <a class="clsHide" href="#idMetaP1"></a></p>
-  <!--                                                                  -->
+  <!--                                                                                                   -->
   <p id="idMetaVersion">Webpage-Versions:
-    <br>• version.3-38.2017-01-18.dynamic: <a href="filMcsLjs.html">filMcsLjs.html</a>,
+    <br>• version.3-40.2017-01-22.dynamic: <a href="filMcsLjs.html">filMcsLjs.html</a>,
     <br>• version.3.2016-08-22 (2-4): <a href="filMcsLjs.html">filMcsLjs.3.2016-08-22.html</a>,
     <br>• version.2.2016-08-04.ljs-ljn (1-33): <a href="filCptLjs.2.2016-08-04.html">filCptLjs.2.2016-08-04.html</a>,
     <br>• version.1-21.2016-05-26: <a href="lngJs.1-21.2016-05-27.html">lngJs.1-21.2016-05-26.html</a>,
