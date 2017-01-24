@@ -2754,6 +2754,58 @@
     <a class="clsHide" href="#idLjsErrorrsc"></a></p>
   </section>
 
+  <section id="idLjsoJSON">
+  <h3 id="idLjsoJSONH3">ljs'JSON-object
+    <a class="clsHide" href="#idLjsoJSONH3"></a></h3>
+  <p id="idLjsoJSONdsn">Description:
+    <br>The-javascript-JSON-object contains 2 functions that map javascript-semantic-units with JSON-language-semantic-units, eg {a:1, b:2} &lt;==&gt; {"a":1,"b":2}
+    <a class="clsHide" href="#idLjsoJSONdsn"></a></p>
+  <p id="idLjsoJSONnam">Name:
+    <br>* cpt.ljs'JSON,
+    <br>* cpt.ljs'JSON-object,
+    <br>* cpt.ljsJSON,
+    <br>* cpt.ljsJSON-object,
+    <br>* cpt.ljso.JSON,
+    <a class="clsHide" href="#idLjsoJSONnam"></a></p>
+  <p id="idLjsoJSONwhl">Whole-chain:
+    <br>* <a class="clsPreview" href="#idLjsmwo">ljs-most-whole-object (global)</a>,
+    <a class="clsHide" href="#idLjsoJSONwhl"></a></p>
+  <p id="idLjsoJSONApi">ljsJSON'API:
+    <br>(Chrome.55)
+    <br><code>&gt; Object.getOwnPropertyNames(JSON).sort().join(', ')
+    <br>"parse, stringify"
+    <br>&gt; Object.getOwnPropertyNames(JSON.__proto__).sort().join(', ')
+    <br>"__defineGetter__, __defineSetter__, __lookupGetter__, __lookupSetter__, __proto__, constructor, hasOwnProperty, isPrototypeOf, propertyIsEnumerable, toLocaleString, toString, valueOf"</code>
+    <a class="clsHide" href="#idLjsoJSONApi"></a></p>
+
+  <section id="idLjsoJSONParse">
+  <h4 id="idLjsoJSONParseH4">ljs'JSON.parse-function
+    <a class="clsHide" href="#idLjsoJSONParseH4"></a></h4>
+  <p id="idLjsoJSONParsedsn">Description:
+    <br>The-JSON.parse()-function has as INPUT a-string that represents a-JSON-language-semantic-unit and OUTPUT the-javascript-semantic-unit that corresponds to that of JSON-language.
+    <a class="clsHide" href="#idLjsoJSONParsedsn"></a></p>
+  <p id="idLjsoJSONParsecod">Code:
+    <br><code>&gt; var a = JSON.parse('[1,2]') //undefined
+    <br>&gt; a //[1, 2]
+    <br>&gt; var n = JSON.parse('2') //undefined
+    <br>&gt; n //2
+    <br>&gt; var o = JSON.parse('{"a":1,"b":2}') //undefined
+    <br>&gt; o //Object {a: 1, b: 2}</code>
+    <a class="clsHide" href="#idLjsoJSONParsecod"></a></p>
+  </section>
+
+  <section id="idLjsoJSONStringify">
+  <h4 id="idLjsoJSONStringifyH4">ljs'JSON.stringify-function
+    <a class="clsHide" href="#idLjsoJSONStringifyH4"></a></h4>
+  <p id="idLjsoJSONStringifydsn">Description:
+    <br>The-JSON.stringify()-function has as INPUT a-javascript-semantic-unit and OUTPUT a-string that corresponds to similar JSON-language-semantic-unit.
+    <a class="clsHide" href="#idLjsoJSONStringifydsn"></a></p>
+  <p id="idLjsoJSONStringifycod">Code:
+    <br><code>&gt; JSON.stringify({a:1, b:2}) //"{"a":1,"b":2}"</code>
+    <a class="clsHide" href="#idLjsoJSONStringifycod"></a></p>
+  </section>
+  </section>
+
   <section id="idLjsoMath">
   <h3 id="idLjsoMathH3">ljs'Math-object
     <a class="clsHide" href="#idLjsoMathH3"></a></h3>
@@ -14424,9 +14476,9 @@
     <br>Type <span class="clsColorRed">CTRL+F "cpt.[ljs|ljb|ljn]words-of-concept's-name"</span>, to go to the-LOCATION of the-concept.
     <br>There are about 400 sub-concepts in this concept (ebook) with 1,400 names and 14,000 lines of <a class="clsPreview" href="../../hitp/#idDescription">hitp-document</a>.
     <a class="clsHide" href="#idMetaP1"></a></p>
-  <!--                                                                                                   -->
+  <!--                                                                                               -->
   <p id="idMetaVersion">Webpage-Versions:
-    <br>• version.3-40.2017-01-22.dynamic: <a href="filMcsLjs.html">filMcsLjs.html</a>,
+    <br>• version.3-41.2017-01-24.dynamic: <a href="filMcsLjs.html">filMcsLjs.html</a>,
     <br>• version.3.2016-08-22 (2-4): <a href="filMcsLjs.html">filMcsLjs.3.2016-08-22.html</a>,
     <br>• version.2.2016-08-04.ljs-ljn (1-33): <a href="filCptLjs.2.2016-08-04.html">filCptLjs.2.2016-08-04.html</a>,
     <br>• version.1-21.2016-05-26: <a href="lngJs.1-21.2016-05-27.html">lngJs.1-21.2016-05-26.html</a>,
