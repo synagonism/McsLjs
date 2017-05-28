@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>cpt.language.Javascript (ljs.3-46.2017-03-10)</title>
+  <title>cpt.language.Javascript (ljs.3-47-0.2017-05-28)</title>
   <meta name="keywords" content="javascript-tutorial, browser-js, Node.js, ljs, ljb, ljn, title-content-tree, hitp-webpage">
   <link rel="stylesheet" href="http://synagonism.github.io/hitp/hitp.css">
 </head>
@@ -16,11 +16,11 @@
 </header>
 
 <section id="idDescription">
-  <h1 id="idDescriptionH1">ljs'Description
+  <h1 id="idDescriptionH1"><a class="clsPreview" href="#idInline">ljs'Description</a>
     <a class="clsHide" href="#idDescriptionH1"></a></h1>
   <p id="idDescriptionP1"><strong>Javascript (ljs)</strong> is the GENERIC language of <a class="clsPreview" href="#idLjbdsn">browser-javascript (ljb, client-side)</a>, <a class="clsPreview" href="#idLjndsn">Node-javascript (ljn, server-side)</a>, desktop-javascript (ljd) and other differentiations.
     <br>
-    <br>Javascript was originally developed in {1995} by Brendan-Eich, at Netscape-Communications-Corporation. [<a href="https://en.wikipedia.org/wiki/javascript#Beginnings_at_Netscape">en.wikipedia.org</a>]
+    <br><span id="idInline">Javascript was originally developed in {1995}</span> by Brendan-Eich, at Netscape-Communications-Corporation. [<a href="https://en.wikipedia.org/wiki/javascript#Beginnings_at_Netscape">en.wikipedia.org</a>]
     <br>
     <br><a class="clsPreview" href="../../#idAboutme">My</a> goal here is my text to be MONOSEMANTIC as possible, in contrast to existing texts, by defining most of the-names of my sentences.
     <br>ALSO, my text differs than the traditional one.
@@ -614,19 +614,19 @@
   <p id="idLjsArraypmbrspc"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br><a class="clsPreview" href="#idLjscod">Code</a>
     <br>(ljn.622):
-    <br><code>&gt; Object.getOwnPropertyNames(Array.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Array.prototype).sort()
     <br>[ 'concat', 'constructor', 'copyWithin', 'entries', 'every', 'fill', 'filter', 'find', 'findIndex', 'forEach', 'includes', 'indexOf', 'join', 'keys', 'lastIndexOf', 'length', 'map', 'pop', 'push', 'reduce', 'reduceRight', 'reverse', 'shift', 'slice', 'some', 'sort', 'splice', 'toLocaleString', 'toString', 'unshift' ]</code>
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Array.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Array.prototype).sort()
     <br>["concat", "constructor", "copyWithin", "entries", "every", "fill", "filter", "find", "findIndex", "forEach", "includes", "indexOf", "join", "keys", "lastIndexOf", "length", "map", "pop", "push", "reduce", "reduceRight", "reverse", "shift", "slice", "some", "sort", "splice", "toLocaleString", "toString", "unshift"]</code>
     <br>(Firefox.45):
-    <br><code>&gt; Object.getOwnPropertyNames(Array.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Array.prototype).sort()
     <br>["concat", "constructor", "copyWithin", "entries", "every", "fill", "filter", "find", "findIndex", "forEach", "includes", "indexOf", "join", "keys", "lastIndexOf", "length", "map", "pop", "push", "reduce", "reduceRight", "reverse", "shift", "slice", "some", "sort", "splice", "toLocaleString", "toSource", "toString", "unshift"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Array.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Array.prototype).sort()
     <br>["concat", "constructor", "copyWithin", "entries", "every", "fill", "filter", "find", "findIndex", "forEach", "indexOf", "join", "keys", "lastIndexOf", "length", "map", "pop", "push", "reduce", "reduceRight", "reverse", "shift", "slice", "some", "sort", "splice", "toLocaleString", "toString", "unshift", "values"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Array.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Array.prototype).sort()
     <br>["concat", "constructor", "every", "filter", "forEach", "indexOf", "join", "lastIndexOf", "length", "map", "pop", "push", "reduce", "reduceRight", "reverse", "shift", "slice", "some", "sort", "splice", "toLocaleString", "toString", "unshift"]</code>
     <a class="clsHide" href="#idLjsArraypmbrspc"></a></p>
   </section>
@@ -730,10 +730,10 @@
     <br><span class="clsQuote">The filter() method creates a new array with all elements that pass the test implemented by the provided function.</span>
     <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a>]
     <br>===
-    <br><code>&gt; ['a', false, 'b', undefined, 'c', null, NaN, 3].filter(Number)
+    <br><code>> ['a', false, 'b', undefined, 'c', null, NaN, 3].filter(Number)
     <br>&lt; [3]</code>
     <br>===
-    <br><code>&gt; Object.getOwnPropertyNames(Math).sort().filter(function(sM){return sM.match(/^[s-z]/)})
+    <br><code>> Object.getOwnPropertyNames(Math).sort().filter(function(sM){return sM.match(/^[s-z]/)})
     <br>&lt; [ 'sign', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc' ]</code>
     <a class="clsHide" href="#idLjsArraypfilterdsn"></a></p>
   <p id="idLjsArraypfilternam">Name::
@@ -830,11 +830,11 @@
     <br>}</code></span>
     <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf</a>]
     <br>===
-    <br><code>&gt; [1,2,3].indexOf(3)
+    <br><code>> [1,2,3].indexOf(3)
     <br>2
-    <br>&gt; [1,2,3].indexOf(4)
+    <br>> [1,2,3].indexOf(4)
     <br>-1
-    <br>&gt; [1,2,3].indexOf(0)
+    <br>> [1,2,3].indexOf(0)
     <br>-1</code>
     <a class="clsHide" href="#idLjsArraypindexOfdsn"></a></p>
   <p id="idLjsArraypindexOfnam">Name::
@@ -854,11 +854,11 @@
     <br>a.join('-'); // 'Wind-Rain-Fire'</code></span>
     <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join</a>]
     <br>===
-    <br><code>&gt; [1,2,3].join()
+    <br><code>> [1,2,3].join()
     <br>"1,2,3"
-    <br>&gt; [1,2,3].join(' ')
+    <br>> [1,2,3].join(' ')
     <br>"1 2 3"
-    <br>&gt; [1,2,3].join(' and ')
+    <br>> [1,2,3].join(' and ')
     <br>"1 and 2 and 3"</code>
     <a class="clsHide" href="#idLjsArraypjoindsn"></a></p>
   <p id="idLjsArraypjoinnam">Name::
@@ -909,7 +909,7 @@
   <h4 id="idLjsArrayplengthH4">ljs'Array.prototype.length-number
     <a class="clsHide" href="#idLjsArrayplengthH4"></a></h4>
   <p id="idLjsArrayplengthdsn">Description::
-    <br><code>&gt; ['a', 'b', 'c'].length
+    <br><code>> ['a', 'b', 'c'].length
     <br>3</code>
     <br>===
     <br><span class="clsQuote">The maximum length until "it gets sluggish" is totally dependent on your target machine and your actual code, so you'll need to test on that (those) platform(s) to see what is acceptable.
@@ -1067,9 +1067,9 @@
     <br>[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice</a>]
     <br>===
     <br><code>//create arrays from array-like
-    <br>&gt; Array.prototype.slice.call({0:'a',1:'b',2:'c',length:3})
+    <br>> Array.prototype.slice.call({0:'a',1:'b',2:'c',length:3})
     <br>["a", "b", "c"]
-    <br>&gt; Array.prototype.slice.call({0:'a',1:'b',2:'c'})
+    <br>> Array.prototype.slice.call({0:'a',1:'b',2:'c'})
     <br>[]</code>
     <a class="clsHide" href="#idLjsArraypslicedsn"></a></p>
   <p id="idLjsArraypslicenam">Name::
@@ -1252,19 +1252,19 @@
     <a class="clsHide" href="#idLjsBooleanpnam"></a></p>
   <p id="idLjsBooleanpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(ljn.630):
-    <br><code>&gt; Object.getOwnPropertyNames(Boolean.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Boolean.prototype).sort()
     <br>[ 'constructor', 'toString', 'valueOf' ]</code>
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Boolean.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Boolean.prototype).sort()
     <br>["constructor", "toString", "valueOf"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Boolean.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Boolean.prototype).sort()
     <br>["constructor", "toSource", "toString", "valueOf"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Boolean.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Boolean.prototype).sort()
     <br>["constructor", "toString", "valueOf"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Boolean.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Boolean.prototype).sort()
     <br>["constructor", "toString", "valueOf"]</code>
     <a class="clsHide" href="#idLjsBooleanpmbr"></a></p>
   </section>
@@ -1444,16 +1444,16 @@
     <a class="clsHide" href="#idLjsFunctionpnam"></a></p>
   <p id="idLjsFunctionpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br><a class="clsPreview" href="#idLjscod">Code</a> (Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Function.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Function.prototype).sort()
     <br>["apply", "arguments", "bind", "call", "caller", "constructor", "length", "name", "toString"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Function.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Function.prototype).sort()
     <br>["apply", "arguments", "bind", "call", "caller", "constructor", "isGenerator", "length", "name", "toSource", "toString"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Function.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Function.prototype).sort()
     <br>["apply", "arguments", "bind", "call", "caller", "constructor", "length", "name", "toString"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Function.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Function.prototype).sort()
     <br>["apply", "bind", "call", "constructor", "length", "name", "toString"]</code>
     <a class="clsHide" href="#idLjsFunctionpmbr"></a></p>
   <p id="idLjsFunctionpSpc">Specific::
@@ -1470,9 +1470,9 @@
     <a class="clsHide" href="#idLjsFunctionH3"></a></h3>
   <p id="idLjsFunctiondsn">Description::
     <br><code>Function</code> is <a class="clsPreview" href="#idLjsfCsr">the-constructor</a>, of all <a class="clsPreview" href="#idLjsf">functions</a>:
-    <br><code>&gt; var f = function(){};
+    <br><code>> var f = function(){};
     <br>undefined
-    <br>&gt; f.constructor
+    <br>> f.constructor
     <br>function Function() { [native code] }</code>
     <a class="clsHide" href="#idLjsFunctiondsn"></a></p>
   <p id="idLjsFunctionnam">Name::
@@ -1492,16 +1492,16 @@
     <a class="clsHide" href="#idLjsFunctionnam"></a></p>
   <p id="idLjsFunctionmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br><a class="clsPreview" href="#idLjscod">Code</a> (Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Function).sort()
+    <br><code>> Object.getOwnPropertyNames(Function).sort()
     <br>[]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Function).sort()
+    <br><code>> Object.getOwnPropertyNames(Function).sort()
     <br>[]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Function).sort()
+    <br><code>> Object.getOwnPropertyNames(Function).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Function).sort()
+    <br><code>> Object.getOwnPropertyNames(Function).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjsFunctionmbr"></a></p>
   </section>
@@ -1727,10 +1727,10 @@
   <h2 id="idLjsmH2">ljsalgo'sut.MODULE (ljsm)
     <a class="clsHide" href="#idLjsmH2"></a></h2>
   <p id="idLjsmdsn">Description::
-    <br>Module is <a class="clsPreview" href="#idLjssut">a-semantic-unit</a> which 
+    <br>Module is <a class="clsPreview" href="#idLjssut">a-semantic-unit</a> which
     <br>- can-be PART OF other modules and
     <br>- can-has AS PART other modules.
-    <br>Like 'the-prototype-inheritance' mechanism which manages the GENERIC-SPECIFIC relations of the-semantic-units of an-API, modules is the-mechanism needed to manage the WHOLE-PART relations of the-semantic-units. 
+    <br>Like 'the-prototype-inheritance' mechanism which manages the GENERIC-SPECIFIC relations of the-semantic-units of an-API, modules is the-mechanism needed to manage the WHOLE-PART relations of the-semantic-units.
     <br>Today only <a class="clsPreview" href="#idLjn">ljn</a> supports modules.
     <a class="clsHide" href="#idLjsmdsn"></a></p>
   <p id="idLjsmnam">Name::
@@ -1799,19 +1799,19 @@
     <a class="clsHide" href="#idLjsNumberpnam"></a></p>
   <p id="idLjsNumberpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Node.6.3.0):
-    <br><code>&gt; Object.getOwnPropertyNames(Number.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Number.prototype).sort()
     <br>[ 'constructor', 'toExponential', 'toFixed', 'toLocaleString', 'toPrecision', 'toString', 'valueOf' ]</code>
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Number.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Number.prototype).sort()
     <br>["constructor", "toExponential", "toFixed", "toLocaleString", "toPrecision", "toString", "valueOf"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Number.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Number.prototype).sort()
     <br>["constructor", "toExponential", "toFixed", "toLocaleString", "toPrecision", "toSource", "toString", "valueOf"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Number.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Number.prototype).sort()
     <br>[constructor", "toExponential", "toFixed", "toLocaleString", "toPrecision", "toString", "valueOf"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Number.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Number.prototype).sort()
     <br>["constructor", "toExponential", "toFixed", "toLocaleString", "toPrecision", "toString", "valueOf"]</code>
     <a class="clsHide" href="#idLjsNumberpmbr"></a></p>
   </section>
@@ -2100,16 +2100,16 @@
     <a class="clsHide" href="#idLjsRegExppnam"></a></p>
   <p id="idLjsRegExppmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(RegExp.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(RegExp.prototype).sort()
     <br>["compile", "constructor", "exec", "flags", "global", "ignoreCase", "multiline", "source", "sticky", "test", "toString", "unicode"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(RegExp.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(RegExp.prototype).sort()
     <br>["compile", "constructor", "exec", "flags", "global", "ignoreCase", "lastIndex", "multiline", "source", "sticky", "test", "toSource", "toString", "unicode"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(RegExp.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(RegExp.prototype).sort()
     <br>["compile", "constructor", "exec", "global", "ignoreCase", "lastIndex", "multiline", "options", "source", "test", "toString", "unicode"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(RegExp.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(RegExp.prototype).sort()
     <br>["compile", "constructor", "exec", "global", "ignoreCase", "lastIndex", "multiline", "source", "test", "toString"]</code>
     <a class="clsHide" href="#idLjsRegExppmbr"></a></p>
   </section>
@@ -2154,19 +2154,19 @@
     <a class="clsHide" href="#idLjsStringpnam"></a></p>
   <p id="idLjsStringpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Node.6.3.0):
-    <br><code>&gt; Object.getOwnPropertyNames(String.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(String.prototype).sort()
     <br>[ 'anchor', 'big', 'blink', 'bold', 'charAt', 'charCodeAt', 'codePointAt', 'concat', 'constructor', 'endsWith', 'fixed', 'fontcolor', 'fontsize', 'includes', 'indexOf', 'italics', 'lastIndexOf', 'length', 'link', 'localeCompare', 'match', 'normalize', 'repeat', 'replace', 'search', 'slice', 'small', 'split', 'startsWith', 'strike', 'sub', 'substr', 'substring', 'sup', 'toLocaleLowerCase', 'toLocaleUpperCase', 'toLowerCase', 'toString', 'toUpperCase', 'trim', 'trimLeft', 'trimRight', 'valueOf' ]</code>
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(String.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(String.prototype).sort()
     <br>["anchor", "big", "blink", "bold", "charAt", "charCodeAt", "codePointAt", "concat", "constructor", "endsWith", "fixed", "fontcolor", "fontsize", "includes", "indexOf", "italics", "lastIndexOf", "length", "link", "localeCompare", "match", "normalize", "repeat", "replace", "search", "slice", "small", "split", "startsWith", "strike", "sub", "substr", "substring", "sup", "toLocaleLowerCase", "toLocaleUpperCase", "toLowerCase", "toString", "toUpperCase", "trim", "trimLeft", "trimRight", "valueOf"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(String.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(String.prototype).sort()
     <br>["anchor", "big", "blink", "bold", "charAt", "charCodeAt", "codePointAt", "concat", "constructor", "contains", "endsWith", "fixed", "fontcolor", "fontsize", "includes", "indexOf", "italics", "lastIndexOf", "length", "link", "localeCompare", "match", "normalize", "repeat", "replace", "search", "slice", "small", "split", "startsWith", "strike", "sub", "substr", "substring", "sup", "toLocaleLowerCase", "toLocaleUpperCase", "toLowerCase", "toSource", "toString", "toUpperCase", "trim", "trimLeft", "trimRight", "valueOf"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(String.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(String.prototype).sort()
     <br>["anchor", "big", "blink", "bold", "charAt", "charCodeAt", "codePointAt", "concat", "constructor", "endsWith", "fixed", "fontcolor", "fontsize", "includes", "indexOf", "italics", "lastIndexOf", "length", "link", "localeCompare", "match", "normalize", "repeat", "replace", "search", "slice", "small", "split", "startsWith", "strike", "sub", "substr", "substring", "sup", "toLocaleLowerCase", "toLocaleUpperCase", "toLowerCase", "toString", "toUpperCase", "trim", "trimLeft", "trimRight", "valueOf"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(String.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(String.prototype).sort()
     <br>["anchor", "big", "blink", "bold", "charAt", "charCodeAt", "concat", "constructor", "fixed", "fontcolor", "fontsize", "indexOf", "italics", "lastIndexOf", "length", "link", "localeCompare", "match", "replace", "search", "slice", "small", "split", "strike", "sub", "substr", "substring", "sup", "toLocaleLowerCase", "toLocaleUpperCase", "toLowerCase", "toString", "toUpperCase", "trim", "trimLeft", "trimRight", "valueOf"]</code>
     <a class="clsHide" href="#idLjsStringpmbr"></a></p>
   </section>
@@ -2466,19 +2466,19 @@
     <a class="clsHide" href="#idLjsmgognc"></a></p>
   <p id="idLjsmgombr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(ljn.6-3-1)
-    <br><code>&gt; Object.getOwnPropertyNames(Object.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Object.prototype).sort()
     <br>[ '__defineGetter__', '__defineSetter__', '__lookupGetter__', '__lookupSetter__', '__proto__', 'constructor', 'hasOwnProperty', 'isPrototypeOf', 'propertyIsEnumerable', 'toLocaleString', 'toString', 'valueOf' ]</code>
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Object.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Object.prototype).sort()
     <br>["__defineGetter__", "__defineSetter__", "__lookupGetter__", "__lookupSetter__", "__proto__", "constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Object.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Object.prototype).sort()
     <br>["__defineGetter__", "__defineSetter__", "__lookupGetter__", "__lookupSetter__", "__proto__", "constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toSource", "toString", "unwatch", "valueOf", "watch"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Object.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Object.prototype).sort()
     <br>["__defineGetter__", "__defineSetter__", "__lookupGetter__", "__lookupSetter__", "__proto__", "constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Object.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Object.prototype).sort()
     <br>["__defineGetter__", "__defineSetter__", "__lookupGetter__", "__lookupSetter__", "constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]</code>
     <a class="clsHide" href="#idLjsmgombr"></a></p>
   <p id="idLjsmgoSpc">Specific::
@@ -2508,16 +2508,16 @@
     <a class="clsHide" href="#idLjsObjectgnc"></a></p>
   <p id="idLjsObjectmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Object).sort()
+    <br><code>> Object.getOwnPropertyNames(Object).sort()
     <br>["arguments", "assign", "caller", "create", "defineProperties", "defineProperty", "freeze", "getOwnPropertyDescriptor", "getOwnPropertyNames", "getOwnPropertySymbols", "getPrototypeOf", "is", "isExtensible", "isFrozen", "isSealed", "keys", "length", "name", "preventExtensions", "prototype", "seal", "setPrototypeOf"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Object).sort()
+    <br><code>> Object.getOwnPropertyNames(Object).sort()
     <br>[]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Object).sort()
+    <br><code>> Object.getOwnPropertyNames(Object).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Object).sort()
+    <br><code>> Object.getOwnPropertyNames(Object).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjsObjectmbr"></a></p>
   <p id="idLjsObjectSpc">Specific::
@@ -2569,9 +2569,9 @@
     <br>* cpt.ljs'Object.getOwnPropertyNames(),
     <a class="clsHide" href="#idLjsObjectGetOwnPropertyNamesnam"></a></p>
   <p id="idLjsObjectGetOwnPropertyNamescod">Code:
-    <br>&gt; Object.getOwnPropertyNames(obj).sort() // to sort the-members.
-    <br>&gt; Object.getOwnPropertyNames(obj).join(', ') // to display ALL the-members.
-    <br>&gt; Object.getOwnPropertyNames(obj).filter(function(sM){return sM.match(/^[a-e]/)}) // to display the-members that begin with a-to-e.
+    <br>> Object.getOwnPropertyNames(obj).sort() // to sort the-members.
+    <br>> Object.getOwnPropertyNames(obj).join(', ') // to display ALL the-members.
+    <br>> Object.getOwnPropertyNames(obj).filter(function(sM){return sM.match(/^[a-e]/)}) // to display the-members that begin with a-to-e.
     <a class="clsHide" href="#idLjsObjectGetOwnPropertyNamescod"></a></p>
   </section>
   </section>
@@ -2665,8 +2665,8 @@
     <a class="clsHide" href="#idLjsapiNtvH2"></a></h2>
   <p id="idLjsapiNtvdsn">Descripton:
     <br>Native-API is <a class="clsPreview" href="#idLjsapi">the-API</a> with only and all <a class="clsPreview" href="#idLjssutCsmNo">the-native-semantic-units</a>.
-    <br>It has 
-    <br>- <a class="clsPreview" href="#idLjsapiwpt">a-whole-part-tree-structure</a> 
+    <br>It has
+    <br>- <a class="clsPreview" href="#idLjsapiwpt">a-whole-part-tree-structure</a>
     <br>- <a class="clsPreview" href="#idLjsapigst">a-generic-specific-tree-structure</a> and
     <br>- a-directory-tree-structure.
     <a class="clsHide" href="#idLjsapiNtvdsn"></a></p>
@@ -2731,7 +2731,7 @@
   <h3 id="idLjsoJSONH3">ljs'JSON-object
     <a class="clsHide" href="#idLjsoJSONH3"></a></h3>
   <p id="idLjsoJSONdsn">Description::
-    <br>The-javascript-JSON-object contains 2 functions that map javascript-semantic-units with JSON-language-semantic-units, eg {a:1, b:2} &lt;==&gt; {"a":1,"b":2}
+    <br>The-javascript-JSON-object contains 2 functions that map javascript-semantic-units with JSON-language-semantic-units, eg {a:1, b:2} &lt;==> {"a":1,"b":2}
     <a class="clsHide" href="#idLjsoJSONdsn"></a></p>
   <p id="idLjsoJSONnam">Name::
     <br>* cpt.ljs'JSON,
@@ -2745,9 +2745,9 @@
     <a class="clsHide" href="#idLjsoJSONwhl"></a></p>
   <p id="idLjsoJSONApi">ljsJSON'API:
     <br>(Chrome.55)
-    <br><code>&gt; Object.getOwnPropertyNames(JSON).sort().join(', ')
+    <br><code>> Object.getOwnPropertyNames(JSON).sort().join(', ')
     <br>"parse, stringify"
-    <br>&gt; Object.getOwnPropertyNames(JSON.__proto__).sort().join(', ')
+    <br>> Object.getOwnPropertyNames(JSON.__proto__).sort().join(', ')
     <br>"__defineGetter__, __defineSetter__, __lookupGetter__, __lookupSetter__, __proto__, constructor, hasOwnProperty, isPrototypeOf, propertyIsEnumerable, toLocaleString, toString, valueOf"</code>
     <a class="clsHide" href="#idLjsoJSONApi"></a></p>
 
@@ -2758,12 +2758,12 @@
     <br>The-JSON.parse()-function has as INPUT a-string that represents a-JSON-language-semantic-unit and OUTPUT the-javascript-semantic-unit that corresponds to that of JSON-language.
     <a class="clsHide" href="#idLjsoJSONParsedsn"></a></p>
   <p id="idLjsoJSONParsecod">Code:
-    <br><code>&gt; var a = JSON.parse('[1,2]') //undefined
-    <br>&gt; a //[1, 2]
-    <br>&gt; var n = JSON.parse('2') //undefined
-    <br>&gt; n //2
-    <br>&gt; var o = JSON.parse('{"a":1,"b":2}') //undefined
-    <br>&gt; o //Object {a: 1, b: 2}</code>
+    <br><code>> var a = JSON.parse('[1,2]') //undefined
+    <br>> a //[1, 2]
+    <br>> var n = JSON.parse('2') //undefined
+    <br>> n //2
+    <br>> var o = JSON.parse('{"a":1,"b":2}') //undefined
+    <br>> o //Object {a: 1, b: 2}</code>
     <a class="clsHide" href="#idLjsoJSONParsecod"></a></p>
   </section>
 
@@ -2774,7 +2774,7 @@
     <br>The-JSON.stringify()-function has as INPUT a-javascript-semantic-unit and OUTPUT a-string that corresponds to similar JSON-language-semantic-unit.
     <a class="clsHide" href="#idLjsoJSONStringifydsn"></a></p>
   <p id="idLjsoJSONStringifycod">Code:
-    <br><code>&gt; JSON.stringify({a:1, b:2}) //"{"a":1,"b":2}"</code>
+    <br><code>> JSON.stringify({a:1, b:2}) //"{"a":1,"b":2}"</code>
     <a class="clsHide" href="#idLjsoJSONStringifycod"></a></p>
   </section>
   </section>
@@ -2796,13 +2796,13 @@
     <a class="clsHide" href="#idLjsoMathwhl"></a></p>
   <p id="idLjsoMathmbr">ljsMath'Member::
     <br>(ljn.6-2-2)
-    <br><code>&gt; Object.getOwnPropertyNames(Math).sort()
+    <br><code>> Object.getOwnPropertyNames(Math).sort()
     <br>[ 'E', 'LN10', 'LN2', 'LOG10E', 'LOG2E', 'PI', 'SQRT1_2', 'SQRT2', 'abs', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'clz32', 'cos', 'cosh', 'exp', 'expm1', 'floor', 'fround', 'hypot', 'imul', 'log', 'log10', 'log1p', 'log2', 'max', 'min', 'pow', 'random', 'round', 'sign', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc' ]</code>
     <br>(Firefox.47)
-    <br><code>&gt; Object.getOwnPropertyNames(Math).sort()
+    <br><code>> Object.getOwnPropertyNames(Math).sort()
     <br>[ 'E', 'LN10', 'LN2', 'LOG10E', 'LOG2E', 'PI', 'SQRT1_2', 'SQRT2', 'abs', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'clz32', 'cos', 'cosh', 'exp', 'expm1', 'floor', 'fround', 'hypot', 'imul', 'log', 'log10', 'log1p', 'log2', 'max', 'min', 'pow', 'random', 'round', 'sign', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'toSource', 'trunc' ]</code>
     <br>(Edge.25)
-    <br><code>&gt; Object.getOwnPropertyNames(Math).sort()
+    <br><code>> Object.getOwnPropertyNames(Math).sort()
     <br>[ 'E', 'LN10', 'LN2', 'LOG10E', 'LOG2E', 'PI', 'SQRT1_2', 'SQRT2', 'abs', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'clz32', 'cos', 'cosh', 'exp', 'expm1', 'floor', 'fround', 'hypot', 'imul', 'log', 'log10', 'log1p', 'log2', 'max', 'min', 'pow', 'random', 'round', 'sign', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc' ]</code>
     <a class="clsHide" href="#idLjsoMathmbr"></a></p>
   </section>
@@ -2859,7 +2859,7 @@
     <br>* cpt.ljs'decodeURI-function,
     <a class="clsHide" href="#idLjsfDecodeURInam"></a></p>
   <p id="idLjsfDecodeURIcod">Code.ljs:
-    <br><code>&gt; decodeURI('https://el.wikipedia.org/wiki/
+    <br><code>> decodeURI('https://el.wikipedia.org/wiki/
     <br>%CE%91%CE%BB%CE%AD%CE%BA%CE%BF%CF%82_%CE%86%CF%87%CE%BF%CE%BB%CE%BF%CF%82')
     <br>&lt; "https://el.wikipedia.org/wiki/Αλέκος_Άχολος"</code>
     <a class="clsHide" href="#idLjsfDecodeURIcod"></a></p>
@@ -5737,11 +5737,11 @@
   <p id="idLjblbradddsn">Description::
     <br>To add <a class="clsPreview" href="#idLjslbr">a-library</a> in your code, to use its <a class="clsPreview" href="#idLjssut">semantic-units</a> (its API):
     <br>1. Use the-script HML-element to add the-javascript file|s:
-    <br><code>&lt;script src="location-of-file/file.js"&gt;&lt;/script&gt;</code>
+    <br><code>&lt;script src="location-of-file/file.js">&lt;/script></code>
     <br>Then all the-semantic-units of the-library were-added in <a class="clsPreview" href="#idLjbmwo">the-ljb-most-whole-object (global)</a>.
     <br>Because the-library's-API is-added in <a class="clsPreview" href="#idLjsmwo">the-global-object (window)</a>, it is a good practice, to store <a class="clsPreview" href="#idLjssutCsm">the-custom-semantic-units</a> of the-library as part of ONE semantic-unit (usually object).
     <br>2. Use the-link HML-element to add the-CSS file|s, if present:
-    <br><code>&lt;link rel="stylesheet" href="location-of-file/file.css" /&gt;</code>
+    <br><code>&lt;link rel="stylesheet" href="location-of-file/file.css" /></code>
     <a class="clsHide" href="#idLjblbradddsn"></a></p>
   </section>
 
@@ -5819,34 +5819,94 @@
     <a class="clsHide" href="#idLjbpgmexcnam"></a></p>
   </section>
 
-  <section id="idLjbalgHW">
-  <h3 id="idLjbalgHWH3">ljbalgo.Hello-World!
-    <a class="clsHide" href="#idLjbalgHWH3"></a></h3>
-  <div id="idLjbalgHWdsn">
+  <section id="idLjbpgmHW">
+  <h3 id="idLjbpgmHWH3">ljbpgm.Hello-World!
+    <a class="clsHide" href="#idLjbpgmHWH3"></a></h3>
+  <div id="idLjbpgmHWdsn">
     <p>Description::
     <br>This is the classic simplest <a class="clsPreview" href="#idLjblpgm">program</a> that displays the-text 'Hello World'.
     <br>You can-open it from <a href="filMcsLjs.files/index.html">this link</a>.
     </p>
     <pre><code>
-    <a class="clsPreview" href="#idLjscod">Code</a>:
-      &lt;!DOCTYPE html&gt;
-      &lt;html&gt;
-        &lt;head&gt;
-          &lt;title&gt;ljbpgm.Hello_World&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-          &lt;script&gt;
-            alert('Hello World!');
-          &lt;/script&gt;
-        &lt;/body&gt;
-      &lt;/html&gt;
+    &lt;!DOCTYPE html>
+    &lt;html>
+      &lt;head>
+        &lt;title>ljbpgm.Hello_World&lt;/title>
+      &lt;/head>
+      &lt;body>
+        &lt;script>
+          alert('Hello World!');
+        &lt;/script>
+      &lt;/body>
+    &lt;/html>
     </code></pre>
-    <a class="clsHide" href="#idLjbalgHWdsn"></a></div>
-  <p id="idLjbalgHWnam">Name::
+    <a class="clsHide" href="#idLjbpgmHWdsn"></a></div>
+  <p id="idLjbpgmHWnam">Name::
     <br>* cpt.ljb'program.Hello-World!,
+    <br>* cpt.ljbalgo.Hello-World!,
     <br>* cpt.ljbprogram.Hello-World!,
     <br>* cpt.ljbpgm.Hello-World!,
-    <a class="clsHide" href="#idLjbalgHWnam"></a></p>
+    <a class="clsHide" href="#idLjbpgmHWnam"></a></p>
+  </section>
+
+  <section id="idLjbpgmHW2">
+  <h3 id="idLjbpgmHW2H3">ljbpgm.Hello-World!-2
+    <a class="clsHide" href="#idLjbpgmHW2H3"></a></h3>
+  <div id="idLjbpgmHW2dsn">
+    <p>Description::
+    <br>A real classic ljb-program contains at least 3 files:
+    <br>a) An-html-file with the-structure and info of the-webpage we see in <a class="clsPreview" href="#idLjbbsr">the-browser</a>.
+    <br>b) A-css-file with the-style of the-page and
+    <br>c) An-ljb-file with the-processing of the-page's info.
+    <br>NOTE: the-ljb-file must-be at the-end of the-html-file in-order-to use the-elements of the-page. ALSO it is important to export ONE object into <a class="clsPreview" href="#idLjbmwo">the-most-whole-object</a>.
+    </p>
+    <pre><code>
+//the-html-file
+&lt;html>
+  &lt;head>
+    &lt;title>Example HW2&lt;/title>
+    &lt;link rel="stylesheet" href="ex.css">
+  &lt;/head>
+  &lt;body>
+    &lt;button id="idBtn">Click me&lt;/button>
+    &lt;script src="ex.js">&lt;/script>
+  &lt;/body>
+&lt;/html>
+
+//the-css-file: ex.css
+button {
+  background-color: green;
+  color: white;
+}
+
+//the-ljb-file: ex.js
+var oOut = (function () {
+  var oOut = {
+    // semantic-units accessed anywhere in the-program
+    oHTMLButtonElement: document.getElementById("idBtn")
+  }
+
+  oOut.fStart = function () {
+    oOut.oHTMLButtonElement.addEventListener('click', function (oEvtIn) {
+      alert('Hello World!');
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    //the executed startpoint of the-program
+    oOut.fStart();
+  });
+
+  return oOut;
+})();
+    </code></pre>
+    <a class="clsHide" href="#idLjbpgmHW2dsn"></a></div>
+  <p id="idLjbpgmHW2nam">Name::
+    <br>* cpt.ljb'program.Hello-World!-2,
+    <br>* cpt.ljbalgo.Hello-World!-2,
+    <br>* cpt.ljbprogram.Hello-World!-2,
+    <br>* cpt.ljbpgm.Hello-World!-2,
+    <a class="clsHide" href="#idLjbpgmHW2nam"></a></p>
   </section>
   </section>
 
@@ -5923,13 +5983,13 @@
     <a class="clsHide" href="#idLjbWindowgnc"></a></p>
   <p id="idLjbWindowmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Window).sort()
+    <br><code>> Object.getOwnPropertyNames(Window).sort()
     <br>["PERSISTENT", "TEMPORARY", "arguments", "caller", "length", "name", "prototype"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Window).sort()
+    <br><code>> Object.getOwnPropertyNames(Window).sort()
     <br>["length", "name", "prototype"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Window).sort()
+    <br><code>> Object.getOwnPropertyNames(Window).sort()
     <br>[ "arguments", "caller", "name", "prototype" ]</code>
     <a class="clsHide" href="#idLjbWindowmbr"></a></p>
   </section>
@@ -6357,16 +6417,16 @@
     <a class="clsHide" href="#idLjbEventpgnc"></a></p>
   <p id="idLjbEventpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Event.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Event.prototype).sort()
     <br>["AT_TARGET", "BLUR", "BUBBLING_PHASE", "CAPTURING_PHASE", "CHANGE", "CLICK", "DBLCLICK", "DRAGDROP", "FOCUS", "KEYDOWN", "KEYPRESS", "KEYUP", "MOUSEDOWN", "MOUSEDRAG", "MOUSEMOVE", "MOUSEOUT", "MOUSEOVER", "MOUSEUP", "NONE", "SELECT", "bubbles", "cancelBubble", "cancelable", "constructor", "currentTarget", "defaultPrevented", "eventPhase", "initEvent", "path", "preventDefault", "returnValue", "srcElement", "stopImmediatePropagation", "stopPropagation", "target", "timeStamp", "type"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Event.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Event.prototype).sort()
     <br>[]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Event.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Event.prototype).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Event.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Event.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbEventpmbr"></a></p>
   </section>
@@ -6394,16 +6454,16 @@
     <a class="clsHide" href="#idLjbEventgnc"></a></p>
   <p id="idLjbEventmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Event).sort()
+    <br><code>> Object.getOwnPropertyNames(Event).sort()
     <br>["AT_TARGET", "BLUR", "BUBBLING_PHASE", "CAPTURING_PHASE", "CHANGE", "CLICK", "DBLCLICK", "DRAGDROP", "FOCUS", "KEYDOWN", "KEYPRESS", "KEYUP", "MOUSEDOWN", "MOUSEDRAG", "MOUSEMOVE", "MOUSEOUT", "MOUSEOVER", "MOUSEUP", "NONE", "SELECT", "arguments", "caller", "length", "name", "prototype"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Event).sort()
+    <br><code>> Object.getOwnPropertyNames(Event).sort()
     <br>["ALT_MASK", "AT_TARGET", "BUBBLING_PHASE", "CAPTURING_PHASE", "CONTROL_MASK", "META_MASK", "NONE", "SHIFT_MASK", "length", "name", "prototype"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Event).sort()
+    <br><code>> Object.getOwnPropertyNames(Event).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Event).sort()
+    <br><code>> Object.getOwnPropertyNames(Event).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbEventmbr"></a></p>
   </section>
@@ -6428,16 +6488,16 @@
     <a class="clsHide" href="#idLjbEventTargetpgnc"></a></p>
   <p id="idLjbEventTargetpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(EventTarget.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(EventTarget.prototype).sort()
     <br>["addEventListener", "constructor", "dispatchEvent", "removeEventListener"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(EventTarget.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(EventTarget.prototype).sort()
     <br>["addEventListener", "constructor", "dispatchEvent", "removeEventListener"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(EventTarget.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(EventTarget.prototype).sort()
     <br>["addEventListener", "constructor", "dispatchEvent", "removeEventListener"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(EventTarget.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(EventTarget.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbEventTargetpmbr"></a></p>
   </section>
@@ -6465,13 +6525,13 @@
     <a class="clsHide" href="#idLjbEventTargetgnc"></a></p>
   <p id="idLjbEventTargetmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(EventTarget).sort()
+    <br><code>> Object.getOwnPropertyNames(EventTarget).sort()
     <br>["arguments", "caller", "length", "name", "prototype"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(EventTarget).sort()
+    <br><code>> Object.getOwnPropertyNames(EventTarget).sort()
     <br>["length", "name", "prototype"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(EventTarget).sort()
+    <br><code>> Object.getOwnPropertyNames(EventTarget).sort()
     <br>["arguments", "caller", "name", "prototype"]</code>
     <a class="clsHide" href="#idLjbEventTargetmbr"></a></p>
   <p id="idLjbEventTargetSpc">Specific::
@@ -6919,16 +6979,16 @@
     <a class="clsHide" href="#idLjbdocumentgnc"></a></p>
   <p id="idLjbdocumentmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(document).sort()
+    <br><code>> Object.getOwnPropertyNames(document).sort()
     <br>["location"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(document).sort()
+    <br><code>> Object.getOwnPropertyNames(document).sort()
     <br>["location"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(document).sort()
+    <br><code>> Object.getOwnPropertyNames(document).sort()
     <br>["__IE_DEVTOOLBAR_CONSOLE_EVAL_ERROR", "__IE_DEVTOOLBAR_CONSOLE_EVAL_ERRORCODE", "__IE_DEVTOOLBAR_CONSOLE_EVAL_RESULT, "closure_lm_199280", "closure_lm_736068", "f"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(document).sort()
+    <br><code>> Object.getOwnPropertyNames(document).sort()
     <br>["URL", "_html5shiv", "activeElement", "alinkColor", "all", "anchors", "applets", "attributes", "baseURI", "bgColor", "body", "characterSet", "charset", "childNodes", "compatMode", "constructor", "cookie", "defaultCharset", "defaultView", "designMode", "dir", "doctype", "documentElement", "documentURI", "domain", "embeds", "fgColor", "firstChild", "forms", "head", "height", "images", "implementation", "inputEncoding", "lastChild", "lastModified", "linkColor", "links", "localName", "location", "namespaceURI", "nextSibling", "nodeName", "nodeType", "nodeValue", "onabort", "onbeforecopy", "onbeforecut", "onbeforepaste", "onblur", "onchange", "onclick", "oncontextmenu", "oncopy", "oncut", "ondblclick", "ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "onerror", "onfocus", "oninput", "oninvalid", "onkeydown", "onkeypress", "onkeyup", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onmousewheel", "onpaste", "onreadystatechange", "onreset", "onscroll", "onsearch", "onselect", "onselectionchange", "onselectstart", "onsubmit", "onwebkitfullscreenchange", "ownerDocument", "parentElement", "parentNode", "plugins", "preferredStylesheetSet", "prefix", "previousSibling", "readyState", "referrer", "scripts", "selectedStylesheetSet", "styleSheets", "textContent", "title", "vlinkColor", "webkitCurrentFullScreenElement", "webkitFullScreenKeyboardInputAllowed", "webkitIsFullScreen", "width", "xmlEncoding", "xmlStandalone", "xmlVersion"]</code>
     <a class="clsHide" href="#idLjbdocumentmbr"></a></p>
   </section>
@@ -6957,16 +7017,16 @@
     <a class="clsHide" href="#idLjbHTMLDocumentpgnc"></a></p>
   <p id="idLjbHTMLDocumentpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
     <br>["alinkColor", "all", "bgColor", "captureEvents", "clear", "constructor", "fgColor", "linkColor", "releaseEvents", "vlinkColor"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
     <br>["alinkColor", "all", "anchors", "applets", "bgColor", "body", "captureEvents", "clear", "close", "constructor", "cookie", "designMode", "domain", "embeds", "execCommand", "fgColor", "forms", "getElementsByName", "getItems", "getSelection", "head", "images", "linkColor", "links", "open", "plugins", "queryCommandEnabled", "queryCommandIndeterm", "queryCommandState", "queryCommandSupported", "queryCommandValue", "releaseEvents", "scripts", "vlinkColor", "write", "writeln"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
     <br>["constructor"]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(HTMLDocument.prototype).sort()
     <br>["captureEvents", "clear", "close", "hasFocus", "open", "releaseEvents", "write", "writeln"]</code>
     <a class="clsHide" href="#idLjbdocumentmbr"></a></p>
   </section>
@@ -6992,16 +7052,16 @@
     <a class="clsHide" href="#idLjbDocumentpgnc"></a></p>
   <p id="idLjbDocumentpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Document.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Document.prototype).sort()
     <br>["URL", "activeElement", "adoptNode", "anchors", "applets", "body", "caretRangeFromPoint", "characterSet", "charset", "childElementCount", "children", "close", "compatMode", "constructor", "contentType", "cookie", "createAttribute", "createAttributeNS", "createCDATASection", "createComment", "createDocumentFragment", "createElement", "createElementNS", "createEvent", "createExpression", "createNSResolver", "createNodeIterator", "createProcessingInstruction", "createRange", "createTextNode", "createTreeWalker", "currentScript", "defaultView", "designMode", "dir", "doctype", "documentElement", "documentURI", "domain", "elementFromPoint", "elementsFromPoint", "embeds", "evaluate", "execCommand", "exitPointerLock", "firstElementChild", "fonts", "forms", "getElementById", "getElementsByClassName", "getElementsByName", "getElementsByTagName", "getElementsByTagNameNS", "getSelection", "hasFocus", "head", "hidden", "images", "implementation", "importNode", "inputEncoding", "lastElementChild", "lastModified", "links", "onabort", "onautocomplete", "onautocompleteerror", "onbeforecopy", "onbeforecut", "onbeforepaste", "onblur", "oncancel", "oncanplay", "oncanplaythrough", "onchange", "onclick", "onclose", "oncontextmenu", "oncopy", "oncuechange", "oncut", "ondblclick", "ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "ondurationchange", "onemptied", "onended", "onerror", "onfocus", "oninput", "oninvalid", "onkeydown", "onkeypress", "onkeyup", "onload", "onloadeddata", "onloadedmetadata", "onloadstart", "onmousedown", "onmouseenter", "onmouseleave", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onmousewheel", "onpaste", "onpause", "onplay", "onplaying", "onpointerlockchange", "onpointerlockerror", "onprogress", "onratechange", "onreadystatechange", "onreset", "onresize", "onscroll", "onsearch", "onseeked", "onseeking", "onselect", "onselectionchange", "onselectstart", "onshow", "onstalled", "onsubmit", "onsuspend", "ontimeupdate", "ontoggle", "onvolumechange", "onwaiting", "onwebkitfullscreenchange", "onwebkitfullscreenerror", "onwheel", "open", "origin", "plugins", "pointerLockElement", "preferredStylesheetSet", "queryCommandEnabled", "queryCommandIndeterm", "queryCommandState", "queryCommandSupported", "queryCommandValue", "querySelector", "querySelectorAll", "readyState", "referrer", "registerElement", "rootElement", "scripts", "scrollingElement", "selectedStylesheetSet", "styleSheets", "title", "visibilityState", "webkitCancelFullScreen", "webkitCurrentFullScreenElement", "webkitExitFullscreen", "webkitFullscreenElement", "webkitFullscreenEnabled", "webkitHidden", "webkitIsFullScreen", "webkitVisibilityState", "write", "writeln", "xmlEncoding", "xmlStandalone", "xmlVersion"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Document.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Document.prototype).sort()
     <br>["URL", "activeElement", "adoptNode", "caretPositionFromPoint", "characterSet", "charset", "childElementCount", "children", "compatMode", "constructor", "contentType", "createAttribute", "createAttributeNS", "createCDATASection", "createComment", "createDocumentFragment", "createElement", "createElementNS", "createEvent", "createExpression", "createNSResolver", "createNodeIterator", "createProcessingInstruction", "createRange", "createTextNode", "createTreeWalker", "currentScript", "defaultView", "dir", "doctype", "documentElement", "documentURI", "elementFromPoint", "elementsFromPoint", "enableStyleSheetsForSet", "evaluate", "firstElementChild", "fonts", "getElementById", "getElementsByClassName", "getElementsByTagName", "getElementsByTagNameNS", "hasFocus", "hidden", "implementation", "importNode", "inputEncoding", "lastElementChild", "lastModified", "lastStyleSheetSet", "mozCancelFullScreen", "mozExitPointerLock", "mozFullScreen", "mozFullScreenElement", "mozFullScreenEnabled", "mozHidden", "mozPointerLockElement", "mozSetImageElement", "mozVisibilityState", "onabort", "onafterscriptexecute", "onbeforescriptexecute", "onblur", "oncanplay", "oncanplaythrough", "onchange", "onclick", "oncontextmenu", "oncopy", "oncut", "ondblclick", "ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "ondurationchange", "onemptied", "onended", "onerror", "onfocus", "oninput", "oninvalid", "onkeydown", "onkeypress", "onkeyup", "onload", "onloadeddata", "onloadedmetadata", "onloadstart", "onmousedown", "onmouseenter", "onmouseleave", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onmozfullscreenchange", "onmozfullscreenerror", "onmozpointerlockchange", "onmozpointerlockerror", "onpaste", "onpause", "onplay", "onplaying", "onprogress", "onratechange", "onreadystatechange", "onreset", "onresize", "onscroll", "onseeked", "onseeking", "onselect", "onshow", "onstalled", "onsubmit", "onsuspend", "ontimeupdate", "onvolumechange", "onwaiting", "onwheel", "preferredStyleSheetSet", "querySelector", "querySelectorAll", "readyState", "referrer", "releaseCapture", "selectedStyleSheetSet", "styleSheetSets", "styleSheets", "title", "visibilityState"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Document.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Document.prototype).sort()
     <br>[190 members]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Document.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Document.prototype).sort()
     <br>["adoptNode", "caretRangeFromPoint", "createAttribute", "createAttributeNS", "createCDATASection", "createComment", "createDocumentFragment", "createElement", "createElementNS", "createEntityReference", "createEvent", "createExpression", "createNSResolver", "createNodeIterator", "createProcessingInstruction", "createRange", "createTextNode", "createTreeWalker", "elementFromPoint", "evaluate", "execCommand", "getCSSCanvasContext", "getElementById", "getElementsByClassName", "getElementsByName", "getElementsByTagName", "getElementsByTagNameNS", "getOverrideStyle", "getSelection", "importNode", "queryCommandEnabled", "queryCommandIndeterm", "queryCommandState", "queryCommandSupported", "queryCommandValue", "querySelector", "querySelectorAll", "webkitCancelFullScreen"]</code>
     <a class="clsHide" href="#idLjbdocumentmbr"></a></p>
   </section>
@@ -7026,16 +7086,16 @@
     <a class="clsHide" href="#idLjbNodepgnc"></a></p>
   <p id="idLjbNodepmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Node.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Node.prototype).sort()
     <br>["ATTRIBUTE_NODE", "CDATA_SECTION_NODE", "COMMENT_NODE", "DOCUMENT_FRAGMENT_NODE", "DOCUMENT_NODE", "DOCUMENT_POSITION_CONTAINED_BY", "DOCUMENT_POSITION_CONTAINS", "DOCUMENT_POSITION_DISCONNECTED", "DOCUMENT_POSITION_FOLLOWING", "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", "DOCUMENT_POSITION_PRECEDING", "DOCUMENT_TYPE_NODE", "ELEMENT_NODE", "ENTITY_NODE", "ENTITY_REFERENCE_NODE", "NOTATION_NODE", "PROCESSING_INSTRUCTION_NODE", "TEXT_NODE", "appendChild", "baseURI", "childNodes", "cloneNode", "compareDocumentPosition", "constructor", "contains", "firstChild", "hasChildNodes", "insertBefore", "isDefaultNamespace", "isEqualNode", "isSameNode", "lastChild", "lookupNamespaceURI", "lookupPrefix", "nextSibling", "nodeName", "nodeType", "nodeValue", "normalize", "ownerDocument", "parentElement", "parentNode", "previousSibling", "removeChild", "replaceChild", "textContent"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Node.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Node.prototype).sort()
     <br>["ATTRIBUTE_NODE", "CDATA_SECTION_NODE", "COMMENT_NODE", "DOCUMENT_FRAGMENT_NODE", "DOCUMENT_NODE", "DOCUMENT_POSITION_CONTAINED_BY", "DOCUMENT_POSITION_CONTAINS", "DOCUMENT_POSITION_DISCONNECTED", "DOCUMENT_POSITION_FOLLOWING", "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", "DOCUMENT_POSITION_PRECEDING", "DOCUMENT_TYPE_NODE", "ELEMENT_NODE", "ENTITY_NODE", "ENTITY_REFERENCE_NODE", "NOTATION_NODE", "PROCESSING_INSTRUCTION_NODE", "TEXT_NODE", "appendChild", "baseURI", "childNodes", "cloneNode", "compareDocumentPosition", "constructor", "contains", "firstChild", "hasChildNodes", "insertBefore", "isDefaultNamespace", "isEqualNode", "lastChild", "localName", "lookupNamespaceURI", "lookupPrefix", "namespaceURI", "nextSibling", "nodeName", "nodeType", "nodeValue", "normalize", "ownerDocument", "parentElement", "parentNode", "prefix", "previousSibling", "removeChild", "replaceChild", "textContent"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Node.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Node.prototype).sort()
     <br>[51 members]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Node.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Node.prototype).sort()
     <br>["adoptNode", "caretRangeFromPoint", "createAttribute", "createAttributeNS", "createCDATASection", "createComment", "createDocumentFragment", "createElement", "createElementNS", "createEntityReference", "createEvent", "createExpression", "createNSResolver", "createNodeIterator", "createProcessingInstruction", "createRange", "createTextNode", "createTreeWalker", "elementFromPoint", "evaluate", "execCommand", "getCSSCanvasContext", "getElementById", "getElementsByClassName", "getElementsByName", "getElementsByTagName", "getElementsByTagNameNS", "getOverrideStyle", "getSelection", "importNode", "queryCommandEnabled", "queryCommandIndeterm", "queryCommandState", "queryCommandSupported", "queryCommandValue", "querySelector", "querySelectorAll", "webkitCancelFullScreen"]</code>
     <a class="clsHide" href="#idLjbNodepmbr"></a></p>
   <p id="idLjbNodepSpc">Specific::
@@ -7069,16 +7129,16 @@
     <a class="clsHide" href="#idLjbAttrpgnc"></a></p>
   <p id="idLjbAttrpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Attr.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Attr.prototype).sort()
     <br>["constructor", "localName", "name", "namespaceURI", "nodeValue", "ownerElement", "prefix", "specified", "textContent", "value"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Attr.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Attr.prototype).sort()
     <br>["constructor", "localName", "name", "namespaceURI", "ownerElement", "prefix", "specified", "value"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Attr.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Attr.prototype).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Attr.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Attr.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbAttrpmbr"></a></p>
   <p id="idLjbAttrpSpc">Specific::
@@ -7107,16 +7167,16 @@
     <a class="clsHide" href="#idLjbCharacterDatapgnc"></a></p>
   <p id="idLjbCharacterDatapmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(CharacterData.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(CharacterData.prototype).sort()
     <br>["appendData", "constructor", "data", "deleteData", "insertData", "length", "nextElementSibling", "previousElementSibling", "remove", "replaceData", "substringData"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(CharacterData.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(CharacterData.prototype).sort()
     <br>["appendData", "constructor", "data", "deleteData", "insertData", "length", "nextElementSibling", "previousElementSibling", "remove", "replaceData", "substringData"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(CharacterData.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(CharacterData.prototype).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(CharacterData.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(CharacterData.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbCharacterDatapmbr"></a></p>
   <p id="idLjbCharacterDatapSpc">Specific::
@@ -7147,16 +7207,16 @@
     <a class="clsHide" href="#idLjbDocumentFragmentpgnc"></a></p>
   <p id="idLjbDocumentFragmentpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
     <br>["childElementCount", "children", "constructor", "firstElementChild", "getElementById", "lastElementChild", "querySelector", "querySelectorAll"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
     <br>["childElementCount", "children", "constructor", "firstElementChild", "getElementById", "lastElementChild", "querySelector", "querySelectorAll"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(DocumentFragment.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbDocumentFragmentpmbr"></a></p>
   <p id="idLjbDocumentFragmentpSpc">Specific::
@@ -7185,16 +7245,16 @@
     <a class="clsHide" href="#idLjbDocumentTypepgnc"></a></p>
   <p id="idLjbDocumentTypepmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(DocumentType.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(DocumentType.prototype).sort()
     <br>["constructor", "name", "publicId", "remove", "systemId"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(DocumentType.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(DocumentType.prototype).sort()
     <br>["constructor", "name", "publicId", "remove", "systemId"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(DocumentType.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(DocumentType.prototype).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(DocumentType.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(DocumentType.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbDocumentTypepmbr"></a></p>
   <p id="idLjbDocumentTypepSpc">Specific::
@@ -7224,16 +7284,16 @@
     <a class="clsHide" href="#idLjbElementpgnc"></a></p>
   <p id="idLjbElementpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(Element.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Element.prototype).sort()
     <br>["animate", "attributes", "childElementCount", "children", "classList", "className", "clientHeight", "clientLeft", "clientTop", "clientWidth", "closest", "constructor", "createShadowRoot", "firstElementChild", "getAttribute", "getAttributeNS", "getAttributeNode", "getAttributeNodeNS", "getBoundingClientRect", "getClientRects", "getDestinationInsertionPoints", "getElementsByClassName", "getElementsByTagName", "getElementsByTagNameNS", "hasAttribute", "hasAttributeNS", "hasAttributes", "id", "innerHTML", "insertAdjacentElement", "insertAdjacentHTML", "insertAdjacentText", "lastElementChild", "localName", "matches", "namespaceURI", "nextElementSibling", "onbeforecopy", "onbeforecut", "onbeforepaste", "oncopy", "oncut", "onpaste", "onsearch", "onselectstart", "onwebkitfullscreenchange", "onwebkitfullscreenerror", "onwheel", "outerHTML", "prefix", "previousElementSibling", "querySelector", "querySelectorAll", "remove", "removeAttribute", "removeAttributeNS", "removeAttributeNode", "requestPointerLock", "scrollHeight", "scrollIntoView", "scrollIntoViewIfNeeded", "scrollLeft", "scrollTop", "scrollWidth", "setAttribute", "setAttributeNS", "setAttributeNode", "setAttributeNodeNS", "shadowRoot", "tagName", "webkitMatchesSelector", "webkitRequestFullScreen", "webkitRequestFullscreen"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(Element.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Element.prototype).sort()
     <br>["attributes", "childElementCount", "children", "classList", "className", "clientHeight", "clientLeft", "clientTop", "clientWidth", "closest", "constructor", "firstElementChild", "getAttribute", "getAttributeNS", "getAttributeNames", "getAttributeNode", "getAttributeNodeNS", "getBoundingClientRect", "getClientRects", "getElementsByClassName", "getElementsByTagName", "getElementsByTagNameNS", "hasAttribute", "hasAttributeNS", "hasAttributes", "id", "innerHTML", "insertAdjacentHTML", "lastElementChild", "matches", "mozMatchesSelector", "mozRequestFullScreen", "mozRequestPointerLock", "nextElementSibling", "onwheel", "outerHTML", "previousElementSibling", "querySelector", "querySelectorAll", "releaseCapture", "remove", "removeAttribute", "removeAttributeNS", "removeAttributeNode", "scroll", "scrollBy", "scrollHeight", "scrollIntoView", "scrollLeft", "scrollLeftMax", "scrollTo", "scrollTop", "scrollTopMax", "scrollWidth", "setAttribute", "setAttributeNS", "setAttributeNode", "setAttributeNodeNS", "setCapture", "tagName", "webkitMatchesSelector"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Element.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Element.prototype).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(Element.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Element.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbElementpmbr"></a></p>
   <p id="idLjbElementpSpc">Specific::
@@ -7263,16 +7323,16 @@
     <a class="clsHide" href="#idLjbHTMLElementpgnc"></a></p>
   <p id="idLjbHTMLElementpmbr"><a class="clsPreview" href="#idLjsombr">Member</a>:
     <br>(Chrome.50):
-    <br><code>&gt; Object.getOwnPropertyNames(HTMLElement.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(HTMLElement.prototype).sort()
     <br>["accessKey", "blur", "click", "constructor", "contentEditable", "dataset", "dir", "draggable", "focus", "hidden", "innerText", "isContentEditable", "lang", "offsetHeight", "offsetLeft", "offsetParent", "offsetTop", "offsetWidth", "onabort", "onautocomplete", "onautocompleteerror", "onblur", "oncancel", "oncanplay", "oncanplaythrough", "onchange", "onclick", "onclose", "oncontextmenu", "oncuechange", "ondblclick", "ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "ondurationchange", "onemptied", "onended", "onerror", "onfocus", "oninput", "oninvalid", "onkeydown", "onkeypress", "onkeyup", "onload", "onloadeddata", "onloadedmetadata", "onloadstart", "onmousedown", "onmouseenter", "onmouseleave", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onmousewheel", "onpause", "onplay", "onplaying", "onprogress", "onratechange", "onreset", "onresize", "onscroll", "onseeked", "onseeking", "onselect", "onshow", "onstalled", "onsubmit", "onsuspend", "ontimeupdate", "ontoggle", "onvolumechange", "onwaiting", "outerText", "spellcheck", "style", "tabIndex", "title", "translate", "webkitdropzone"]</code>
     <br>(Firefox.46):
-    <br><code>&gt; Object.getOwnPropertyNames(HTMLElement.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(HTMLElement.prototype).sort()
     <br>["accessKey", "accessKeyLabel", "blur", "click", "constructor", "contentEditable", "contextMenu", "dataset", "dir", "draggable", "focus", "hidden", "innerText", "isContentEditable", "itemId", "itemProp", "itemRef", "itemScope", "itemType", "itemValue", "lang", "offsetHeight", "offsetLeft", "offsetParent", "offsetTop", "offsetWidth", "onabort", "onblur", "oncanplay", "oncanplaythrough", "onchange", "onclick", "oncontextmenu", "oncopy", "oncut", "ondblclick", "ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "ondurationchange", "onemptied", "onended", "onerror", "onfocus", "oninput", "oninvalid", "onkeydown", "onkeypress", "onkeyup", "onload", "onloadeddata", "onloadedmetadata", "onloadstart", "onmousedown", "onmouseenter", "onmouseleave", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onmozfullscreenchange", "onmozfullscreenerror", "onmozpointerlockchange", "onmozpointerlockerror", "onpaste", "onpause", "onplay", "onplaying", "onprogress", "onratechange", "onreset", "onresize", "onscroll", "onseeked", "onseeking", "onselect", "onshow", "onstalled", "onsubmit", "onsuspend", "ontimeupdate", "onvolumechange", "onwaiting", "properties", "spellcheck", "style", "tabIndex", "title"]</code>
     <br>(Edge.20):
-    <br><code>&gt; Object.getOwnPropertyNames(Element.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(Element.prototype).sort()
     <br>[]</code>
     <br>(Safari.5-1-7):
-    <br><code>&gt; Object.getOwnPropertyNames(HTMLElement.prototype).sort()
+    <br><code>> Object.getOwnPropertyNames(HTMLElement.prototype).sort()
     <br>[]</code>
     <a class="clsHide" href="#idLjbHTMLElementpmbr"></a></p>
   <p id="idLjbHTMLElementpSpc">Specific::
@@ -7933,7 +7993,7 @@
     <br>For example, the http module contains functions specific to HTTP.
     <br>Node.js provides a few <strong>core modules</strong> out of the box to help you access files on the file system, create HTTP and TCP/UDP servers, and perform other useful functions.
     <br>Including a module is easy; simply call the require() function, like this:
-    <br>&gt; var http = require('http');
+    <br>> var http = require('http');
     <br>The require() function returns the reference to the specified module.
     <br>In the case of this code, a <span class="clsU">reference</span> to the http module is stored in the http <span class="clsU">variable</span>.</span>
     <br>[<a href="http://net.tutsplus.com/tutorials/javascript-ajax/node-js-for-beginners/">http://net.tutsplus.com/tutorials/javascript-ajax/node-js-for-beginners/</a>]
@@ -8147,11 +8207,11 @@
     <a class="clsHide" href="#idLjnmodule_memberH5"></a></h5>
   <p id="idLjnmodule_memberP1">Member::
     <br>// ljn.6-2-2
-    <br>&gt; Object.getOwnPropertyNames(module).sort()
+    <br>> Object.getOwnPropertyNames(module).sort()
     <br>[ '<a class="clsPreview" href="#idLjnmodule_children">children</a>', '<a class="clsPreview" href="#idLjnmodule_exports">exports</a>', '<a class="clsPreview" href="#idLjnmodule_filename">filename</a>', '<a class="clsPreview" href="#idLjnmodule_">id</a>', '<a class="clsPreview" href="#idLjnmodule_loaded">loaded</a>', '<a class="clsPreview" href="#idLjnmodule_parent">parent</a>', '<a class="clsPreview" href="#idLjnmodule_paths">paths</a>' ]
-    <br>&gt; Object.getOwnPropertyNames(module.__proto__).sort()
+    <br>> Object.getOwnPropertyNames(module.__proto__).sort()
     <br>[ '_compile', 'constructor', 'load', 'require' ]
-    <br>&gt; Object.getOwnPropertyNames(module.__proto__.__proto__).sort()
+    <br>> Object.getOwnPropertyNames(module.__proto__.__proto__).sort()
     <br>[ '__defineGetter__', '__defineSetter__', '__lookupGetter__', '__lookupSetter__', '__proto__', 'constructor', 'hasOwnProperty', 'isPrototypeOf', 'propertyIsEnumerable', 'toLocaleString', 'toString', 'valueOf' ]
     <a class="clsHide" href="#idLjnmodule_memberP1"></a></p>
   </section>
@@ -8290,7 +8350,7 @@
   <h5 id="idLjnmodule_pathsH5">ljnmobtmbr.paths-object
     <a class="clsHide" href="#idLjnmodule_pathsH5"></a></h5>
   <p id="idLjnmodule_pathsdsn">Description::
-    <br><code>&gt; D:\ljn>node filStart
+    <br><code>> D:\ljn>node filStart
     <br>// module.paths
     <br>[ 'D:\\ljn\\node_modules' ]</code>
     <a class="clsHide" href="#idLjnmodule_pathsdsn"></a></p>
@@ -8410,7 +8470,7 @@
     <a class="clsHide" href="#idLjnrequirejsonH5"></a></h5>
   <p id="idLjnrequirejsondsn">Description::
     <br><a class="clsPreview" href="#idLjndsn">Nodejs</a> and <a class="clsPreview" href="#idLjnpkgBrowserify">browserify</a> support importing JSON files.
-    <br><code>&gt; oJson = require('./test.json'),</code>
+    <br><code>> oJson = require('./test.json'),</code>
     <a class="clsHide" href="#idLjnrequirejsondsn"></a></p>
   <p id="idLjnrequirejsonnam">Name::
     <br>* cpt.ljn'import-JSON-file,
@@ -8422,10 +8482,10 @@
   <h5 id="idLjnrequirembrH5">ljnrequire'Member
     <a class="clsHide" href="#idLjnrequirembrH5"></a></h5>
   <p id="idLjnrequirembrdsn">Description::
-    <br><code>&gt; Object.getOwnPropertyNames(require).sort()
+    <br><code>> Object.getOwnPropertyNames(require).sort()
     <br>[ 'cache', 'extensions', 'length', 'main', 'name', 'prototype', 'resolve' ]</code>
     <br>===
-    <br><code>&gt; require
+    <br><code>> require
     <br>{ [Function: require]
     <br>  resolve: [Function: resolve],
     <br>  main: undefined,
@@ -8773,7 +8833,7 @@
     <br>* <a class="clsPreview" href="#idLjnmoZlib">ljnm.zlib</a>,
     <br>===
     <br>// ljn.6-3-1
-    <br><code>repl&gt; repl._builtinLibs
+    <br><code>repl> repl._builtinLibs
     <br>[ 'assert', 'buffer', 'child_process', 'cluster', 'crypto', 'dgram', 'dns', 'domain', 'events', 'fs', 'http', 'https', 'net', 'os', 'path', 'punycode', 'querystring', 'readline', 'repl', 'stream', 'string_decoder', 'tls', 'tty', 'url', 'util', 'v8', 'vm', 'zlib' ]</code>
     <a class="clsHide" href="#idLjnmCorSpc"></a></p>
   </section>
@@ -8964,7 +9024,7 @@
     <br>// Object.getOwnPropertyNames(mfStream).sort()
     <br>[ 'Duplex', 'PassThrough', 'Readable', 'Stream', 'Transform', 'Writable', 'length', 'name', 'prototype', 'super_' ]
     <br>===
-    <br>&gt; stream
+    <br>> stream
     <br>{ [Function: Stream]
     <br>  super_:
     <br>   { [Function: EventEmitter]
@@ -9816,7 +9876,7 @@
     <br>  output: process.stdout
     <br>});
     <br>
-    <br>rl.question('What do you think of Node.js? ', (answer) =&gt; {
+    <br>rl.question('What do you think of Node.js? ', (answer) => {
     <br>  // TODO: Log the answer in a database
     <br>  console.log('Thank you for your valuable feedback:', answer);
     <br>
@@ -10353,7 +10413,7 @@
     <ul class="clsTreeUl">
       <li><a class="clsPreview" href="#idLjsmgo">Object.prototype</a> (<strong>ROOT of ljn generic-specific-tree</strong>)
         <ul>
-          <li>Array.prototype (<code>&gt; Array.prototype.__proto__ === Object.prototype //true</code>),</li>
+          <li>Array.prototype (<code>> Array.prototype.__proto__ === Object.prototype //true</code>),</li>
           <li>ArrayBuffer.prototype,</li>
           <li>Boolean.prototype,</li>
           <li>Console.prototype,</li>
@@ -10365,7 +10425,7 @@
               <li><a class="clsPreview" href="#idLjnrequire">require-function</a>,</li>
             </ul>
           </li>
-          <li>Intl (<code>&gt; Object.getPrototypeOf(Intl) === Object.prototype //true</code>),</li>
+          <li>Intl (<code>> Object.getPrototypeOf(Intl) === Object.prototype //true</code>),</li>
           <li>JSON,</li>
           <li>Map.prototype,</li>
           <li><a class="clsPreview" href="#idLjsoMath">Math</a>,</li>
@@ -10468,7 +10528,7 @@
     <a class="clsHide" href="#idLjnmwognc"></a></p>
   <p id="idLjnmwognc">Generic-chain::
     <br>* global.__proto__ (?)
-    <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a> (&gt; global.__proto__.__proto__ === Object.prototype //true)
+    <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a> (> global.__proto__.__proto__ === Object.prototype //true)
     <br>===
     <br>The-<code>global</code> is a-specific of <code>Object.prototype</code>.
     <a class="clsHide" href="#idLjnmwognc"></a></p>
@@ -10514,7 +10574,7 @@
     <a class="clsHide" href="#idLjnmwombrnam"></a></p>
   <p id="idLjnmwombrspc">SPECIFIC:
     <br>// ljn.6-3-1
-    <br>&gt; Object.getOwnPropertyNames(global).sort()
+    <br>> Object.getOwnPropertyNames(global).sort()
     <br>[ 'Array', 'ArrayBuffer', 'Boolean', 'Buffer', 'COUNTER_HTTP_CLIENT_REQUEST', 'COUNTER_HTTP_CLIENT_RESPONSE', 'COUNTER_HTTP_SERVER_REQUEST', 'COUNTER_HTTP_SERVER_RESPONSE',  'COUNTER_NET_SERVER_CONNECTION', 'COUNTER_NET_SERVER_CONNECTION_CLOSE', 'DTRACE_HTTP_CLIENT_REQUEST', 'DTRACE_HTTP_CLIENT_RESPONSE', 'DTRACE_HTTP_SERVER_REQUEST',  'DTRACE_HTTP_SERVER_RESPONSE', 'DTRACE_NET_SERVER_CONNECTION', 'DTRACE_NET_STREAM_END',   'DataView', 'Date', 'Error', 'EvalError', 'Float32Array', 'Float64Array', 'Function', 'GLOBAL', 'Infinity', 'Int16Array', 'Int32Array', 'Int8Array', 'Intl', 'JSON', 'Map', 'Math', 'NaN', 'Number', 'Object', 'Promise', 'Proxy', 'RangeError', 'ReferenceError', 'Reflect', 'RegExp', 'Set', 'String', 'Symbol', 'SyntaxError', 'TypeError', 'URIError', 'Uint16Array', 'Uint32Array', 'Uint8Array', 'Uint8ClampedArray', 'WeakMap', 'WeakSet', 'clearImmediate', 'clearInterval', 'clearTimeout', 'console', 'decodeURI', 'decodeURIComponent', 'encodeURI', 'encodeURIComponent', 'escape', 'eval', 'global', 'isFinite', 'isNaN', 'parseFloat', 'parseInt', 'process', 'root', 'setImmediate', 'setInterval', 'setTimeout', 'undefined', 'unescape' ]
     <a class="clsHide" href="#idLjnmwombrspc"></a></p>
   </section>
@@ -10531,16 +10591,16 @@
     <br>* <a class="clsPreview" href="#idLjnmwo">global</a>,
     <a class="clsHide" href="#idLjnArrayBufferwhl"></a></p>
   <p id="idLjnArrayBuffergnc">Generic-chain::
-    <br>* <a class="clsPreview" href="#idLjsFunctionp">Function.prototype</a> (<code>&gt; Object.getPrototypeOf(ArrayBuffer) === Function.prototype //true</code>)
+    <br>* <a class="clsPreview" href="#idLjsFunctionp">Function.prototype</a> (<code>> Object.getPrototypeOf(ArrayBuffer) === Function.prototype //true</code>)
     <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a>,
     <a class="clsHide" href="#idLjnArrayBuffergnc"></a></p>
   <p id="idLjnArrayBuffermbr">ljnArrayBuffer'Member::
     <br>// ljn.6-2-2
-    <br>&gt; Object.getOwnPropertyNames(ArrayBuffer).sort()
+    <br>> Object.getOwnPropertyNames(ArrayBuffer).sort()
     <br>[ 'arguments', 'caller', 'isView', 'length', 'name', 'prototype' ]
-    <br>&gt; Object.getOwnPropertyNames(ArrayBuffer.prototype).sort()
+    <br>> Object.getOwnPropertyNames(ArrayBuffer.prototype).sort()
     <br>[ 'byteLength', 'constructor', 'slice' ]
-    <br>&gt; Object.getOwnPropertyNames(ArrayBuffer.prototype.__proto__).sort()
+    <br>> Object.getOwnPropertyNames(ArrayBuffer.prototype.__proto__).sort()
     <br>[ '__defineGetter__',
     <br>  '__defineSetter__',
     <br>  '__lookupGetter__',
@@ -10556,7 +10616,7 @@
     <a class="clsHide" href="#idLjnArrayBuffermbr"></a></p>
   <p id="idLjnArrayBufferpmbr">ljnArrayBuffer.prototype'Member::
     <br>// ljn.6-2-2
-    <br>&gt; Object.getOwnPropertyNames(ArrayBuffer.prototype).sort()
+    <br>> Object.getOwnPropertyNames(ArrayBuffer.prototype).sort()
     <br>[ 'byteLength', 'constructor', 'slice' ]
     <a class="clsHide" href="#idLjnArrayBufferpmbr"></a></p>
   </section>
@@ -10614,8 +10674,8 @@
     <br>* <a class="clsPreview" href="#idLjnmwo">ljn-most-whole-object (global)</a>,
     <a class="clsHide" href="#idLjnconsolewhl"></a></p>
   <p id="idLjnconsolegnc">Generic-chain::
-    <br>* Console.prototype, (&gt; console.__proto__ === console.Console.prototype)
-    <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a>, (&gt; console.__proto__.__proto__ === Object.prototype //true)
+    <br>* Console.prototype, (> console.__proto__ === console.Console.prototype)
+    <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a>, (> console.__proto__.__proto__ === Object.prototype //true)
     <a class="clsHide" href="#idLjnconsolegnc"></a></p>
   </section>
 
@@ -10645,8 +10705,8 @@
     <a class="clsHide" href="#idLjnprocesswhl"></a></p>
   <p id="idLjnprocessgnc">Generic-chain::
     <br>* (process.__proto__)
-    <br>* events.EventEmitter.prototype (&gt;  process.__proto__.__proto__ === events.EventEmitter.prototype //true)
-    <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a> (&gt; process.__proto__.__proto__.__proto__ === Object.prototype //true)
+    <br>* events.EventEmitter.prototype (>  process.__proto__.__proto__ === events.EventEmitter.prototype //true)
+    <br>* <a class="clsPreview" href="#idLjsmgo">Object.prototype</a> (> process.__proto__.__proto__.__proto__ === Object.prototype //true)
     <a class="clsHide" href="#idLjnprocessgnc"></a></p>
   <p id="idLjnprocessapi">API:
     <br>* ljn.last: <a href="https://nodejs.org/api/process.html">https://nodejs.org/api/process.html</a>,
@@ -10657,14 +10717,14 @@
     <a class="clsHide" href="#idLjnprocessmbrH4"></a></h4>
   <p id="idLjnprocessmbrP1">ljnprocess'Member::
     <br>//{ljn.6-2-2}
-    <br>&gt; Object.getOwnPropertyNames(process).sort()
+    <br>> Object.getOwnPropertyNames(process).sort()
     <br>[ 'EventEmitter', '_debugEnd', '_debugPause', '_debugProcess', '_events', '_eventsCount', '_exiting', '_fatalException', '_getActiveHandles', '_getActiveRequests', '_kill', '_linkedBinding', '_maxListeners', '_needImmediateCallback', '_promiseRejectEvent', '_rawDebug', '_startProfilerIdleNotifier', '_stopProfilerIdleNotifier', '_tickCallback', '_tickDomainCallback', 'abort', 'arch', 'argv', 'assert', 'binding', 'chdir', 'config', 'cpuUsage', 'cwd', 'debugPort', 'dlopen', 'domain', 'emitWarning', 'env', 'execArgv', 'execPath', 'exit', 'features', 'hrtime', 'kill', 'memoryUsage', 'moduleLoadList', 'nextTick', 'openStdin', 'pid', 'platform', 'reallyExit', 'release', 'stderr', 'stdin', 'stdout', 'title', 'umask', 'uptime', 'version', 'versions' ]
     <br>===
-    <br>&gt; Object.getOwnPropertyNames(process.__proto__)
+    <br>> Object.getOwnPropertyNames(process.__proto__)
     <br>[ 'constructor' ]
-    <br>&gt; Object.getOwnPropertyNames(process.__proto__.__proto__)
+    <br>> Object.getOwnPropertyNames(process.__proto__.__proto__)
     <br>[ 'constructor', 'domain', '_events', '_maxListeners', 'setMaxListeners', 'getMaxListeners', 'emit', 'addListener', 'on', 'prependListener', 'once', 'prependOnceListener', 'removeListener', 'removeAllListeners', 'listeners', 'listenerCount', 'eventNames' ]
-    <br>&gt; Object.getOwnPropertyNames(process.__proto__.__proto__.__proto__)
+    <br>> Object.getOwnPropertyNames(process.__proto__.__proto__.__proto__)
     <br>[ 'constructor', 'toString', 'toLocaleString', 'valueOf', 'hasOwnProperty', 'isPrototypeOf', 'propertyIsEnumerable', '__defineGetter__', '__lookupGetter__', '__defineSetter__', '__lookupSetter__', '__proto__' ]
     <a class="clsHide" href="#idLjnprocessmbrP1"></a></p>
   </section>
@@ -10706,7 +10766,7 @@
   <section id="idLjnprocess_versions">
   <h4 id="idLjnprocess_versionsH4">ljnprocess.versions-object
     <a class="clsHide" href="#idLjnprocess_versionsH4"></a></h4>
-  <p id="idLjnprocess_versionsP1">&gt; process.versions
+  <p id="idLjnprocess_versionsP1">> process.versions
     <br>{ http_parser: '2.7.0',
     <br>  node: '6.2.2',
     <br>  v8: '5.0.71.52',
@@ -11268,9 +11328,9 @@
     <br>connecting... ok
     <br>break in /home/indutny/Code/git/indutny/myscript.js:1
     <br>&nbsp;&nbsp;1 x = 5;
-    <br>&nbsp;&nbsp;2 setTimeout(() =&gt; {
+    <br>&nbsp;&nbsp;2 setTimeout(() => {
     <br>&nbsp;&nbsp;3   debugger;
-    <br>debug&gt;</code>
+    <br>debug></code>
     <br>Node.js's debugger client is not a full-featured debugger, but simple step and inspection are possible.</span>
     <br>[<a href="https://nodejs.org/docs/v6.3.1/api/debugger.html#debugger_debugger">https://nodejs.org/docs/v6.3.1/api/debugger.html#debugger_debugger</a>]
     <a class="clsHide" href="#idLjndbgdsn"></a></p>
@@ -11620,9 +11680,9 @@
     <br>a) a <span class="clsU">folder</span> containing a program described by a package.json file
     <br>b) a <span class="clsU">gzipped tarball</span> containing (a)
     <br>c) a <span class="clsU">url</span> that resolves to (b)
-    <br>d) a &lt;name&gt;@&lt;version&gt; that is published on the registry with (c)
-    <br>e) a &lt;name&gt;@&lt;tag&gt; that points to (d)
-    <br>f) a &lt;name&gt; that has a "latest" tag satisfying (e)
+    <br>d) a &lt;name>@&lt;version> that is published on the registry with (c)
+    <br>e) a &lt;name>@&lt;tag> that points to (d)
+    <br>f) a &lt;name> that has a "latest" tag satisfying (e)
     <br>g) a git url that, when cloned, results in (a).
     <br>Even if you never publish your package, you can still get a lot of benefits of using npm if you just want to write a node program (a), and perhaps if you also want to be able to easily install it elsewhere after packing it up into a tarball (b).
     <br>
@@ -11672,7 +11732,7 @@
     <br>In this case I'll accept any version of Express 3.3.
     <br>You can list as many dependencies as you want in this section.
     <br>Now instead of installing each dependency separately, we can run a single command and install all of them.
-    <br><code>&gt; npm install</code>
+    <br><code>> npm install</code>
     <br>When you run this command npm will look in the current folder for a package.json file.
     <br>If it finds one, it will install every dependency listed.</span>
     <br>[<a href="http://blog.modulus.io/absolute-beginners-guide-to-nodejs">http://blog.modulus.io/absolute-beginners-guide-to-nodejs</a>]
@@ -11796,7 +11856,7 @@
     <br>, "url" : "http://barnyrubble.tumblr.com/"
     <br>}</code>
     <br>Or you can shorten that all into a single string, and npm will parse it for you:
-    <br><code>"Barney Rubble &lt;b@rubble.com&gt; (http://barnyrubble.tumblr.com/)"</code>
+    <br><code>"Barney Rubble &lt;b@rubble.com> (http://barnyrubble.tumblr.com/)"</code>
     <br>Both email and url are optional either way.
     <br>
     <br>npm also sets a top-level "maintainers" field with your npm user info.</span>
@@ -11875,7 +11935,7 @@
     <br>===
     <br><span class="clsQuote">DEFAULT VALUES
     <br>"contributors": [...]
-    <br>If there is an AUTHORS file in the root of your package, npm will treat each line as a Name &lt;email&gt; (url) format, where email and url are optional. Lines which start with a # or are blank, will be ignored.</span>
+    <br>If there is an AUTHORS file in the root of your package, npm will treat each line as a Name &lt;email> (url) format, where email and url are optional. Lines which start with a # or are blank, will be ignored.</span>
     <br>[<a href="https://docs.npmjs.com/files/package.json#default-values">https://docs.npmjs.com/files/package.json#default-values</a>]
     <a class="clsHide" href="#idLjnpackage_jsonmbrcontributorsdsn"></a></p>
   </section>
@@ -11999,10 +12059,10 @@
   <h5 id="idLjnpackage_jsonmbrenginesH5">npmpkgjsn'engines-object
     <a class="clsHide" href="#idLjnpackage_jsonmbrenginesH5"></a></h5>
   <p id="idLjnpackage_jsonmbrenginesdsn">Description::
-    <br><code>&nbsp; "engines" : { "node" : "&gt;=0.10.3 &lt;0.12",  "npm" : "1.3.5" },</code>
+    <br><code>&nbsp; "engines" : { "node" : ">=0.10.3 &lt;0.12",  "npm" : "1.3.5" },</code>
     <br>===
     <br><span class="clsQuote">You can specify the version of node that your stuff works on:
-    <br>{ "engines" : { "node" : "&gt;=0.10.3 &lt;0.12" } }
+    <br>{ "engines" : { "node" : ">=0.10.3 &lt;0.12" } }
     <br>And, like with dependencies, if you don't specify the version (or if you specify "*" as the version), then any version of node will do.
     <br>
     <br>If you specify an "engines" field, then npm will require that "node" be somewhere on that list. If "engines" is omitted, then npm will just assume that it works on node.
@@ -12146,7 +12206,7 @@
     <br>
     <br>Trying to install another plugin with a conflicting requirement will cause an error. For this reason, make sure your plugin requirement is as broad as possible, and not to lock it down to specific patch versions.
     <br>
-    <br>Assuming the host complies with semver, only changes in the host package's major version will break your plugin. Thus, if you've worked with every 1.x version of the host package, use "^1.0" or "1.x" to express this. If you depend on features introduced in 1.5.2, use "&gt;= 1.5.2 &lt; 2".</span>
+    <br>Assuming the host complies with semver, only changes in the host package's major version will break your plugin. Thus, if you've worked with every 1.x version of the host package, use "^1.0" or "1.x" to express this. If you depend on features introduced in 1.5.2, use ">= 1.5.2 &lt; 2".</span>
     <br>[<a href="https://docs.npmjs.com/files/package.json#peerdependencies">https://docs.npmjs.com/files/package.json#peerdependencies</a>]
     <a class="clsHide" href="#idLjnpackage_jsonmbrpeerDependenciesdsn"></a></p>
   </section>
@@ -12239,7 +12299,7 @@
     <br>[<a href="https://docs.npmjs.com/cli/start">https://docs.npmjs.com/cli/start</a>]
     <br>===
     <br><span class="clsQuote">You can specify the version of node that your stuff works on:
-    <br>{ "engines" : { "node" : "&gt;=0.10.3 &lt;0.12" } }
+    <br>{ "engines" : { "node" : ">=0.10.3 &lt;0.12" } }
     <br>And, like with dependencies, if you don't specify the version (or if you specify "*" as the version), then any version of node will do.
     <br>
     <br>If you specify an "engines" field, then npm will require that "node" be somewhere on that list. If "engines" is omitted, then npm will just assume that it works on node.
@@ -12262,7 +12322,7 @@
     <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrdescription">description</a>" : "A packaged foo fooer for fooing foos",
     <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrmain">main</a>" : "index.js",
     <br>
-    <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrauthor">author</a>" : "Barney Rubble &lt;b@rubble.com&gt; (http://barnyrubble.tumblr.com/)",
+    <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrauthor">author</a>" : "Barney Rubble &lt;b@rubble.com> (http://barnyrubble.tumblr.com/)",
     <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrbin">bin</a>" : "./path/to/program",
     <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrbugs">bugs</a>" : { "url" : "https://github.com/user/my_package/issues" },
     <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrconfig">config</a>" : { "port" : "8080" },
@@ -12279,7 +12339,7 @@
     <br>&nbsp; &nbsp; "man" : "local/man",
     <br>&nbsp; &nbsp; "doc" : "local/docs"
     <br>&nbsp; },
-    <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrengines">engines</a>" : { "node" : "&gt;=0.10.3 &lt;0.12", "npm" : "1.3.5" },
+    <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrengines">engines</a>" : { "node" : ">=0.10.3 &lt;0.12", "npm" : "1.3.5" },
     <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrfiles">files</a>" : [ filName, dirName],
     <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrhomepage">homepage</a>" : "https://my-homepage/",
     <br>&nbsp; "<a class="clsPreview" href="#idLjnpackage_jsonmbrkeywords">keywords</a>" : [ "http", "authentication" ],
@@ -12354,7 +12414,7 @@
     <br>[<a href="https://docs.npmjs.com/getting-started/updating-local-packages">https://docs.npmjs.com/getting-started/updating-local-packages</a>]
     <br>===
     <br><span class="clsQuote">Updating global packages
-    <br>To update global packages, you can use <code>npm install -g &lt;package&gt;</code>:
+    <br>To update global packages, you can use <code>npm install -g &lt;package></code>:
     <br><code>npm install -g jshint</code>
     <br>To find out which packages need to be updated, you can use <code>npm outdated -g --depth=0</code>.
     <br>
@@ -12397,14 +12457,14 @@
     <br>
     <br>Also make sure there isn't already a package with the same name, owned by somebody else.
     <br>
-    <br>Test: Go to <strong>https://npmjs.com/package/&lt;package&gt;</strong>. You should see the information for your new package.
+    <br>Test: Go to <strong>https://npmjs.com/package/&lt;package></strong>. You should see the information for your new package.
     <br>
     <br><strong>Updating the package</strong>
-    <br>When you make changes, you can update the package using <code>npm version &lt;update_type&gt;</code>, where update_type is one of the semantic versioning release types, patch, minor, or major. This command will change the version number in package.json. Note that this will also add a tag with this release number to your git repository if you have one.
+    <br>When you make changes, you can update the package using <code>npm version &lt;update_type></code>, where update_type is one of the semantic versioning release types, patch, minor, or major. This command will change the version number in package.json. Note that this will also add a tag with this release number to your git repository if you have one.
     <br>
     <br>After updating the version number, you can <code>npm publish</code> again.
     <br>
-    <br>Test: Go to https://npmjs.com/package/&lt;package&gt;. The package number should be updated.
+    <br>Test: Go to https://npmjs.com/package/&lt;package>. The package number should be updated.
     <br>
     <br>The README displayed on the site will not be updated unless a new version of your package is published, so you would need to run <code>npm version patch</code> and <code>npm publish</code> to have a documentation fix displayed on the site.</span>
     <br>[<a href="https://docs.npmjs.com/getting-started/publishing-npm-packages">https://docs.npmjs.com/getting-started/publishing-npm-packages</a>]
@@ -12533,22 +12593,22 @@
     <br>Put the above code in a file named index.js.
     <br>
     <br>Now, to be able to run this code in the browser, enter this command in the terminal:
-    <br><code>browserify index.js &gt; bundle.js</code>
+    <br><code>browserify index.js > bundle.js</code>
     <br>The bundle.js file now has your event emitter code along with any dependencies on core node modules and shims to make them work in the browser.
     <br>
     <br>You can include bundle.js in your html now like any other javascript file.
     <br>
     <br>Example:
-    <br><code>&lt;!DOCTYPE html&gt;
-    <br>&lt;html&gt;
-    <br>&lt;head&gt;
-    <br>  &lt;title&gt;node / browserify example&lt;/title&gt;
-    <br>&lt;/head&gt;
-    <br>&lt;body&gt;
+    <br><code>&lt;!DOCTYPE html>
+    <br>&lt;html>
+    <br>&lt;head>
+    <br>  &lt;title>node / browserify example&lt;/title>
+    <br>&lt;/head>
+    <br>&lt;body>
     <br>
-    <br>&lt;script src="./bundle.js"&gt;&lt;/script&gt;
-    <br>&lt;/body&gt;
-    <br>&lt;/html&gt;</code>
+    <br>&lt;script src="./bundle.js">&lt;/script>
+    <br>&lt;/body>
+    <br>&lt;/html></code>
     <br>That's it! Now you can use node modules and require in the browser!
     <br>
     <br>Live reload development environment
@@ -13651,7 +13711,7 @@
   <h3 id="idLjnnpmEvnH3">lngnpm.EVOLUTING
     <a class="clsHide" href="#idLjnnpmEvnH3"></a></h3>
   <p id="idLjnnpmEvnP1">Version:
-    <br><code>&gt; npm -v</code>
+    <br><code>> npm -v</code>
     <br>3.9.5
     <br>===
     <br>AddressWpg::
@@ -13680,7 +13740,7 @@
     <br>You will see its command-prompt (>).
     <a class="clsHide" href="#idLjnrplexc"></a></p>
   <p id="idLjnrplcmd">Commands:
-    <br><code>&gt; .help</code>
+    <br><code>> .help</code>
     <br>.break&nbsp; &nbsp; Sometimes you get stuck, this gets you out
     <br>.clear&nbsp; &nbsp; Alias for .break
     <br>.exit&nbsp; &nbsp; Exit the repl
@@ -13699,7 +13759,7 @@
     <a class="clsHide" href="#idLjnrplmdlnam"></a></p>
   <p id="idLjnrplmdlP2">ljnrepl'Member::
     <br><code>// ljn.6-2-2
-    <br>&gt; Object.getOwnPropertyNames(repl).sort()</code>
+    <br>> Object.getOwnPropertyNames(repl).sort()</code>
     <br>[ 'REPLServer',  'REPL_MODE_MAGIC',  'REPL_MODE_SLOPPY',  'REPL_MODE_STRICT',  'Recoverable',  '_builtinLibs',  'repl',  'start',  'writer' ]
     <a class="clsHide" href="#idLjnrplmdlP2"></a></p>
   </section>
@@ -13729,7 +13789,7 @@
     <a class="clsHide" href="#idLjnrtmspsH3"></a></h3>
   <p id="idLjnrtmspsdsn">Description::
     <br>Usage:
-    <br>&gt; node [options] [v8 options] [script.js | -e "script"] [arguments]
+    <br>> node [options] [v8 options] [script.js | -e "script"] [arguments]
     <a class="clsHide" href="#idLjnrtmspsdsn"></a></p>
   <p id="idLjnrtmspsnam">Name::
     <br>* cpt.ljnrtm'synopsis,
@@ -14074,7 +14134,7 @@
   <p id="idLjnubuntudsn">Description::
     <br><span class="clsQuote">At Least from Ubuntu 12.04, an old version (0.6.x) of Node is in the standard repository.
     <br>To install, just run:
-    <br>&gt; sudo apt-get install nodejs</span>
+    <br>> sudo apt-get install nodejs</span>
     <br>[<a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint">https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint</a>]
     <a class="clsHide" href="#idLjnubuntudsdsn"></a></p>
   </section>
@@ -14087,7 +14147,7 @@
     <br>The first method of doing so is via git, if you have git installed you can execute:
     <br>$ git clone http://github.com/ry/node.git &amp;&amp; cd node
     <br>For those without git, or who prefer not to use it, we can also download the source via curl, wget, or similar:
-    <br>$ curl -# http://nodejs.org/dist/node-v0.1.99.tar.gz &gt; node.tar.gz
+    <br>$ curl -# http://nodejs.org/dist/node-v0.1.99.tar.gz > node.tar.gz
     <br>$ tar -zxf node.tar.gz
     <br>Now that we have the source on our machine, we can run ./configure which discovers which libraries are available for node to utilize such as OpenSSL for transport security support, C and C++ compilers, etc. make which builds node, and finally make install which will install node.
     <br>
@@ -14194,71 +14254,71 @@
   <p id="idLjnVrnrsc">resource:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md">https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md</a>,
     <a class="clsHide" href="#idLjnVrnrsc"></a></p>
-  <p id="idLjn6">ljn.6.2016-04-26:
+  <p id="idLjn6">ljn.6-0-0.2016-04-26:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md">changelog</a>,
     <br>* The v6 release line will be covered by the Node.js Long Term Support plan starting in October 2016.
-    <br>* 6.0.0 (current)- 6.3.0.2016-07-06 (current),
+    <br>* 6.0.0 (current) - 6-3-0.2016-07-06 (current),
     <a class="clsHide" href="#idLjn6"></a></p>
-  <p id="idLjn5">ljn.5.2015-10-29:
+  <p id="idLjn5">ljn.5-0-0.2015-10-29:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V5.md">changelog</a>,
     <br>* Official support for the v5 release line is scheduled to expire around June 2016. Users of v5 should upgrade to Node.js v6.
     <br>* 5.0.0 (stable) - 5.12.0 (stable),
     <a class="clsHide" href="#idLjn5"></a></p>
-  <p id="idLjn4">ljn.4.2015-10-07:
+  <p id="idLjn4">ljn.4-0-0.2015-10-07:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V4.md">changelog</a>,
     <br>* Node.js v4 is covered by the Node.js Long Term Support Plan and will be supported actively until April 2017 and maintained until April 2018.
-    <br>* 4.0.0 (stable) - 4.4.7.2016-06-28 (LTS),
+    <br>* 4.0.0 (stable) - 4-4-7.2016-06-28 (LTS),
     <a class="clsHide" href="#idLjn4"></a></p>
-  <p id="idLjn012">ljn.0-12.2015-02-06:
+  <p id="idLjn012">ljn.0-12-0.2015-02-06:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V012.md#2015-02-06-version-0120-stable">changelog</a>,
     <br>* Node.js v0.12 is covered by the Node.js Long Term Support Plan and will be maintained until December 31st, 2016.
     <br>* 0.12.0 (stable) - 0.12.15-2016.06.23 (maintenance),
     <a class="clsHide" href="#idLjn012"></a></p>
-  <p id="idLjn011">ljn.0-11.2013-03-28:
+  <p id="idLjn011">ljn.0-11-0.2013-03-28:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20130328-version-0110-unstable">changelog</a>,
     <br>* 0.11.0 (unstable) - 0.11.14 (unstable),
     <a class="clsHide" href="#idLjn011"></a></p>
-  <p id="idLjn010">ljn.0-10.2013-03-11:
+  <p id="idLjn010">ljn.0-10-0.2013-03-11:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V010.md">changelog</a>,
     <br>* 0.10.0 (stable) - 0.10.46 (maintenance),
     <a class="clsHide" href="#idLjn010"></a></p>
-  <p id="idLjn09">ljn.0-9.2012-07-20:
+  <p id="idLjn09">ljn.0-9-0.2012-07-20:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20120720-version-090-unstable">changelog</a>,
     <br>* 0.9.0 (unstable) - 0.9.12 (unstable),
     <a class="clsHide" href="#idLjn09"></a></p>
-  <p id="idLjn08">ljn.0-8.2012-06-25:
+  <p id="idLjn08">ljn.0-8-0.2012-06-25:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20120625-version-080-stable">changelog</a>,
     <br>* 0.8.0 (stable) - 0.8.25 (maintenance),
     <a class="clsHide" href="#idLjn08"></a></p>
-  <p id="idLjn07">ljn.0-7.2012-01-16:
+  <p id="idLjn07">ljn.0-7-0.2012-01-16:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20120116-version-070-unstable">changelog</a>,
     <br>* 0.7.0 (unstable) - 0.7.12 (unstable),
     <a class="clsHide" href="#idLjn07"></a></p>
-  <p id="idLjn06">ljn.0-6.2011-11-04:
+  <p id="idLjn06">ljn.0-6-0.2011-11-04:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20111104-version-060-stable">changelog</a>,
     <br>* 0.6.0 (stable) - 0.6.20 (maintenance),
     <a class="clsHide" href="#idLjn06"></a></p>
-  <p id="idLjn05">ljn.0-5.2011-07-05:
+  <p id="idLjn05">ljn.0-5-0.2011-07-05:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20110705-version-050-unstable">changelog</a>,
     <br>* 0.5.0 - 0.5.10,
     <a class="clsHide" href="#idLjn05"></a></p>
-  <p id="idLjn04">ljn.0-4.2011-02-10:
+  <p id="idLjn04">ljn.0-4-0.2011-02-10:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20110210-version-040-stable">changelog</a>,
     <br>* 0.4.0 - 0.4.12,
     <a class="clsHide" href="#idLjn04"></a></p>
-  <p id="idLjn03">ljn.0-3.2010-10-23:
+  <p id="idLjn03">ljn.0-3-0.2010-10-23:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20101023-version-030-unstable">changelog</a>,
     <br>* 0.3.0 - 0.3.8,
     <a class="clsHide" href="#idLjn03"></a></p>
-  <p id="idLjn02">ljn.0-2.2010-08-20:
+  <p id="idLjn02">ljn.0-2-0.2010-08-20:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20100820-version-020">changelog</a>,
     <br>* 0.2.0,
     <a class="clsHide" href="#idLjn02"></a></p>
-  <p id="idLjn01">ljn.0-1.2009-06-30:
+  <p id="idLjn01">ljn.0-1-0.2009-06-30:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20090630-version-010">changelog</a>,
     <br>* 0.1.0 - 0.1.104,
     <a class="clsHide" href="#idLjn01"></a></p>
-  <p id="idLjn00">ljn.0-0.2009-06-11:
+  <p id="idLjn00">ljn.0-0-3.2009-06-11:
     <br>* <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md#20090611-version-003">changelog</a>,
     <br> 0.0.3 - 0.0.6
     <a class="clsHide" href="#idLjn00"></a></p>
@@ -14358,6 +14418,18 @@
 <section id="idMeta">
   <h1 id="idMetaH1">Meta Info
     <a class="clsHide" href="#idMetaH1"></a></h1>
+  <p id="idMetaCounter" class="clsCenter">This page was visited
+    <span class="clsColorRed">
+    <script src="../../dirPgm/dirCntr/counter.php?page=miw.tchInf.lagJs"></script>
+    </span>
+    times since {2016.05.04}</p>
+  <!-- the content of page-path paragraph is displayed as it is on top of toc -->
+  <p id="idMetaWebpage_path"><span class="clsB clsColorGreen">Page-path</span>:
+    <a class="clsPreview" href="../../#idDescription">synagonism.net</a> /
+    <a class="clsPreview" href="../../hitp/#idDescription">hitp</a> /
+    <a class="clsPreview" href="../#idDescription">modelInfoWorld</a> /
+    javascript (ljs)
+    </p>
   <p id="idMetaP1">SEARCH THE-PAGE:
     <br>This page uses '<span class="clsColorRed">locator-names</span>', names that when you find them, you find the-LOCATION of the-concept they denote.
     <br>Type <span class="clsColorRed">CTRL+F "cpt.[ljs|ljb|ljn]words-of-concept's-name"</span>, to go to the-LOCATION of the-concept.
@@ -14373,18 +14445,6 @@
     <br>• version.1-11.2016-05-18: <a href="lngJs.1-11.2016-05-18.html">lngJs.1-11.2016-05-18.html</a>,
     <br>• version.1.2016-05-10.ljb.created: <a href="lngJs.1.2016-05-10.html">lngJs.1.2016-05-10.html</a>,
     <a class="clsHide" href="#idMetaVersion"></a></p>
-  <p id="idMetaCounter" class="clsCenter">This page was visited
-    <span class="clsColorRed">
-    <script src="../../program/counter/counter.php?page=miw.tchInf.lngJs"></script>
-    </span>
-    times since {2016.05.04}</p>
-  <!-- the content of page-path paragraph is displayed as it is on top of toc -->
-  <p id="idMetaWebpage_path"><span class="clsB clsColorGreen">Page-path</span>:
-    <a class="clsPreview" href="../../#idDescription">synagonism.net</a> /
-    <a class="clsPreview" href="../../hitp/#idDescription">hitp</a> /
-    <a class="clsPreview" href="../#idDescription">modelInfoWorld</a> /
-    javascript (ljs)
-    </p>
 </section>
 
 <section id="idSupport">
