@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>cpt.language.Javascript (ljs.3-55-0.2017-06-11)</title>
-  <meta name="keywords" content="javascript-tutorial, browser-js, Node.js, ljs, ljb, ljn, title-content-tree, hitp-webpage">
+  <title>cpt.language.Javascript (ljs.3-56-0.2017-06-11)</title>
+  <meta name="keywords" content="JavaScript, js, javascript-tutorial, browser-js, Node.js, ljs, ljb, ljn, title-content-tree, hitp-webpage">
   <link rel="stylesheet" href="http://synagonism.github.io/hitp/hitp.css">
 </head>
 
@@ -258,12 +258,12 @@
   <p id="idLjssutnamedsn">Description::
     <br>Most semantic-units are anonymous.
     <br><a class="clsPreview" href="#idLjsfname">Only a-function has name in one case</a>.
-    <br>The-code below, shows that <a class="clsPreview" href="#idLjsv">a-variable (a-name-value-pair)</a> is a different beast (semantic-unit).
+    <br>The-code below, shows that <a class="clsPreview" href="#idLjsv">a-variable (a-name-value-pair)</a> is a different beast.
     <br>The-name we give to a-semantic-unit when we create a-variable, I call REFERENCE-NAME.
     <br>A-semantic-unit can have many reference-names.
     <br>The other name that a-semantic-unit can-have (as a-member of it) I call INTERNAL-NAME.
-    <a class="clsHide" href="#idLjssutnameDes"></a></p>
-  <p id="idLjssutnamedsn">Code.ljs::
+    <a class="clsHide" href="#idLjssutnamedsn"></a></p>
+  <p id="idLjssutnamecod">Code.ljs::
     <br><code>> function f(){} //function with internal-name
     <br>> var f = function(){} //anonymous function, with reference-name
     <br>> var f = function f2(){} //function with internal and reference name
@@ -273,7 +273,7 @@
     <br>> b = a //another reference-name for sgm-array
     <br>> c = b //another reference-name for sgm-array
     <br>> c.name //gives 'sgm'</code>
-    <a class="clsHide" href="#idLjssutnameDes"></a></p>
+    <a class="clsHide" href="#idLjssutnamecod"></a></p>
   <p id="idLjssutnamenam">Name::
     <br>* cpt.Internal-name-of-semantic-unit-of-javascript,
     <br>* cpt.Ljs'semantic-unit'internal-name',
@@ -294,7 +294,7 @@
   <h2 id="idLjssutSpcH2">ljsalgo'sut.SPECIFIC
     <a class="clsHide" href="#idLjssutSpcH2"></a></h2>
   <p id="idLjssutSpcP1">Specific::
-    <br><a class="clsPreview" href="#idDescription">Ljs</a> uses only 12 <a class="clsPreview" href="#idLjssut">semantic-units</a> to create <a class="clsPreview" href="#idLjsalg">algorithms</a>:
+    <br><a class="clsPreview" href="#idDescription">Ljs</a> uses only 11 <a class="clsPreview" href="#idLjssut">semantic-units</a> to create <a class="clsPreview" href="#idLjsalg">algorithms</a>:
     <br>01) <a class="clsPreview" href="#idLjsa">a - Array</a>,
     <br>02) <a class="clsPreview" href="#idLjsb">b - Boolean</a>,
     <br>03) <a class="clsPreview" href="#idLjsf">f - Function</a>,
@@ -305,8 +305,7 @@
     <br>08) <a class="clsPreview" href="#idLjsr">r - Regexp</a>,
     <br>09) <a class="clsPreview" href="#idLjss">s - String</a>,
     <br>10) <a class="clsPreview" href="#idLjsu">u - Undefined</a>,
-    <br>11) <a class="clsPreview" href="#idLjsv">v - name-Value-pair</a>,
-    <br>12) <a class="clsPreview" href="#idLjsx">x - miXed</a>,
+    <br>11) <a class="clsPreview" href="#idLjsx">x - miXed</a>,
     <a class="clsHide" href="#idLjssutSpcP1"></a></p>
   <p id="idLjssutSpcAlpha">Specific.alphabetically::
     <br>* <a class="clsPreview" href="#idLjsa">array--semantic-unit</a>,
@@ -317,10 +316,10 @@
     <br>* <a class="clsPreview" href="#idLjbsut">ljb-semantic-unit</a>,
     <br>* <a class="clsPreview" href="#idLjnsut">ljn-semantic-unit</a>,
     <br>* <a class="clsPreview" href="#idLjsv">name-semantic-unit</a>,
-    <br>* <a class="clsPreview" href="#idLjsvNo">nameNo-semantic-unit</a>,
+    <br>* <a class="clsPreview" href="#idLjssutSnamN">nameNo-semantic-unit</a>,
     <br>* <a class="clsPreview" href="#idLjsx">name-value-pair-mixed--semantic-unit</a>,
     <br>* <a class="clsPreview" href="#idLjsxNo">name-value-pair-mixedNo--semantic-unit</a>,
-    <br>* <a class="clsPreview" href="#idLjsvNo">name-value-pair-No--semantic-unit</a>,
+    <br>* <a class="clsPreview" href="#idLjssutSnamN">name-value-pair-No--semantic-unit</a>,
     <br>* <a class="clsPreview" href="#idLjsl">null--semantic-unit</a>,
     <br>* <a class="clsPreview" href="#idLjsn">number--semantic-unit</a>,
     <br>* <a class="clsPreview" href="#idLjso">object--semantic-unit</a>,
@@ -376,28 +375,45 @@
   </section>
   </section>
 
-  <section id="idLjssutSpcNam">
-  <h2 id="idLjssutSpcNamH2">ljssut.SPECIFIC-DIVISION.name
-    <a class="clsHide" href="#idLjssutSpcNamH2"></a></h2>
-  <p id="idLjssutSpcNamP1">Specific::
-    <br>* <a class="clsPreview" href="#idLjsv">name-semantic-unit</a>,
-    <br>* <a class="clsPreview" href="#idLjsvNo">nameNo-semantic-unit</a>,
-    <a class="clsHide" href="#idLjssutSpcNamP1"></a></p>
+  <section id="idLjssutSnam">
+  <h2 id="idLjssutSnamH2">ljssut.SPECIFIC-DIVISION.name
+    <a class="clsHide" href="#idLjssutSnamH2"></a></h2>
+  <p id="idLjssutSnamP1">Specific::
+    <br>* <a class="clsPreview" href="#idLjssutSnamY">Name-semantic-unit</a>,
+    <br>* <a class="clsPreview" href="#idLjssutSnamN">NameNo-semantic-unit</a>,
+    <a class="clsHide" href="#idLjssutSnamP1"></a></p>
 
-  <section id="idLjsvNo">
-  <h3 id="idLjsvNoH3">ljssut.NameNo
-    <a class="clsHide" href="#idLjsvNoH3"></a></h3>
-  <p id="idLjsvNodsn">Description::
-    <br>NameNo is <a class="clsPreview" href="#idLjssut">a-semantic-unit</a> which HAS NO <a class="clsPreview" href="#idLjsvnam">a-name</a> associated with it.
-    <a class="clsHide" href="#idLjsvNodsn"></a></p>
-  <p id="idLjsvNonam">Name::
+  <section id="idLjssutSnamY">
+  <h3 id="idLjssutSnamYH3">ljssut.Name
+    <a class="clsHide" href="#idLjssutSnamYH3"></a></h3>
+  <p id="idLjssutSnamYcrd">Created:: {2017-06-11}
+    <a class="clsHide" href="#idLjssutSnamYcrd"></a></p>
+  <p id="idLjssutSnamYdsn">Description::
+    <br>Name-semantic-unit is <a class="clsPreview" href="#idLjssut">a-semantic-unit</a> which HAS <a class="clsPreview" href="#idLjssutname">a-name</a> associated with it, internal or reference or both.
+    <a class="clsHide" href="#idLjssutSnamYdsn"></a></p>
+  <p id="idLjssutSnamYnam">Name::
+    <br>* cpt.Ljs'anonymousNo-semantic-unit,
+    <br>* cpt.Ljs'named-semantic-unit,
+    <br>* cpt.LjsAnonymousNo-semantic-unit,
+    <br>* cpt.LjsNamed-semantic-unit,
+    <br>* cpt.LjsName-semantic-unit,
+    <a class="clsHide" href="#idLjssutSnamYnam"></a></p>
+  </section>
+
+    <section id="idLjssutSnamN">
+  <h3 id="idLjssutSnamNH3">ljssut.NameNo
+    <a class="clsHide" href="#idLjssutSnamNH3"></a></h3>
+  <p id="idLjssutSnamNdsn">Description::
+    <br>NameNo is <a class="clsPreview" href="#idLjssut">a-semantic-unit</a> which HAS NO <a class="clsPreview" href="#idLjssutname">a-name</a> associated with it.
+    <a class="clsHide" href="#idLjssutSnamNdsn"></a></p>
+  <p id="idLjssutSnamNnam">Name::
     <br>* cpt.Ljs'anonymous-semantic-unit,
     <br>* cpt.LjsAnonymous-semantic-unit,
     <br>* cpt.LjsNameNo-semantic-unit,
     <br>* cpt.LjsName-value-pair-No-semantic-unit,
     <br>* cpt.Ljs'nameNo,
     <br>* cpt.LjsNameNo,
-    <a class="clsHide" href="#idLjsvNonam"></a></p>
+    <a class="clsHide" href="#idLjssutSnamNnam"></a></p>
   </section>
   </section>
 
@@ -2235,177 +2251,6 @@
     <a class="clsHide" href="#idLjsugnc"></a></p>
   </section>
 
-  <section id="idLjsv">
-  <h2 id="idLjsvH2">ljsalgo'sut.NAME-VALUE-PAIR (ljsv)
-    <a class="clsHide" href="#idLjsvH2"></a></h2>
-  <p id="idLjsvdsn">Description::
-    <br>In order to create combinations of <a class="clsPreview" href="#idLjssut">semantic-units</a> we need to give names to semantic-units and combinations of semantic-units.
-    <br>This pair of a-name and the-information associated with this name is the-name-value-pair (variable).
-    <a class="clsHide" href="#idLjsvdsn"></a></p>
-  <p id="idLjsvnam">Name::
-    <br>* cpt.Ljs'name-value-pair,
-    <br>* cpt.LjsName-value-pair,
-    <br>* cpt.Ljs'variable,
-    <br>* cpt.LjsVariable,
-    <br>* cpt.Ljs'nvp,
-    <br>* cpt.LjsNvp,
-    <br>* cpt.LjsV,
-    <br>* cpt.Variable-of-javascript,
-    <a class="clsHide" href="#idLjsvnam"></a></p>
-  <p id="idLjsvgnc">Generic-chain::
-    <br>* the-generic of its <a class="clsPreview" href="#idLjsvval">value</a>.
-    <a class="clsHide" href="#idLjsvgnc"></a></p>
-
-  <section id="idLjsvidr">
-  <h3 id="idLjsvidrH3">ljsv'identifier (name)
-    <a class="clsHide" href="#idLjsvidrH3"></a></h3>
-  <p id="idLjsvidrdsn">Description::
-    <br>The-name of <a class="clsPreview" href="#idLjsv">a-name-value-pair</a> is-called idenfier.
-    <br>An-identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9).
-    <a class="clsHide" href="#idLjsvidrdsn"></a></p>
-  <p id="idLjsvidrnam">Name::
-    <br>* cpt.Ljs'identifier,
-    <br>* cpt.Ljs'variable-name,
-    <br>* cpt.Ljs'variable-reference,
-    <br>* cpt.LjsIdentifier,
-    <a class="clsHide" href="#idLjsvidrnam"></a></p>
-
-  <section id="idLjsvidrTyp">
-  <h4 id="idLjsvidrTypH4">ljsv'identifier.VALUENAME
-    <a class="clsHide" href="#idLjsvidrTypH4"></a></h4>
-  <p id="idLjsvidrTypdsn">Description::
-    <br>Valuename|typename is an-identifier which denotes its value|type.
-    <br>Since {2014.08.05} <a class="clsPreview" href="../../#idAboutme">I</a> am-using <a class="clsPreview" href="../../hitp/#idEvnPara10d">typenames</a> in my code, which makes the-code much more readable.
-    <a class="clsHide" href="#idLjsvidrTypdsn"></a></p>
-  <p id="idLjsvidrTypnam">Name::
-    <br>* cpt.Ljs'typename,
-    <br>* cpt.Ljs'valuename,
-    <br>* cpt.Typename,
-    <br>* cpt.Valuename,
-    <a class="clsHide" href="#idLjsvidrnam"></a></p>
-  <p id="idLjsvidrTypSpc">Specific::
-    <br>In <a class="clsPreview" href="#idDescription">javascript</a> we need only 11 typenames to denote ALL its types:
-    <br>01) <a class="clsPreview" href="#idLjsa">aName for Arrays</a>,
-    <br>02) <a class="clsPreview" href="#idLjsb">bName for Booleans</a>,
-    <br>03) <a class="clsPreview" href="#idLjsf">fName for Functions</a>,
-    <br>04) <a class="clsPreview" href="#idLjsl">lName for nuLl</a>,
-    <br>05) <a class="clsPreview" href="#idLjnm">mName for Modules</a>,
-    <br>06) <a class="clsPreview" href="#idLjsn">nName for Numbers</a>,
-    <br>07) <a class="clsPreview" href="#idLjso">oName for Objects</a>,
-    <br>08) <a class="clsPreview" href="#idLjsr">rName for Regexps</a>,
-    <br>09) <a class="clsPreview" href="#idLjss">sName for Strings</a>,
-    <br>10) <a class="clsPreview" href="#idLjsu">uName for Undefined</a>,
-    <br>11) <a class="clsPreview" href="#idLjsx">xName for miXed-name-value-pairs</a>,
-    <a class="clsHide" href="#idLjsvidrTypSpc"></a></p>
-  </section>
-  </section>
-
-  <section id="idLjsvval">
-  <h3 id="idLjsvvalH3">ljsv'value
-    <a class="clsHide" href="#idLjsvvalH3"></a></h3>
-  <p id="idLjsvvaldsn">Description::
-    <br>The-information we assign in the-name of <a class="clsPreview" href="#idLjsv">a-name-value-pair</a> is-called value.
-    <a class="clsHide" href="#idLjsvvaldsn"></a></p>
-  <p id="idLjsvvalnam">Name::
-    <br>* cpt.Ljs'value,
-    <br>* cpt.LjsValue,
-    <a class="clsHide" href="#idLjsvvalnam"></a></p>
-  </section>
-
-  <section id="idLjsvdfn">
-  <h3 id="idLjsvdfnH3">ljsv'definition (<a class="clsPreview" href="#idLjsstcDfnV">link</a>)
-    <a class="clsHide" href="#idLjsvdfnH3"></a></h3>
-
-  <section id="idLjsvSpc">
-  <h3 id="idLjsvSpcH3">ljsv.SPECIFIC
-    <a class="clsHide" href="#idLjsvSpcH3"></a></h3>
-  <p id="idLjsvSpcP1">Specific::
-    <br>* <a class="clsPreview" href="#idLjsvCst">const-nvp</a>,
-    <br>* <a class="clsPreview" href="#idLjsvLet">let-nvp</a>,
-    <br>* <a class="clsPreview" href="#idLjsvVar">var-nvp</a>,
-    <br>===
-    <br>* array-nvp (var a = []),
-    <br>* boolean-nvp (var b = true),
-    <br>* function-nvp (var f = function(){}),
-    <br>* module-nvp (var m = require('os')),
-    <br>* number-nvp (var n = 3),
-    <br>* object-nvp (var o = {}),
-    <br>* regexp-nvp (var r = /x/),
-    <br>* string-nvp (var s = 'a-string'),
-    <br>* <a class="clsPreview" href="#idLjsx">mixed-nvp</a>,
-    <br>* <a class="clsPreview" href="#idLjsxNo">mixedNo-nvp</a>,
-    <a class="clsHide" href="#idLjsvSpcP1"></a></p>
-  </section>
-
-  <section id="idLjsvSpcVal">
-  <h3 id="idLjsvSpcValH3">ljsv.SPECIFIC-DIVISION.value
-    <a class="clsHide" href="#idLjsvSpcValH3"></a></h3>
-  <p id="idLjsvSpcValP1">Specific::
-    <br>* <a class="clsPreview" href="#idLjsx">mixed-name-value-pair--semantic-unit</a>,
-    <br>* <a class="clsPreview" href="#idLjsxNo">mixedNo-name-value-pair--semantic-unit</a>,
-    <a class="clsHide" href="#idLjsvSpcValP1"></a></p>
-  <p id="idLjsxNo">MixedNo-name-value-pair--semantic-unit:
-    <br>Description::
-    <br>MixedNo-name-value-pair is <a class="clsPreview" href="#idLjsv">a-name-value-pair</a> which ASSOCIATES only ONE type of <a class="clsPreview" href="#idLjsvval">value</a> with <a class="clsPreview" href="#idLjsvnam">a-name</a>.
-    <br>
-    <br>Name::
-    <br>* cpt.Ljs'mixedNo-semantic-unit,
-    <br>* cpt.LjsMixedNo-semantic-unit,
-    <br>* cpt.Ljs'mixedNo-name-value-pair--semantic-unit,
-    <br>* cpt.LjsMixedNo-name-value-pair--semantic-unit,
-    <br>* cpt.Ljs'mixedNo-sut,
-    <br>* cpt.LjsMixedNo-sut,
-    <a class="clsHide" href="#idLjsxNo"></a></p>
-  </section>
-
-  <section id="idLjsvCst">
-  <h3 id="idLjsvCstH3">ljsv.const
-    <a class="clsHide" href="#idLjsvCstH3"></a></h3>
-  <p id="idLjsvCstdsn">Description::
-    <br><span class="clsQuote">The <code>const</code> declaration creates a read-only reference to a value.
-    <br>It does not mean the value it holds is immutable, just that the variable identifier cannot be reassigned.</span>
-    [<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const</a>]
-    <a class="clsHide" href="#idLjsvCstdsn"></a></p>
-  <p id="idLjsvCstnam">Name::
-    <br>* cpt.Ljs'const-name-value-pair,
-    <br>* cpt.LjsConst-name-value-pair,
-    <br>* cpt.Ljs'constant,
-    <br>* cpt.Ljs'const,
-    <br>* cpt.LjsConst,
-    <a class="clsHide" href="#idLjsvCstnam"></a></p>
-  </section>
-
-  <section id="idLjsvLet">
-  <h3 id="idLjsvLetH3">ljsv.let
-    <a class="clsHide" href="#idLjsvLetH3"></a></h3>
-  <p id="idLjsvLetdsn">Description::
-    <br><span class="clsQuote">The let statement declares a block scope local variable, optionally initializing it to a value.</span>
-    [<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let</a>]
-    <a class="clsHide" href="#idLjsvLetdsn"></a></p>
-  <p id="idLjsvLetnam">Name::
-    <br>* cpt.Ljs'let-name-value-pair,
-    <br>* cpt.LjsLet-name-value-pair,
-    <br>* cpt.Ljs'let,
-    <br>* cpt.LjsLet,
-    <a class="clsHide" href="#idLjsvLetnam"></a></p>
-  </section>
-
-  <section id="idLjsvVar">
-  <h3 id="idLjsvVarH3">ljsv.var
-    <a class="clsHide" href="#idLjsvVarH3"></a></h3>
-  <p id="idLjsvVardsn">Description::
-    <br><span class="clsQuote">The scope of a variable declared with <code>var</code> is its current execution context, which is either the enclosing function or, for variables declared outside any function, global.</span>
-    [<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var</a>]
-    <a class="clsHide" href="#idLjsvVardsn"></a></p>
-  <p id="idLjsvVarnam">Name::
-    <br>* cpt.Ljs'var-name-value-pair,
-    <br>* cpt.LjsVar-name-value-pair,
-    <br>* cpt.Ljs'var,
-    <br>* cpt.LjsVar,
-    <a class="clsHide" href="#idLjsvVarnam"></a></p>
-  </section>
-  </section>
-
   <section id="idLjsx">
   <h2 id="idLjsxH2">ljsalgo'sut.MIXED (ljsx)
     <a class="clsHide" href="#idLjsxH2"></a></h2>
@@ -2993,9 +2838,11 @@
     <a class="clsHide" href="#idLjsstcdsn"></a></p>
   <p id="idLjsstcnam">Name::
     <br>* cpt.Ljs'sentence,
-    <br>* cpt.LjsSentence,
     <br>* cpt.Ljs'statement,
+    <br>* cpt.LjsSentence,
     <br>* cpt.LjsStatement,
+    <br>* cpt.Sentence-of-javascript,
+    <br>* cpt.Statement-of-javascript,
     <a class="clsHide" href="#idLjsstcnam"></a></p>
   <p id="idLjsstcwhl">Whole-chain::
     <br>* <a class="clsPreview" href="#idLjspgm">ljs-program</a>,
@@ -3004,24 +2851,6 @@
     <br>* <a class="clsPreview" href="#idLjsfrs">ljs-ljs-phrase</a>,
     <br>* <a class="clsPreview" href="#idLjssut">ljs-semantic-unit</a>,
     <a class="clsHide" href="#idLjsstcprt"></a></p>
-
-  <section id="idLjsstccod">
-  <h2 id="idLjsstccodH2">ljsstc'Code
-    <a class="clsHide" href="#idLjsstccodH2"></a></h2>
-  <p id="idLjsstccoddsn">Description::
-    <br>Code-sentence is <a class="clsPreview" href="#idLjsstc">a-sentence</a> written in <a class="clsPreview" href="#idLjscod">code-format</a>.
-    <br>Example:
-    <br><code>var s = 'string';
-    <br>n = 2 + 3;
-    <br>if (b) {//do this};</code>
-    <a class="clsHide" href="#idLjsstccodDes"></a></p>
-  <p id="idLjsstccodnam">Name::
-    <br>* cpt.Ljs'sentence.code,
-    <br>* cpt.LjsSentence.code,
-    <br>* cpt.Ljs'code-sentence,
-    <br>* cpt.LjsCode-sentence,
-    <a class="clsHide" href="#idLjsstccodnam"></a></p>
-  </section>
 
   <section id="idLjsstcSpc">
   <h2 id="idLjsstcSpcH2">ljsstc.SPECIFIC
@@ -3107,20 +2936,23 @@
     <br>In contrast to natural-languages, machines throw errors if a-sentence uses an undefined semantic-unit!!!
     <a class="clsHide" href="#idLjsstcDfndsn"></a></p>
   <p id="idLjsstcDfnnam">Name::
-    <br>* cpt.Ljs'definition-sentence,
-    <br>* cpt.LjsDefinition-sentence,
-    <br>* cpt.Ljs'definition-statement,
-    <br>* cpt.LjsDefinition-statement,
     <br>* cpt.Ljs'declaration,
+    <br>* cpt.Ljs'definition-sentence,
+    <br>* cpt.Ljs'definition-statement,
     <br>* cpt.LjsDeclaration,
+    <br>* cpt.LjsDefinition-sentence,
+    <br>* cpt.LjsDefinition-statement,
+    <br>* cpt.Declaration-of-javascript,
+    <br>* cpt.Definition-sentence-of-javascript,
+    <br>* cpt.Definition-statement-of-javascript,
     <a class="clsHide" href="#idLjsstcDfnnam"></a></p>
   <p id="idLjsstcDfnSpc">Specific::
-    <br>* function-definition,
-    <br>* name-value-pair definition,
+    <br>* <a class="clsPreview" href="#idLjsstcDfnF">Function-definition</a>,
+    <br>* <a class="clsPreview" href="#idLjsv">Name-value-pair--definition</a>,
     <a class="clsHide" href="#idLjsstcDfnnam"></a></p>
 
   <section id="idLjsstcDfnF">
-  <h3 id="idLjsstcDfnFH3">ljsstc.DEFINITION.FUNCTION
+  <h3 id="idLjsstcDfnFH3">ljsstc.definition.FUNCTION
     <a class="clsHide" href="#idLjsstcDfnFH3"></a></h3>
   <p id="idLjsstcDfnFdsn">Description::
     <br><a class="clsPreview" href="#idLjsstc">A-sentence</a> that creates <a class="clsPreview" href="#idLjsf">function</a> instance.
@@ -3139,33 +2971,189 @@
     <a class="clsHide" href="#idLjsstcDfnFnam"></a></p>
   </section>
 
-  <section id="idLjsstcDfnV">
-  <h3 id="idLjsstcDfnVH3">ljsstc.DEFINITION.NAME-VALUE-PAIR
-    <a class="clsHide" href="#idLjsstcDfnVH3"></a></h3>
-  <p id="idLjsstcDfnVdsn">Description::
-    <br><a class="clsPreview" href="#idLjsstc">A-sentence</a> that creates <a class="clsPreview" href="#idLjsv">a-name-value-pair</a> instance.
+  <section id="idLjsv">
+  <h3 id="idLjsvH3">ljsstc.definition.NAME-VALUE-PAIR (ljsv)
+    <a class="clsHide" href="#idLjsvH3"></a></h3>
+  <p id="idLjsvdsn">Description::
+    <br><a class="clsPreview" href="#idLjsstc">A-sentence</a> that creates <a class="clsPreview" href="#idLjssut">a-semantic-unit</a> with <a class="clsPreview" href="#idLjssutname">a-reference-name</a>.
     <br><a class="clsPreview" href="#idLjscod">Code</a>:
-    <br><code>var name;
-    <br>// === number <a class="clsPreview" href="#idLjsv">nvp</a> definition and <a class="clsPreview" href="#idLjsstcAst">assignment</a>
+    <br><code>var n;
     <br>var n = 3;
-    <br>===
     <br>const n = 3;
-    <br>===
-    <br>let n = 3;
-    </code>
-    <a class="clsHide" href="#idLjsstcDfnVdsn"></a></p>
-  <p id="idLjsstcDfnVnam">Name::
-    <br>* cpt.Ljs'name-value-pair-definition,
-    <br>* cpt.LjsName-value-pair-definition,
-    <br>* cpt.Ljs'variable-statement,
-    <br>* cpt.LjsVariable-statement,
-    <br>* cpt.Ljs'variable-definition-sentence,
-    <br>* cpt.LjsVariable-definition-sentence,
+    <br>let n = 3;</code>
+    <a class="clsHide" href="#idLjsvdsn"></a></p>
+  <p id="idLjsvnam">Name::
     <br>* cpt.Ljs'definition.variable,
-    <br>* cpt.LjsDefinition.variable,
+    <br>* cpt.Ljs'name-value-pair-definition,
+    <br>* cpt.Ljs'nvp,
+    <br>* cpt.Ljs'variable,
     <br>* cpt.Ljs'variable-declaration,
+    <br>* cpt.Ljs'variable-definition-sentence,
+    <br>* cpt.Ljs'variable-statement,
+    <br>* cpt.LjsDefinition.variable,
+    <br>* cpt.LjsName-value-pair-definition,
+    <br>* cpt.LjsVariable,
+    <br>* cpt.LjsNvp,
+    <br>* cpt.LjsV,
     <br>* cpt.LjsVariable-declaration,
-    <a class="clsHide" href="#idLjsstcDfnVnam"></a></p>
+    <br>* cpt.LjsVariable-definition-sentence,
+    <br>* cpt.LjsVariable-statement,
+    <br>* cpt.Variable-of-javascript,
+    <a class="clsHide" href="#idLjsvnam"></a></p>
+  <p id="idLjsvgnc">Generic-chain::
+    <br>* Definition-sentence,
+    <a class="clsHide" href="#idLjsvgnc"></a></p>
+
+  <section id="idLjsvidr">
+  <h4 id="idLjsvidrH4">ljsv'identifier (name)
+    <a class="clsHide" href="#idLjsvidrH4"></a></h4>
+  <p id="idLjsvidrdsn">Description::
+    <br>The-name of <a class="clsPreview" href="#idLjsv">a-name-value-pair</a> is-called idenfier.
+    <br>An-identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9).
+    <a class="clsHide" href="#idLjsvidrdsn"></a></p>
+  <p id="idLjsvidrnam">Name::
+    <br>* cpt.Ljs'identifier,
+    <br>* cpt.Ljs'reference-name,
+    <br>* cpt.Ljs'variable-name,
+    <br>* cpt.Ljs'variable-reference,
+    <br>* cpt.LjsIdentifier,
+    <a class="clsHide" href="#idLjsvidrnam"></a></p>
+
+  <section id="idLjsvidrTyp">
+  <h5 id="idLjsvidrTypH5">ljsv'identifier.VALUENAME
+    <a class="clsHide" href="#idLjsvidrTypH5"></a></h5>
+  <p id="idLjsvidrTypdsn">Description::
+    <br>Valuename|typename is an-identifier which denotes its value|type.
+    <br>Since {2014.08.05} <a class="clsPreview" href="../../#idAboutme">I</a> am-using <a class="clsPreview" href="../../hitp/#idEvnPara10d">typenames</a> in my code, which makes the-code much more readable.
+    <a class="clsHide" href="#idLjsvidrTypdsn"></a></p>
+  <p id="idLjsvidrTypnam">Name::
+    <br>* cpt.Ljs'typename,
+    <br>* cpt.Ljs'valuename,
+    <br>* cpt.Typename,
+    <br>* cpt.Valuename,
+    <a class="clsHide" href="#idLjsvidrnam"></a></p>
+  <p id="idLjsvidrTypSpc">Specific::
+    <br>In <a class="clsPreview" href="#idDescription">javascript</a> we need only 11 typenames to denote ALL its types:
+    <br>01) <a class="clsPreview" href="#idLjsa">aName for Arrays</a>,
+    <br>02) <a class="clsPreview" href="#idLjsb">bName for Booleans</a>,
+    <br>03) <a class="clsPreview" href="#idLjsf">fName for Functions</a>,
+    <br>04) <a class="clsPreview" href="#idLjsl">lName for nuLl</a>,
+    <br>05) <a class="clsPreview" href="#idLjnm">mName for Modules</a>,
+    <br>06) <a class="clsPreview" href="#idLjsn">nName for Numbers</a>,
+    <br>07) <a class="clsPreview" href="#idLjso">oName for Objects</a>,
+    <br>08) <a class="clsPreview" href="#idLjsr">rName for Regexps</a>,
+    <br>09) <a class="clsPreview" href="#idLjss">sName for Strings</a>,
+    <br>10) <a class="clsPreview" href="#idLjsu">uName for Undefined</a>,
+    <br>11) <a class="clsPreview" href="#idLjsx">xName for miXed-name-value-pairs</a>,
+    <a class="clsHide" href="#idLjsvidrTypSpc"></a></p>
+  </section>
+  </section>
+
+  <section id="idLjsvval">
+  <h4 id="idLjsvvalH4">ljsv'value
+    <a class="clsHide" href="#idLjsvvalH4"></a></h4>
+  <p id="idLjsvvaldsn">Description::
+    <br>The-information we assign in the-name of <a class="clsPreview" href="#idLjsv">a-name-value-pair</a> is-called value.
+    <a class="clsHide" href="#idLjsvvaldsn"></a></p>
+  <p id="idLjsvvalnam">Name::
+    <br>* cpt.Ljs'value,
+    <br>* cpt.LjsValue,
+    <a class="clsHide" href="#idLjsvvalnam"></a></p>
+  </section>
+
+  <section id="idLjsvdfn">
+  <h4 id="idLjsvdfnH4">ljsv'definition (<a class="clsPreview" href="#idLjsv">link</a>)
+    <a class="clsHide" href="#idLjsvdfnH4"></a></h4>
+  </section>
+
+  <section id="idLjsvSpc">
+  <h4 id="idLjsvSpcH4">ljsv.SPECIFIC
+    <a class="clsHide" href="#idLjsvSpcH4"></a></h4>
+  <p id="idLjsvSpcP1">Specific::
+    <br>* <a class="clsPreview" href="#idLjsvCst">const-nvp</a>,
+    <br>* <a class="clsPreview" href="#idLjsvLet">let-nvp</a>,
+    <br>* <a class="clsPreview" href="#idLjsvVar">var-nvp</a>,
+    <br>===
+    <br>* array-nvp (var a = []),
+    <br>* boolean-nvp (var b = true),
+    <br>* function-nvp (var f = function(){}),
+    <br>* module-nvp (var m = require('os')),
+    <br>* number-nvp (var n = 3),
+    <br>* object-nvp (var o = {}),
+    <br>* regexp-nvp (var r = /x/),
+    <br>* string-nvp (var s = 'a-string'),
+    <br>* <a class="clsPreview" href="#idLjsx">mixed-nvp</a>,
+    <br>* <a class="clsPreview" href="#idLjsxNo">mixedNo-nvp</a>,
+    <a class="clsHide" href="#idLjsvSpcP1"></a></p>
+  </section>
+
+  <section id="idLjsvSpcVal">
+  <h4 id="idLjsvSpcValH4">ljsv.SPECIFIC-DIVISION.value
+    <a class="clsHide" href="#idLjsvSpcValH4"></a></h4>
+  <p id="idLjsvSpcValP1">Specific::
+    <br>* <a class="clsPreview" href="#idLjsx">mixed-name-value-pair--semantic-unit</a>,
+    <br>* <a class="clsPreview" href="#idLjsxNo">mixedNo-name-value-pair--semantic-unit</a>,
+    <a class="clsHide" href="#idLjsvSpcValP1"></a></p>
+  <p id="idLjsxNo">MixedNo-name-value-pair--semantic-unit:
+    <br>Description::
+    <br>MixedNo-name-value-pair is <a class="clsPreview" href="#idLjsv">a-name-value-pair</a> which ASSOCIATES only ONE type of <a class="clsPreview" href="#idLjsvval">value</a> with <a class="clsPreview" href="#idLjssutname">a-name</a>.
+    <br>
+    <br>Name::
+    <br>* cpt.Ljs'mixedNo-semantic-unit,
+    <br>* cpt.LjsMixedNo-semantic-unit,
+    <br>* cpt.Ljs'mixedNo-name-value-pair--semantic-unit,
+    <br>* cpt.LjsMixedNo-name-value-pair--semantic-unit,
+    <br>* cpt.Ljs'mixedNo-sut,
+    <br>* cpt.LjsMixedNo-sut,
+    <a class="clsHide" href="#idLjsxNo"></a></p>
+  </section>
+
+  <section id="idLjsvCst">
+  <h4 id="idLjsvCstH4">ljsv.const
+    <a class="clsHide" href="#idLjsvCstH4"></a></h4>
+  <p id="idLjsvCstdsn">Description::
+    <br><span class="clsQuote">The <code>const</code> declaration creates a read-only reference to a value.
+    <br>It does not mean the value it holds is immutable, just that the variable identifier cannot be reassigned.</span>
+    [<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const</a>]
+    <a class="clsHide" href="#idLjsvCstdsn"></a></p>
+  <p id="idLjsvCstnam">Name::
+    <br>* cpt.Ljs'const-name-value-pair,
+    <br>* cpt.LjsConst-name-value-pair,
+    <br>* cpt.Ljs'constant,
+    <br>* cpt.Ljs'const,
+    <br>* cpt.LjsConst,
+    <a class="clsHide" href="#idLjsvCstnam"></a></p>
+  </section>
+
+  <section id="idLjsvLet">
+  <h4 id="idLjsvLetH4">ljsv.let
+    <a class="clsHide" href="#idLjsvLetH4"></a></h4>
+  <p id="idLjsvLetdsn">Description::
+    <br><span class="clsQuote">The let statement declares a block scope local variable, optionally initializing it to a value.</span>
+    [<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let</a>]
+    <a class="clsHide" href="#idLjsvLetdsn"></a></p>
+  <p id="idLjsvLetnam">Name::
+    <br>* cpt.Ljs'let-name-value-pair,
+    <br>* cpt.LjsLet-name-value-pair,
+    <br>* cpt.Ljs'let,
+    <br>* cpt.LjsLet,
+    <a class="clsHide" href="#idLjsvLetnam"></a></p>
+  </section>
+
+  <section id="idLjsvVar">
+  <h4 id="idLjsvVarH4">ljsv.var
+    <a class="clsHide" href="#idLjsvVarH4"></a></h4>
+  <p id="idLjsvVardsn">Description::
+    <br><span class="clsQuote">The scope of a variable declared with <code>var</code> is its current execution context, which is either the enclosing function or, for variables declared outside any function, global.</span>
+    [<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var</a>]
+    <a class="clsHide" href="#idLjsvVardsn"></a></p>
+  <p id="idLjsvVarnam">Name::
+    <br>* cpt.Ljs'var-name-value-pair,
+    <br>* cpt.LjsVar-name-value-pair,
+    <br>* cpt.Ljs'var,
+    <br>* cpt.LjsVar,
+    <a class="clsHide" href="#idLjsvVarnam"></a></p>
+  </section>
   </section>
   </section>
 </section>
