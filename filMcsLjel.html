@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>cpt.Electron-desktop-javascript-language (Ljel.2-0-0.2017-10-23)</title>
+  <title>cpt.Electron-desktop-javascript-language (Ljel.3-0-0.2017-10-28)</title>
   <meta name="keywords" content="Electron-Desktop-Javascript, ModelConceptStructured, Mcs, ModelInfoWorld, Worldview, Mws, Hitp, Kaseluris.Nikos.1959, Synagonism">
   <link rel="stylesheet" href="http://synagonism.github.io/hitp/hitp.css">
 </head>
@@ -86,7 +86,9 @@
     <a class="clsHide" href="#idLjelapiH1"></a></h1>
   <p id="idLjelapinam">Name::
     <br>* cpt.API.Electron,
+    <br>* cpt.API.ljel,
     <br>* cpt.Electron-API,
+    <br>* cpt.Ljel'API,
     <br>* cpt.Ljel-algo'API,
     <br>* cpt.Ljel-API,
     <a class="clsHide" href="#idLjelapinam"></a></p>
@@ -152,6 +154,7 @@
   <p id="idLjelmgonam">Name::
     <br>* cpt.Ljel'Most-generic-object,
     <br>* cpt.Ljel'Object.prototype,
+    <br>* cpt.Most-generic-object.ljel,
     <a class="clsHide" href="#idLjelmgonam"></a></p>
   <p id="idLjelmgognc">Generic::
     <br>* <a class="clsPreview" href="filMcsLjs.html#idLjsmgo">Javascript--most-generic-object</a>,
@@ -209,20 +212,51 @@
     <a class="clsHide" href="#idLjelmainelngnc"></a></p>
 
   <section id="idLjelBrowserView">
-  <h3 id="idLjelBrowserViewH3">Ljel-API'BrowserView
+  <h3 id="idLjelBrowserViewH3">Ljel-API'BrowserView-function
     <a class="clsHide" href="#idLjelBrowserViewH3"></a></h3>
+  <p id="idLjelBrowserViewdsn">Description::
+    <br>Create and control views.
+    <br>Note: The BrowserView API is currently experimental and may change or be removed in future Electron releases.
+    <br>Process: Main
+    <br>A BrowserView can be used to embed additional web content into a BrowserWindow. It is like a child window, except that it is positioned relative to its owning window. It is meant to be an alternative to the webview tag.
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/browser-view.md">https://github.com/electron/electron/blob/master/docs/api/browser-view.md</a>]
+    <a class="clsHide" href="#idLjelBrowserViewdsn"></a></p>
   <p id="idLjelBrowserViewnam">Name::
-    <br>* cpt.Ljel-API'BrowserView,
-    <br>* cpt.Ljel-BrowserView,
+    <br>* cpt.Ljel-API'BrowserView-function,
+    <br>* cpt.Ljel'BrowserView-function,
+    <br>* cpt.Ljel-BrowserView-function,
     <a class="clsHide" href="#idLjelBrowserViewnam"></a></p>
   </section>
 
   <section id="idLjelBrowserWindow">
-  <h3 id="idLjelBrowserWindowH3">Ljel-API'BrowserWindow
+  <h3 id="idLjelBrowserWindowH3">Ljel-API'BrowserWindow-function
     <a class="clsHide" href="#idLjelBrowserWindowH3"></a></h3>
+  <p id="idLjelBrowserWindowdsn">Description::
+    <br>Create and control browser windows.
+    <br>Process: Main
+    <br>
+    <br><code>// In the main process.
+    <br>const {BrowserWindow} = require('electron')
+    <br>
+    <br>// Or use `remote` from the renderer process.
+    <br>// const {BrowserWindow} = require('electron').remote
+    <br>
+    <br>let win = new BrowserWindow({width: 800, height: 600})
+    <br>win.on('closed', () => {
+    <br> &nbsp;win = null
+    <br>})
+    <br>
+    <br>// Load a remote URL
+    <br>win.loadURL('https://github.com')
+    <br>
+    <br>// Or load a local HTML file
+    <br>win.loadURL(`file://${__dirname}/app/index.html`)</code>
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/browser-window.md">https://github.com/electron/electron/blob/master/docs/api/browser-window.md</a>]
+    <a class="clsHide" href="#idLjelBrowserWindowdsn"></a></p>
   <p id="idLjelBrowserWindownam">Name::
-    <br>* cpt.Ljel-API'BrowserWindow,
-    <br>* cpt.Ljel-BrowserWindow,
+    <br>* cpt.Ljel-API'BrowserWindow-function,
+    <br>* cpt.Ljel'BrowserWindow-function,
+    <br>* cpt.Ljel-BrowserWindow-function,
     <a class="clsHide" href="#idLjelBrowserWindownam"></a></p>
   </section>
 
@@ -260,191 +294,335 @@
   </section>
 
   <section id="idLjelfMenuItem">
-  <h3 id="idLjelfMenuItemH3">Ljel-API'MenuItem
+  <h3 id="idLjelfMenuItemH3">Ljel-API'MenuItem-function
     <a class="clsHide" href="#idLjelfMenuItemH3"></a></h3>
   <p id="idLjelfMenuItemnam">Name::
-    <br>* cpt.Ljel-API'MenuItem,
-    <br>* cpt.Ljel-MenuItem,
+    <br>* cpt.Ljel-API'MenuItem-function,
+    <br>* cpt.Ljel'MenuItem-function,
+    <br>* cpt.Ljel-MenuItem-function,
     <a class="clsHide" href="#idLjelfMenuItemnam"></a></p>
   </section>
 
   <section id="idLjelTouchBar">
-  <h3 id="idLjelTouchBarH3">Ljel-API'TouchBar
+  <h3 id="idLjelTouchBarH3">Ljel-API'TouchBar-function
     <a class="clsHide" href="#idLjelTouchBarH3"></a></h3>
   <p id="idLjelTouchBarnam">Name::
-    <br>* cpt.Ljel-API'TouchBar,
-    <br>* cpt.Ljel-TouchBar,
+    <br>* cpt.Ljel-API'TouchBar-function,
+    <br>* cpt.Ljel'TouchBar-function,
+    <br>* cpt.Ljel-TouchBar-function,
     <a class="clsHide" href="#idLjelTouchBarnam"></a></p>
   </section>
 
   <section id="idLjelTray">
-  <h3 id="idLjelTrayH3">Ljel-API'Tray
+  <h3 id="idLjelTrayH3">Ljel-API'Tray-function
     <a class="clsHide" href="#idLjelTrayH3"></a></h3>
   <p id="idLjelTraynam">Name::
-    <br>* cpt.Ljel-API'Tray,
-    <br>* cpt.Ljel-Tray,
+    <br>* cpt.Ljel-API'Tray-function,
+    <br>* cpt.Ljel'Tray-function,
+    <br>* cpt.Ljel-Tray-function,
     <a class="clsHide" href="#idLjelTraynam"></a></p>
   </section>
 
   <section id="idLjelapp">
-  <h3 id="idLjelappH3">Ljel-API'app
+  <h3 id="idLjelappH3">Ljel-API'app-object
     <a class="clsHide" href="#idLjelappH3"></a></h3>
+  <p id="idLjelappdsn">Description::
+    <br>Control your application's event lifecycle.
+    <br>Process: Main
+    <br>The following example shows how to quit the application when the last window is closed:
+    <br><code>const {app} = require('electron')
+    <br>app.on('window-all-closed', () => {
+    <br> &nbsp;app.quit()
+    <br>})</code>
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/app.md">https://github.com/electron/electron/blob/master/docs/api/app.md</a>]
+    <a class="clsHide" href="#idLjelappdsn"></a></p>
   <p id="idLjelappnam">Name::
-    <br>* cpt.Ljel-API'app,
-    <br>* cpt.Ljel-app,
+    <br>* cpt.Ljel-API'app-object,
+    <br>* cpt.Ljel'app-object,
+    <br>* cpt.Ljel-app-object,
     <a class="clsHide" href="#idLjelappnam"></a></p>
   </section>
 
   <section id="idLjelautoUpdater">
-  <h3 id="idLjelautoUpdaterH3">Ljel-API'autoUpdater
+  <h3 id="idLjelautoUpdaterH3">Ljel-API'autoUpdater-object
     <a class="clsHide" href="#idLjelautoUpdaterH3"></a></h3>
+  <p id="idLjelautoUpdaterdsn">Description::
+    <br>Enable apps to automatically update themselves.
+    <br>Process: Main
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/auto-updater.md">https://github.com/electron/electron/blob/master/docs/api/auto-updater.md</a>]
+    <a class="clsHide" href="#idLjelautoUpdaterdsn"></a></p>
   <p id="idLjelautoUpdaternam">Name::
-    <br>* cpt.Ljel-API'autoUpdater,
-    <br>* cpt.Ljel-autoUpdater,
+    <br>* cpt.Ljel-API'autoUpdater-object,
+    <br>* cpt.Ljel'autoUpdater-object,
+    <br>* cpt.Ljel-autoUpdater-object,
     <a class="clsHide" href="#idLjelautoUpdaternam"></a></p>
   </section>
 
   <section id="idLjelclipboard">
-  <h3 id="idLjelclipboardH3">Ljel-API'clipboard
+  <h3 id="idLjelclipboardH3">Ljel-API'clipboard-object
     <a class="clsHide" href="#idLjelclipboardH3"></a></h3>
   <p id="idLjelclipboardnam">Name::
-    <br>* cpt.Ljel-API'clipboard,
-    <br>* cpt.Ljel-clipboard,
+    <br>* cpt.Ljel-API'clipboard-object,
+    <br>* cpt.Ljel'clipboard-object,
+    <br>* cpt.Ljel-clipboard-object,
     <a class="clsHide" href="#idLjelclipboardnam"></a></p>
   </section>
 
   <section id="idLjelcontentTracing">
-  <h3 id="idLjelcontentTracingH3">Ljel-API'contentTracing
+  <h3 id="idLjelcontentTracingH3">Ljel-API'contentTracing-object
     <a class="clsHide" href="#idLjelcontentTracingH3"></a></h3>
   <p id="idLjelcontentTracingnam">Name::
-    <br>* cpt.Ljel-API'contentTracing,
-    <br>* cpt.Ljel-contentTracing,
+    <br>* cpt.Ljel-API'contentTracing-object,
+    <br>* cpt.Ljel'contentTracing-object,
+    <br>* cpt.Ljel-contentTracing-object,
     <a class="clsHide" href="#idLjelcontentTracingnam"></a></p>
   </section>
 
   <section id="idLjelcrashReporter">
-  <h3 id="idLjelcrashReporterH3">Ljel-API'crashReporter
+  <h3 id="idLjelcrashReporterH3">Ljel-API'crashReporter-object
     <a class="clsHide" href="#idLjelcrashReporterH3"></a></h3>
   <p id="idLjelcrashReporternam">Name::
-    <br>* cpt.Ljel-API'crashReporter,
-    <br>* cpt.Ljel-crashReporter,
+    <br>* cpt.Ljel-API'crashReporter-object,
+    <br>* cpt.Ljel'crashReporter-object,
+    <br>* cpt.Ljel-crashReporter-object,
     <a class="clsHide" href="#idLjelcrashReporternam"></a></p>
   </section>
 
   <section id="idLjeldialog">
-  <h3 id="idLjeldialogH3">Ljel-API'dialog
+  <h3 id="idLjeldialogH3">Ljel-API'dialog-object
     <a class="clsHide" href="#idLjeldialogH3"></a></h3>
+  <p id="idLjeldialogdsn">Description::
+    <br>Display native system dialogs for opening and saving files, alerting, etc.
+    <br>Process: Main
+    <br>An example of showing a dialog to select multiple files and directories:
+    <br><code>const {dialog} = require('electron')
+    <br>console.log(dialog.showOpenDialog({properties: ['openFile', 'openDirectory', 'multiSelections']}))</code>
+    <br>The Dialog is opened from Electron's main thread. If you want to use the dialog object from a renderer process, remember to access it using the remote:
+    <br><code>const {dialog} = require('electron').remote
+    <br>console.log(dialog)</code>
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/dialog.md">https://github.com/electron/electron/blob/master/docs/api/dialog.md</a>]
+    <a class="clsHide" href="#idLjeldialogdsn"></a></p>
   <p id="idLjeldialognam">Name::
-    <br>* cpt.Ljel-API'dialog,
-    <br>* cpt.Ljel-dialog,
+    <br>* cpt.Ljel-API'dialog-object,
+    <br>* cpt.Ljel'dialog-object,
+    <br>* cpt.Ljel-dialog-object,
     <a class="clsHide" href="#idLjeldialognam"></a></p>
   </section>
 
   <section id="idLjelmwoShortcut">
-  <h3 id="idLjelmwoShortcutH3">Ljel-API'globalShortcut
+  <h3 id="idLjelmwoShortcutH3">Ljel-API'globalShortcut-object
     <a class="clsHide" href="#idLjelmwoShortcutH3"></a></h3>
   <p id="idLjelmwoShortcutnam">Name::
-    <br>* cpt.Ljel-API'globalShortcut,
-    <br>* cpt.Ljel-globalShortcut,
+    <br>* cpt.Ljel-API'globalShortcut-object,
+    <br>* cpt.Ljel'globalShortcut-object,
+    <br>* cpt.Ljel-globalShortcut-object,
     <a class="clsHide" href="#idLjelmwoShortcutnam"></a></p>
   </section>
 
   <section id="idLjelipcMain">
-  <h3 id="idLjelipcMainH3">Ljel-API'ipcMain
+  <h3 id="idLjelipcMainH3">Ljel-API'ipcMain-object
     <a class="clsHide" href="#idLjelipcMainH3"></a></h3>
+  <p id="idLjelipcMaindsn">Description::
+    <br>Communicate asynchronously from the main process to renderer processes.
+    <br>Process: Main
+    <br>The ipcMain module is an instance of the EventEmitter class. When used in the main process, it handles asynchronous and synchronous messages sent from a renderer process (web page). Messages sent from a renderer will be emitted to this module.
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/ipc-main.md">https://github.com/electron/electron/blob/master/docs/api/ipc-main.md</a>]
+    <a class="clsHide" href="#idLjelipcMaindsn"></a></p>
   <p id="idLjelipcMainnam">Name::
-    <br>* cpt.Ljel-API'ipcMain,
-    <br>* cpt.Ljel-ipcMain,
+    <br>* cpt.Ljel-API'ipcMain-object,
+    <br>* cpt.Ljel'ipcMain-object,
+    <br>* cpt.Ljel-ipcMain-object,
     <a class="clsHide" href="#idLjelipcMainnam"></a></p>
   </section>
 
   <section id="idLjelnativeImage">
-  <h3 id="idLjelnativeImageH3">Ljel-API'nativeImage
+  <h3 id="idLjelnativeImageH3">Ljel-API'nativeImage-object
     <a class="clsHide" href="#idLjelnativeImageH3"></a></h3>
+  <p id="idLjelnativeImagedsn">Description::
+    <br>Create tray, dock, and application icons using PNG or JPG files.
+    <br>Process: Main, Renderer
+    <br>In Electron, for the APIs that take images, you can pass either file paths or NativeImage instances. An empty image will be used when null is passed.
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/native-image.md">https://github.com/electron/electron/blob/master/docs/api/native-image.md</a>]
+    <a class="clsHide" href="#idLjelnativeImagedsn"></a></p>
   <p id="idLjelnativeImagenam">Name::
-    <br>* cpt.Ljel-API'nativeImage,
-    <br>* cpt.Ljel-nativeImage,
+    <br>* cpt.Ljel-API'nativeImage-object,
+    <br>* cpt.Ljel'nativeImage-object,
+    <br>* cpt.Ljel-nativeImage-object,
     <a class="clsHide" href="#idLjelnativeImagenam"></a></p>
   </section>
 
   <section id="idLjelnet">
-  <h3 id="idLjelnetH3">Ljel-API'net
+  <h3 id="idLjelnetH3">Ljel-API'net-object
     <a class="clsHide" href="#idLjelnetH3"></a></h3>
+  <p id="idLjelnetdsn">Description::
+    <br>Issue HTTP/HTTPS requests using Chromium's native networking library
+    <br>Process: Main
+    <br>The net module is a client-side API for issuing HTTP(S) requests. It is similar to the HTTP and HTTPS modules of Node.js but uses Chromium's native networking library instead of the Node.js implementation, offering better support for web proxies.
+    <br>The following is a non-exhaustive list of why you may consider using the net module instead of the native Node.js modules:
+    <br>Automatic management of system proxy configuration, support of the wpad protocol and proxy pac configuration files.
+    <br>Automatic tunneling of HTTPS requests.
+    <br>Support for authenticating proxies using basic, digest, NTLM, Kerberos or negotiate authentication schemes.
+    <br>Support for traffic monitoring proxies: Fiddler-like proxies used for access control and monitoring.
+    <br>The net module API has been specifically designed to mimic, as closely as possible, the familiar Node.js API. The API components including classes, methods, properties and event names are similar to those commonly used in Node.js.
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/net.md">https://github.com/electron/electron/blob/master/docs/api/net.md</a>]
+    <a class="clsHide" href="#idLjelnetdsn"></a></p>
   <p id="idLjelnetnam">Name::
-    <br>* cpt.Ljel-API'net,
-    <br>* cpt.Ljel-net,
+    <br>* cpt.Ljel-API'net-object,
+    <br>* cpt.Ljel'net-object,
+    <br>* cpt.Ljel-net-object,
     <a class="clsHide" href="#idLjelnetnam"></a></p>
   </section>
 
   <section id="idLjelpowerMonitor">
-  <h3 id="idLjelpowerMonitorH3">Ljel-API'powerMonitor
+  <h3 id="idLjelpowerMonitorH3">Ljel-API'powerMonitor-object
     <a class="clsHide" href="#idLjelpowerMonitorH3"></a></h3>
   <p id="idLjelpowerMonitornam">Name::
-    <br>* cpt.Ljel-API'powerMonitor,
-    <br>* cpt.Ljel-powerMonitor,
+    <br>* cpt.Ljel-API'powerMonitor-object,
+    <br>* cpt.Ljel'powerMonitor-object,
+    <br>* cpt.Ljel-powerMonitor-object,
     <a class="clsHide" href="#idLjelpowerMonitornam"></a></p>
   </section>
 
   <section id="idLjelpowerSaveBlocker">
-  <h3 id="idLjelpowerSaveBlockerH3">Ljel-API'powerSaveBlocker
+  <h3 id="idLjelpowerSaveBlockerH3">Ljel-API'powerSaveBlocker-object
     <a class="clsHide" href="#idLjelpowerSaveBlockerH3"></a></h3>
   <p id="idLjelpowerSaveBlockernam">Name::
-    <br>* cpt.Ljel-API'powerSaveBlocker,
-    <br>* cpt.Ljel-powerSaveBlocker,
+    <br>* cpt.Ljel-API'powerSaveBlocker-object,
+    <br>* cpt.Ljel'powerSaveBlocker-object,
+    <br>* cpt.Ljel-powerSaveBlocker-object,
     <a class="clsHide" href="#idLjelpowerSaveBlockernam"></a></p>
   </section>
 
   <section id="idLjelprotocol">
-  <h3 id="idLjelprotocolH3">Ljel-API'protocol
+  <h3 id="idLjelprotocolH3">Ljel-API'protocol-object
     <a class="clsHide" href="#idLjelprotocolH3"></a></h3>
   <p id="idLjelprotocolnam">Name::
-    <br>* cpt.Ljel-API'protocol,
-    <br>* cpt.Ljel-protocol,
+    <br>* cpt.Ljel-API'protocol-object,
+    <br>* cpt.Ljel'protocol-object,
+    <br>* cpt.Ljel-protocol-object,
     <a class="clsHide" href="#idLjelprotocolnam"></a></p>
   </section>
 
   <section id="idLjelscreen">
-  <h3 id="idLjelscreenH3">Ljel-API'screen
+  <h3 id="idLjelscreenH3">Ljel-API'screen-object
     <a class="clsHide" href="#idLjelscreenH3"></a></h3>
+  <p id="idLjelscreendsn">Description::
+    <br>Retrieve information about screen size, displays, cursor position, etc.
+    <br>Process: Main, Renderer
+    <br>You cannot require or use this module until the ready event of the app module is emitted.
+    <br>screen is an EventEmitter.
+    <br>Note: In the renderer / DevTools, window.screen is a reserved DOM property, so writing let {screen} = require('electron') will not work.
+    <br>An example of creating a window that fills the whole screen:
+    <br>
+    <br><code>const electron = require('electron')
+    <br>const {app, BrowserWindow} = electron
+    <br>
+    <br>let win
+    <br>
+    <br>app.on('ready', () => {
+    <br> &nbsp;const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
+    <br> &nbsp;win = new BrowserWindow({width, height})
+    <br> &nbsp;win.loadURL('https://github.com')
+    <br>})</code>
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/screen.md">https://github.com/electron/electron/blob/master/docs/api/screen.md</a>]
+    <a class="clsHide" href="#idLjelscreendsn"></a></p>
   <p id="idLjelscreennam">Name::
-    <br>* cpt.Ljel-API'screen,
-    <br>* cpt.Ljel-screen,
+    <br>* cpt.Ljel-API'screen-object,
+    <br>* cpt.Ljel'screen-object,
+    <br>* cpt.Ljel-screen-object,
     <a class="clsHide" href="#idLjelscreennam"></a></p>
+  <p id="idLjelscreenmbr">Member::
+    <br>// console.log(Object.getOwnPropertyNames(electron.screen).sort().join(', '))
+    <br>[]
+    <br>// console.log(Object.getOwnPropertyNames(electron.screen.__proto__).sort().join(', '))
+    <br>[constructor, getAllDisplays, getCursorScreenPoint, getDisplayMatching, getDisplayNearestPoint, getPrimaryDisplay]
+    <br>// console.log(Object.getOwnPropertyNames(electron.screen.__proto__.__proto__).sort().join(', '))
+    <br>[_events, _maxListeners, addListener, constructor, domain, emit, eventNames, getMaxListeners, listenerCount, listeners, on, once, prependListener, prependOnceListener, removeAllListeners, removeListener, setMaxListeners]
+    <br>// console.log(Object.getOwnPropertyNames(electron.screen.__proto__.__proto__.__proto__).sort().join(', '))
+    <br>[__defineGetter__, __defineSetter__, __lookupGetter__, __lookupSetter__, __proto__, constructor, hasOwnProperty, isPrototypeOf, propertyIsEnumerable, toLocaleString, toString, valueOf]
+    <a class="clsHide" href="#idLjelscreenmbr"></a></p>
   </section>
 
   <section id="idLjelsession">
-  <h3 id="idLjelsessionH3">Ljel-API'session
+  <h3 id="idLjelsessionH3">Ljel-API'session-object
     <a class="clsHide" href="#idLjelsessionH3"></a></h3>
   <p id="idLjelsessionnam">Name::
-    <br>* cpt.Ljel-API'session,
-    <br>* cpt.Ljel-session,
+    <br>* cpt.Ljel-API'session-object,
+    <br>* cpt.Ljel'session-object,
+    <br>* cpt.Ljel-session-object,
     <a class="clsHide" href="#idLjelsessionnam"></a></p>
   </section>
 
   <section id="idLjelshell">
-  <h3 id="idLjelshellH3">Ljel-API'shell
+  <h3 id="idLjelshellH3">Ljel-API'shell-object
     <a class="clsHide" href="#idLjelshellH3"></a></h3>
+  <p id="idLjelshelldsn">Description::
+    <br>Manage files and URLs using their default applications.
+    <br>Process: Main, Renderer
+    <br>The shell module provides functions related to desktop integration.
+    <br>An example of opening a URL in the user's default browser:
+    <br>
+    <br><code>const {shell} = require('electron')
+    <br>shell.openExternal('https://github.com')</code>
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/shell.md">https://github.com/electron/electron/blob/master/docs/api/shell.md</a>]
+    <a class="clsHide" href="#idLjelshelldsn"></a></p>
   <p id="idLjelshellnam">Name::
-    <br>* cpt.Ljel-API'shell,
-    <br>* cpt.Ljel-shell,
+    <br>* cpt.Ljel-API'shell-object,
+    <br>* cpt.Ljel'shell-object,
+    <br>* cpt.Ljel-shell-object,
     <a class="clsHide" href="#idLjelshellnam"></a></p>
   </section>
 
   <section id="idLjelsystemPreferences">
-  <h3 id="idLjelsystemPreferencesH3">Ljel-API'systemPreferences
+  <h3 id="idLjelsystemPreferencesH3">Ljel-API'systemPreferences-object
     <a class="clsHide" href="#idLjelsystemPreferencesH3"></a></h3>
+  <p id="idLjelsystemPreferencesdsn">Description::
+    <br>Get system preferences.
+    <br>Process: Main
+    <br>
+    <br><code>const {systemPreferences} = require('electron')
+    <br>console.log(systemPreferences.isDarkMode())</code>
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/system-preferences.md">https://github.com/electron/electron/blob/master/docs/api/system-preferences.md</a>]
+    <a class="clsHide" href="#idLjelsystemPreferencesdsn"></a></p>
   <p id="idLjelsystemPreferencesnam">Name::
-    <br>* cpt.Ljel-API'systemPreferences,
-    <br>* cpt.Ljel-systemPreferences,
+    <br>* cpt.Ljel-API'systemPreferences-object,
+    <br>* cpt.Ljel'systemPreferences-object,
+    <br>* cpt.Ljel-systemPreferences-object,
     <a class="clsHide" href="#idLjelsystemPreferencesnam"></a></p>
+  <p id="idLjelsystemPreferencesmbr">Member::
+    <br>// v1.7.9
+    <br>// console.log(Object.getOwnPropertyNames(electron.systemPreferences).sort().join(', '))
+    <br>[]
+    <br>// console.log(Object.getOwnPropertyNames(electron.systemPreferences.__proto__).sort().join(', '))
+    <br>constructor, getAccentColor, getColor, isAeroGlassEnabled, isDarkMode, isInvertedColorScheme]
+    <br>// console.log(Object.getOwnPropertyNames(electron.systemPreferences.__proto__.__proto__).sort().join(', '))
+    <br>[_events, _maxListeners, addListener, constructor, domain, emit, eventNames, getMaxListeners, listenerCount, listeners, on, once, prependListener, prependOnceListener, removeAllListeners, removeListener, setMaxListeners]
+    <br>// console.log(Object.getOwnPropertyNames(electron.systemPreferences.__proto__.__proto__.__proto__).sort().join(', '))
+    <br>[__defineGetter__, __defineSetter__, __lookupGetter__, __lookupSetter__, __proto__, constructor, hasOwnProperty, isPrototypeOf, propertyIsEnumerable, toLocaleString, toString, valueOf]
+    <a class="clsHide" href="#idLjelsystemPreferencesmbr"></a></p>
   </section>
 
   <section id="idLjelwebContents">
-  <h3 id="idLjelwebContentsH3">Ljel-API'webContents
+  <h3 id="idLjelwebContentsH3">Ljel-API'webContents-object
     <a class="clsHide" href="#idLjelwebContentsH3"></a></h3>
+  <p id="idLjelwebContentsdsn">Description::
+    <br>Render and control web pages.
+    <br>Process: Main
+    <br>webContents is an EventEmitter. It is responsible for rendering and controlling a web page and is a property of the BrowserWindow object. An example of accessing the webContents object:
+    <br>
+    <br><code>const {BrowserWindow} = require('electron')
+    <br>
+    <br>let win = new BrowserWindow({width: 800, height: 1500})
+    <br>win.loadURL('http://github.com')
+    <br>
+    <br>let contents = win.webContents
+    <br>console.log(contents)</code>
+    <br>[<a href="https://github.com/electron/electron/blob/master/docs/api/web-contents.md">https://github.com/electron/electron/blob/master/docs/api/web-contents.md</a>]
+    <a class="clsHide" href="#idLjelwebContentsdsn"></a></p>
   <p id="idLjelwebContentsnam">Name::
-    <br>* cpt.Ljel-API'webContents,
-    <br>* cpt.Ljel-webContents,
+    <br>* cpt.Ljel-API'webContents-object,
+    <br>* cpt.Ljel'webContents-object,
+    <br>* cpt.Ljel-webContents-object,
     <a class="clsHide" href="#idLjelwebContentsnam"></a></p>
   </section>
   </section>
@@ -571,6 +749,9 @@
   <p id="idLjelpgmnam">Name::
     <br>* cpt.Electron-application-(Ljel-pgm),
     <br>* cpt.Electron-program-(Ljel-pgm),
+    <br>* cpt.Ljel'app,
+    <br>* cpt.Ljel'pgm,
+    <br>* cpt.Ljel'program,
     <br>* cpt.Ljel-algo.program-(Ljel-pgm),
     <br>* cpt.Ljel-application-(Ljel-pgm),
     <br>* cpt.Ljel-pgm-(Electron-program),
@@ -585,17 +766,27 @@
   <h2 id="idLjelpgmmnjsH2">main.js-file--of--Ljel-pgm
     <a class="clsHide" href="#idLjelpgmmnjsH2"></a></h2>
   <p id="idLjelpgmmnjsdsn">Description::
-    <br>The main.js should create windows and handle system events.
+    <br>The-main.js-file contains <a class="clsPreview" href="filMcsLjs.html#idLjscod">the-script</a> of <a class="clsPreview" href="#idLjelprcMain">the-main-process</a>.
+    <br>[<a class="clsPreview" href="../../#idAboutme">HmnSgm</a>.2017-10-28]
     <a class="clsHide" href="#idLjelpgmmnjsdsn"></a></p>
   <p id="idLjelpgmmnjsnam">Name::
+    <br>* cpt.Ljel'main.js,
     <br>* cpt.Ljel-pgm'main.js,
     <a class="clsHide" href="#idLjelpgmmnjsnam"></a></p>
   </section>
 
-  <section id="idLjelpgmidxhml">
-  <h2 id="idLjelpgmidxhmlH2">index.html-file--of--Ljel-pgm
-    <a class="clsHide" href="#idLjelpgmidxhmlH2"></a></h2>
-  <p id="idLjelpgmidxhmldsn">Description::
+  <section id="idLjelpgmrdrhml">
+  <h2 id="idLjelpgmrdrhmlH2">rederer.html-file--of--Ljel-pgm
+    <a class="clsHide" href="#idLjelpgmrdrhmlH2"></a></h2>
+  <p id="idLjelpgmrdrhmldsn">Description::
+    <br>The-renderer.html-file contains <a class="clsPreview" href="filMcsLjs.html#idLjscod">the-script</a> or <a class="clsPreview" href="#idLjelprcRdr">the-renderer-process</a>.
+    <br>[<a class="clsPreview" href="../../#idAboutme">HmnSgm</a>.2017-10-28]
+    <a class="clsHide" href="#idLjelpgmrdrhmldsn"></a></p>
+  <p id="idLjelpgmrdrhmlnam">Name::
+    <br>* cpt.Ljel'renderer.html-file,
+    <br>* cpt.Ljel-pgm'index.html,
+    <a class="clsHide" href="#idLjelpgmrdrhmlnam"></a></p>
+  <p id="idLjelpgmrdrhmldsn">Description::
     <br>Finally the index.html is the web page you want to show:
     <br><pre><code>
 &lt;!DOCTYPE html>
@@ -612,10 +803,7 @@
   &lt;/body>
 &lt;/html>
     <br></pre></code>
-    <a class="clsHide" href="#idLjelpgmidxhmldsn"></a></p>
-  <p id="idLjelpgmidxhmlnam">Name::
-    <br>* cpt.Ljel-pgm'index.html,
-    <a class="clsHide" href="#idLjelpgmidxhmlnam"></a></p>
+    <a class="clsHide" href="#idLjelpgmrdrhmldsn"></a></p>
   </section>
 
   <section id="idLjelpgmpkgjsn">
